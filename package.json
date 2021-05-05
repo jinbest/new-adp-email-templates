@@ -1,0 +1,22 @@
+{
+  "name": "adp-frontend-email-template",
+  "version": "1.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "email-templates": "6.0.4",
+    "express": "4.17.1",
+    "handlebars": "^4.7.6",
+    "nodemailer": "6.4.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "server": "node app.js"
+  },
+  "proxy": "http://localhost:8000",
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "description": "ADP-DeviceList email-template marketing"
+}

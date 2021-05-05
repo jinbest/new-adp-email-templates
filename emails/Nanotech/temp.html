@@ -1,0 +1,1024 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif !important;
+        margin: 0;
+        background: #fff;
+        padding: 30px 0;
+      }
+      table {
+        width: 100%;
+      }
+      table tr,
+      table td,
+      th {
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        padding: 0;
+        margin: 1px 0;
+      }
+      button:hover {
+        opacity: 0.7;
+      }
+      a {
+        text-decoration: none;
+        width: fit-content;
+      }
+      a:hover {
+        opacity: 0.8;
+      }
+      .main-div {
+        width: 100%;
+        max-width: 700px;
+        box-shadow: -10px -10px 30px rgba(174, 174, 192, 0.4),
+          -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+        margin: auto;
+        background-color: #ffffff;
+      }
+      .header {
+        padding: 20px 20px 70px 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .logo-header {
+        height: 35px;
+        width: 40%;
+      }
+      .logo-header img {
+        height: 100%;
+      }
+      .header-text {
+        text-align: right;
+        width: 60%;
+      }
+      .header-text p {
+        color: white;
+        font-size: 16px;
+        line-height: 22px;
+        width: 300px;
+        margin-left: auto;
+        text-align: right;
+      }
+      .text-title {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .text-subtitle {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .text-theme-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .text-theme-content {
+        font-size: 16px;
+        font-weight: 200;
+      }
+      .text-content {
+        font-size: 14px;
+        font-weight: 200;
+      }
+      .mid-text {
+        font-size: 12px;
+        font-weight: 200;
+      }
+      .t-bold {
+        font-weight: bold;
+      }
+      .col-white {
+        color: white;
+      }
+      .col-black {
+        color: black;
+      }
+      .container {
+        padding: 0 30px;
+      }
+      .section-1 {
+        text-align: center;
+      }
+      .box {
+        background: linear-gradient(#fff, #fff) padding-box,
+          linear-gradient(to right, black, #ed1d24) border-box;
+        color: #313149;
+        padding: 15px;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        display: inline-block;
+        height: -webkit-fill-available;
+      }
+      .liner {
+        margin: 5px auto;
+        background: linear-gradient(to right, #ed1d24, black) border-box;
+        color: #313149;
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+      .sec1-card-1 {
+        text-align: left;
+        margin-top: 20px;
+      }
+      .sec1-card-1 table {
+        margin-top: 10px;
+      }
+      .sec1-info-card-desktop {
+        margin-top: 10px;
+        position: relative;
+        height: 235px;
+      }
+      .nearest-location {
+        text-align: left;
+        width: 50%;
+        height: 100%;
+      }
+      .nearest-location > div {
+        margin-right: auto;
+        width: calc(100% - 38px);
+        text-align: center;
+      }
+      .buttons {
+        margin-top: 10px;
+      }
+      .buttons td {
+        width: 50%;
+      }
+      .buttons button {
+        height: 30px;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #ed1d24;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        border-radius: 15px;
+        cursor: pointer;
+        width: calc(100% - 3px);
+        margin-top: 5px;
+        max-width: 200px;
+      }
+      .customer-information {
+        text-align: right;
+        width: 50%;
+        height: 100%;
+      }
+      .customer-information > div {
+        margin-left: auto;
+        width: calc(100% - 38px);
+        text-align: center;
+      }
+      .book-appointment {
+        text-align: center;
+        padding: 20px 0;
+      }
+      .book-appointment button {
+        width: 270px;
+        height: 40px;
+        background: white;
+        border-radius: 20px;
+        text-align: center;
+        border: 2px solid #ed1d24;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        color: #ed1d24;
+        margin-bottom: 10px;
+      }
+      .book-appointment p {
+        text-transform: uppercase;
+      }
+      .section-2-desktop {
+        padding: 20px 0;
+        position: relative;
+      }
+      .open-late,
+      .battery-money {
+        width: 50%;
+      }
+      .section-2-desktop td > div {
+        width: calc(100% - 20px);
+      }
+      .card-shadow {
+        position: relative;
+        padding: 1px 2px 2px 1px;
+        background: linear-gradient(to right bottom, white, rgb(241, 238, 238))
+          border-box;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .card {
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 15px;
+      }
+      .section-3 {
+        padding: 20px 0;
+        text-align: center;
+      }
+      .section-4-desktop {
+        padding: 20px 0;
+        position: relative;
+      }
+      .bounce {
+        width: calc(100% - 38px);
+        margin-right: auto;
+        background: #4ccaf3;
+        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 25px 15px 0 15px;
+        text-align: center;
+        color: white;
+        height: 270px;
+        position: relative;
+      }
+      .bounce img {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+      }
+      .mobile-groups {
+        width: calc(100% - 38px);
+        margin-left: auto;
+        background: #d01b0d;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        color: white;
+        height: 265px;
+      }
+      .mobile-groups img {
+        min-width: 150px;
+      }
+      .mobile-groups button {
+        font-size: 12px;
+        background: #ed1d24;
+        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        height: 30px;
+        width: 170px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: white;
+        margin: 5px 0;
+      }
+      .section-5 {
+        padding: 20px 0;
+        text-align: center;
+      }
+      .section-5 a {
+        color: black;
+      }
+      .fa-icon-button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .fa-icon-button img {
+        height: 60%;
+        margin-top: 20%;
+      }
+      .fa-icon-button:hover {
+        opacity: 0.7;
+      }
+      .fa-icon-button i {
+        margin: 7px;
+      }
+      .footer {
+        background-color: #333333;
+        height: 35px;
+        padding: 20px 20px 15px;
+      }
+      .footer a {
+        color: white;
+        white-space: nowrap;
+      }
+      .footer td {
+        width: 33.33%;
+      }
+      .footer img {
+        height: 25px;
+      }
+      .header-mobile {
+        display: none;
+        text-align: center;
+      }
+      .header-mobile p {
+        color: white;
+      }
+      .sec1-info-card-mobile {
+        display: none;
+      }
+      .section-2-mobile,
+      .section-4-mobile {
+        display: none;
+        padding: 20px 0;
+      }
+      @media (max-width: 600px) {
+        .text-title {
+          font-size: 18px;
+        }
+        .text-subtitle {
+          font-size: 16px;
+        }
+        .text-theme-title,
+        .text-theme-content {
+          font-size: 14px;
+        }
+        .text-content {
+          font-size: 13px;
+        }
+        .mid-text {
+          font-size: 11px;
+        }
+        .section-2-desktop {
+          display: none;
+        }
+        .section-2-mobile {
+          display: block;
+        }
+      }
+      @media (max-width: 520px) {
+        .header-desktop,
+        .sec1-info-card-desktop {
+          display: none;
+        }
+        .header-mobile {
+          display: block;
+        }
+        .header {
+          padding: 25px 20px 115px 20px;
+        }
+        .section-1 {
+          margin-top: -50px;
+        }
+        .sec1-info-card-mobile {
+          display: block;
+        }
+        .sec1-info-card-mobile .box {
+          width: calc(100% - 36px);
+          margin-top: 10px;
+        }
+        .book-appointment button {
+          width: 100%;
+        }
+        .section-4-desktop {
+          display: none;
+        }
+        .section-4-mobile {
+          display: block;
+          padding-top: 0;
+        }
+        .bounce,
+        .mobile-groups {
+          width: calc(100% - 30px);
+          margin: 20px auto 0;
+          height: auto;
+        }
+        .bounce img {
+          position: inherit;
+          left: 0;
+        }
+      }
+      @media (max-width: 375px) {
+        .footer img {
+          height: 18px;
+        }
+        .container {
+          padding: 0 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div" id="email-template">
+      <div
+        class="header"
+        style="
+          background-image: url('https://storage.googleapis.com/adp_prod_images/assets/emails/4/top-banner.png');
+        "
+      >
+        <table class="header-desktop">
+          <tr>
+            <td class="logo-header">
+              <a
+                href="https://mobiletechlab.ca/"
+                target="_blank"
+                rel="noreffer"
+                style="opacity: 1"
+              >
+                <img
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png"
+                />
+              </a>
+            </td>
+            <td class="header-text">
+              <p class="text-theme-content">
+                Please call prior to visiting for parts availability and
+                turnaround time.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <div class="header-mobile">
+          <a
+            href="https://mobiletechlab.ca/"
+            target="_blank"
+            rel="noreffer"
+            style="opacity: 1"
+          >
+            <img
+              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png"
+              style="margin-bottom: 10px"
+            />
+          </a>
+          <p class="text-theme-content">
+            Please call prior to visiting for parts availability and turnaround
+            time.
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="section-1">
+          <p class="text-title">Here is the quote you requested!</p>
+          <p class="text-content">
+            We look forward to seeing you instore! When you visit us, our staf
+            will check you in, inspect your device and confirm pricing and
+            approximate turnaround time.
+          </p>
+          <div class="box sec1-card-1">
+            <p class="text-subtitle" style="margin-bottom: 10px">
+              Quote Summary
+            </p>
+            <hr class="liner" />
+            <table>
+              <tr>
+                <td style="width: 150px">
+                  <p class="text-theme-title">Device:</p>
+                </td>
+                <td>
+                  <p class="text-theme-content">iPhone XR</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 150px">
+                  <p class="text-theme-title">Service:</p>
+                </td>
+                <td>
+                  <p class="text-theme-content">Walk In Battery Replacement</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 150px">
+                  <p class="text-theme-title">Duration:</p>
+                </td>
+                <td>
+                  <p class="text-theme-content">1 Hour</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 150px">
+                  <p class="text-theme-title">Warranty:</p>
+                </td>
+                <td>
+                  <p class="text-theme-content">90 Days</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 150px">
+                  <p class="text-theme-title">Quoted Cost:</p>
+                </td>
+                <td>
+                  <p class="text-theme-content">$89.00</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="width: 150px">
+                  <p class="text-theme-title">As low as:</p>
+                </td>
+                <td>
+                  <p class="text-theme-content">
+                    $7.00 per month at 0% APR with financing
+                  </p>
+                </td>
+              </tr>
+            </table>
+            <span class="text-content t-bold"
+              >We price match any repair shop.</span
+            >
+            <span class="text-content"
+              >Simply reply to this email with the name of the shop and the
+              price you were quoted.</span
+            >
+          </div>
+          <table class="sec1-info-card-desktop">
+            <tr>
+              <td class="nearest-location">
+                <div class="box">
+                  <p class="text-subtitle">Nearest Location</p>
+                  <hr class="liner" />
+                  <p class="text-theme-title">Mobile Tech Lab Corydon</p>
+                  <p class="text-theme-content">Unit F - 2020 Corydon Avenue</p>
+                  <p class="text-theme-content">Winnipeg, MB R3P 0N2</p>
+                  <a
+                    class="text-theme-content"
+                    href="tel:2048089416"
+                    style="color: black"
+                    >(204) 808-9416</a
+                  >
+                  <table class="buttons">
+                    <tr>
+                      <td style="text-align: left">
+                        <a
+                          href="https://mobiletechlab.ca/get-quote"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button>Email Us</button>
+                        </a>
+                      </td>
+                      <td style="text-align: right">
+                        <a
+                          href="https://mobiletechlab.ca/get-quote"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button>Call Us</button>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left">
+                        <a
+                          href="https://mobiletechlab.ca/get-quote"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button>Text Us</button>
+                        </a>
+                      </td>
+                      <td style="text-align: right">
+                        <a
+                          href="https://mobiletechlab.ca/get-quote"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <button>Get Directions</button>
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </td>
+              <td class="customer-information">
+                <div class="box">
+                  <p class="text-subtitle">Customer Information</p>
+                  <hr class="liner" />
+                  <div style="margin-bottom: 10px">
+                    <p class="text-theme-title">Customer Name:</p>
+                    <p class="text-theme-content">Tim Green</p>
+                  </div>
+                  <div style="margin-bottom: 10px">
+                    <p class="text-theme-title">Contact Number:</p>
+                    <a
+                      class="text-theme-content"
+                      href="tel:2049951430"
+                      style="color: black"
+                      >(204) 995 - 1430</a
+                    >
+                  </div>
+                  <div style="margin-bottom: 10px">
+                    <p class="text-theme-title">Contact Email:</p>
+                    <a
+                      class="text-theme-content"
+                      href="mailto:tim@green.ca"
+                      style="color: black"
+                      >tim@green.ca</a
+                    >
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="sec1-info-card-mobile">
+            <div class="box">
+              <p class="text-subtitle">Nearest Location</p>
+              <hr class="liner" />
+              <p class="text-theme-title">Mobile Tech Lab Corydon</p>
+              <p class="text-theme-content">Unit F - 2020 Corydon Avenue</p>
+              <p class="text-theme-content">Winnipeg, MB R3P 0N2</p>
+              <a
+                class="text-theme-content"
+                href="tel:2048089416"
+                style="color: black"
+                >(204) 808-9416</a
+              >
+              <div class="buttons">
+                <a
+                  href="https://mobiletechlab.ca/get-quote"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button>Email Us</button>
+                </a>
+                <a
+                  href="https://mobiletechlab.ca/get-quote"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button>Call Us</button>
+                </a>
+                <a
+                  href="https://mobiletechlab.ca/get-quote"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button>Text Us</button>
+                </a>
+                <a
+                  href="https://mobiletechlab.ca/get-quote"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button>Get Directions</button>
+                </a>
+              </div>
+            </div>
+            <div class="box">
+              <p class="text-subtitle">Customer Information</p>
+              <hr class="liner" />
+              <div style="margin-bottom: 10px">
+                <p class="text-theme-title">Customer Name:</p>
+                <p class="text-theme-content">Tim Green</p>
+              </div>
+              <div style="margin-bottom: 10px">
+                <p class="text-theme-title">Contact Number:</p>
+                <a
+                  class="text-theme-content"
+                  href="tel:2049951430"
+                  style="color: black"
+                  >(204) 995 - 1430</a
+                >
+              </div>
+              <div style="margin-bottom: 10px">
+                <p class="text-theme-title">Contact Email:</p>
+                <a
+                  class="text-theme-content"
+                  href="mailto:tim@green.ca"
+                  style="color: black"
+                  >tim@green.ca</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="book-appointment">
+            <a
+              href="https://mobiletechlab.ca/get-quote"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>Book Appointment</button>
+            </a>
+            <p class="text-theme-title">It only takes 2 minutes</p>
+          </div>
+        </div>
+
+        <hr class="liner" />
+
+        <div class="section-2-desktop">
+          <table>
+            <tr>
+              <td class="open-late" style="text-align: left">
+                <div class="card-shadow">
+                  <div
+                    class="card"
+                    style="text-align: center; margin-right: auto"
+                  >
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png"
+                    />
+                    <p class="text-theme-title">OPEN LATE</p>
+                    <p class="text-content">Weekdays</p>
+                    <p class="text-content">10:00 a.m. - 6:00 p.m.</p>
+                    <p class="text-content">Weekends</p>
+                    <p class="text-content">10:00 a.m. - 6:00 p.m.</p>
+                  </div>
+                </div>
+              </td>
+              <td class="battery-money" style="text-align: right">
+                <div style="margin-left: auto; height: -webkit-fill-available">
+                  <div class="card-shadow">
+                    <div class="card" style="padding: 15px 10px 15px 0">
+                      <table>
+                        <tr>
+                          <td>
+                            <img
+                              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png"
+                              style="width: 70px; margin: auto"
+                            />
+                          </td>
+                          <td style="text-align: center">
+                            <p
+                              class="text-theme-title"
+                              style="white-space: nowrap"
+                            >
+                              LOSING POWER?
+                            </p>
+                            <p class="text-content">
+                              We offer free battery evaluations
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="card-shadow">
+                    <div class="card" style="padding: 15px 10px 15px 0">
+                      <table>
+                        <tr>
+                          <td>
+                            <img
+                              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png"
+                              style="width: 70px"
+                            />
+                          </td>
+                          <td style="text-align: center">
+                            <p
+                              class="text-theme-title"
+                              style="white-space: nowrap"
+                            >
+                              TRADE IN PROGRAM
+                            </p>
+                            <p class="text-content">
+                              Trade in Old Devices for Cash or Credit
+                            </p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="section-2-mobile">
+          <div class="card-shadow">
+            <div class="card" style="text-align: center; margin: auto">
+              <img
+                src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png"
+              />
+              <p class="text-subtitle">OPEN LATE</p>
+              <p class="text-theme-content">Weekdays</p>
+              <p class="text-theme-content">10:00 a.m. - 6:00 p.m.</p>
+              <p class="text-theme-content">Weekends</p>
+              <p class="text-theme-content">10:00 a.m. - 6:00 p.m.</p>
+            </div>
+          </div>
+          <div class="card-shadow">
+            <div class="card">
+              <table>
+                <tr>
+                  <td>
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png"
+                      style="width: 80px"
+                    />
+                  </td>
+                  <td style="text-align: center">
+                    <p class="text-subtitle">LOSING POWER?</p>
+                    <p class="text-theme-content">
+                      We offer free battery evaluations
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="card-shadow">
+            <div class="card">
+              <table>
+                <tr>
+                  <td>
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png"
+                      style="width: 80px"
+                    />
+                  </td>
+                  <td style="text-align: center">
+                    <p class="text-subtitle">TRADE IN PROGRAM</p>
+                    <p class="text-theme-content">
+                      Trade in Old Devices for Cash or Credit
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <hr class="liner" />
+
+        <div class="section-3">
+          <p class="text-title">Why do we ask for your personal information?</p>
+          <p class="text-theme-content">
+            Our staff may ask for the passcode for your device upon intake. This
+            is only to perform our 30-point pre-repair and post-repair
+            inspection to ensure your device is in perfect working order. We'll
+            test your front and rear camera, microphone, loudspeaker, sensors,
+            and more. Access will allow us to ensure the highest quality repair
+            and customer service. If you are uncomfortable giving us your
+            passcode we can run our pre and post service inspection in front of
+            you when you pickup the device. See Full Privacy Policy
+          </p>
+        </div>
+
+        <hr class="liner" />
+
+        <div class="section-4-desktop">
+          <table>
+            <tr>
+              <td style="width: 50%; text-align: left">
+                <div class="bounce">
+                  <p class="text-theme-title">Get Bounce Screen Insurance</p>
+                  <p class="text-theme-content">Starting At $39/yr</p>
+                  <p class="text-theme-content">Zero Deductible</p>
+                  <img
+                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
+                    style="width: 60%; margin-top: 10px"
+                  />
+                </div>
+              </td>
+              <td style="width: 50%; text-align: left">
+                <div class="mobile-groups">
+                  <p class="text-theme-title">
+                    Certified Pre-Owned Devices Starting from $79
+                  </p>
+                  <img
+                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
+                    style="width: 60%"
+                  />
+                  <p class="text-theme-content">
+                    1 year warranty and free shipping. Shop online, pick up in
+                    store
+                  </p>
+                  <a
+                    href="https://shop.mobiletechlab.ca/"
+                    target="_blank"
+                    rel="noreffer"
+                  >
+                    <button>Shop Now</button>
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="section-4-mobile">
+          <div class="bounce">
+            <p class="text-theme-title">Get Bounce Screen Insurance</p>
+            <p class="text-theme-content">Starting At $39/yr</p>
+            <p class="text-theme-content">Zero Deductible</p>
+            <img
+              src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
+              style="width: 60%; margin-top: 10px"
+            />
+          </div>
+          <div class="mobile-groups">
+            <p class="text-theme-title">
+              Certified Pre-Owned Devices Starting from $79
+            </p>
+            <img
+              src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
+              style="width: 60%"
+            />
+            <p class="text-theme-content">
+              1 year warranty and free shipping. Shop online, pick up in store
+            </p>
+            <a
+              href="https://shop.mobiletechlab.ca/"
+              target="_blank"
+              rel="noreffer"
+            >
+              <button>Shop Now</button>
+            </a>
+          </div>
+        </div>
+
+        <hr class="liner" />
+
+        <div class="section-5">
+          <p class="text-theme-title">Find us on</p>
+          <table style="width: 180px; margin: 0 auto 20px">
+            <tr>
+              <td>
+                <a href="" target="_blank" rel="noreferrer">
+                  <div class="fa-icon-button">
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.png"
+                    />
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="" target="_blank" rel="noreferrer">
+                  <div class="fa-icon-button">
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.png"
+                    />
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="" target="_blank" rel="noreferrer">
+                  <div class="fa-icon-button">
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.png"
+                      style="margin-top: 15%"
+                    />
+                  </div>
+                </a>
+              </td>
+              <td>
+                <a href="" target="_blank" rel="noreferrer">
+                  <div class="fa-icon-button">
+                    <img
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.png"
+                    />
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </table>
+          <p class="mid-text">
+            Turnaround times and costs vary based upon the nature of the
+            service, parts availability, your warranty status, and other
+            factors. Once your device is in the shop, we will diagnose your
+            problem and contact you as soon as we can to provide any details and
+            specific time and cost estimate. Diagnostic and/or repair fees may
+            apply if work to be performed is not covered under warranty. Offer
+            expires one week after Free Estimate Request submitted.
+          </p>
+          <p class="mid-text" style="margin-top: 15px">
+            © 2021 Mobile Tech Lab Inc. All Rights Reserved. All product and
+            company names are trademarks of their respective holders. iPhone,
+            iPad, iPod, iPod touch, Mac and iMac are registered trademarks and
+            property of Apple, Inc. Mobile Tech Lab Inc. does not own or make
+            claim to those trademarks used on this website in which it is not
+            the holder. Mobile Tech Lab is a third-party repair company and is
+            not affiliated with Apple.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <table>
+          <tr>
+            <td style="text-align: left">
+              <img
+                src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-footer.png"
+              />
+            </td>
+            <td style="text-align: center">
+              <a
+                href="https://mobiletechlab.ca"
+                target="_blank"
+                rel="noreferrer"
+                class="mid-text"
+                >mobiletechlab.ca</a
+              >
+            </td>
+            <td style="text-align: right">
+              <a
+                href="https://mobiletechlab.ca/privacy_policy"
+                target="_blank"
+                rel="noreferrer"
+                class="mid-text"
+                style="text-decoration: underline"
+                >Privacy Policy</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
