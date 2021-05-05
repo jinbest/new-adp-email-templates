@@ -8,7 +8,7 @@
       body {
         font-family: "Poppins", sans-serif !important;
         margin: 0;
-        background: #fff;
+        background: #ddd;
         padding: 30px 0;
       }
       table {
@@ -23,13 +23,18 @@
       p {
         padding: 0;
         margin: 1px 0;
+        color: #313149;
       }
       button:hover {
         opacity: 0.7;
       }
+      span {
+        color: #313149;
+      }
       a {
         text-decoration: none;
         width: fit-content;
+        color: #313149;
       }
       a:hover {
         opacity: 0.8;
@@ -48,7 +53,7 @@
         background-repeat: no-repeat;
       }
       .logo-header {
-        height: 35px;
+        height: 45px;
         width: 40%;
       }
       .logo-header img {
@@ -107,7 +112,7 @@
       }
       .box {
         background: linear-gradient(#fff, #fff) padding-box,
-          linear-gradient(to right, black, #ed1d24) border-box;
+          linear-gradient(to right, #cfe4ec, #00b0f0) border-box;
         color: #313149;
         padding: 15px;
         border: 2px solid transparent;
@@ -117,7 +122,7 @@
       }
       .liner {
         margin: 5px auto;
-        background: linear-gradient(to right, #ed1d24, black) border-box;
+        background: linear-gradient(to right, #cfe4ec, #00b0f0) border-box;
         color: #313149;
         display: inline-block;
         height: 2px;
@@ -135,7 +140,7 @@
       .sec1-info-card-desktop {
         margin-top: 10px;
         position: relative;
-        height: 235px;
+        height: 265px;
       }
       .nearest-location {
         text-align: left;
@@ -158,7 +163,7 @@
         width: 100%;
         border: none;
         outline: none;
-        background: #ed1d24;
+        background: #00b0f0;
         text-align: center;
         color: white;
         font-size: 12px;
@@ -188,11 +193,11 @@
         background: white;
         border-radius: 20px;
         text-align: center;
-        border: 2px solid #ed1d24;
+        border: 2px solid #00b0f0;
         cursor: pointer;
         font-weight: bold;
         font-size: 16px;
-        color: #ed1d24;
+        color: #00b0f0;
         margin-bottom: 10px;
       }
       .book-appointment p {
@@ -238,7 +243,6 @@
         border-radius: 5px;
         padding: 25px 15px 0 15px;
         text-align: center;
-        color: white;
         height: 270px;
         position: relative;
       }
@@ -250,7 +254,7 @@
       .mobile-groups {
         width: calc(100% - 38px);
         margin-left: auto;
-        background: #d01b0d;
+        background: #007aa7;
         padding: 15px;
         text-align: center;
         box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
@@ -263,7 +267,7 @@
       }
       .mobile-groups button {
         font-size: 12px;
-        background: #ed1d24;
+        background: #00b0f0;
         box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         height: 30px;
@@ -312,7 +316,7 @@
         width: 33.33%;
       }
       .footer img {
-        height: 25px;
+        height: 30px;
       }
       .header-mobile {
         display: none;
@@ -397,7 +401,7 @@
       }
       @media (max-width: 375px) {
         .footer img {
-          height: 18px;
+          height: 25px;
         }
         .container {
           padding: 0 15px;
@@ -410,7 +414,7 @@
       <div
         class="header"
         style="
-          background-image: url('https://storage.googleapis.com/adp_prod_images/assets/emails/4/top-banner.png');
+          background-image: url('https://storage.googleapis.com/adp_prod_images/assets/emails/2/top-banner.png');
         "
       >
         <table class="header-desktop">
@@ -423,7 +427,7 @@
                 style="opacity: 1"
               >
                 <img
-                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png"
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/logo-header.png"
                 />
               </a>
             </td>
@@ -443,7 +447,7 @@
             style="opacity: 1"
           >
             <img
-              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png"
+              src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/logo-header.png"
               style="margin-bottom: 10px"
             />
           </a>
@@ -706,72 +710,55 @@
             <tr>
               <td class="open-late" style="text-align: left">
                 <div class="card-shadow">
-                  <div
-                    class="card"
-                    style="text-align: center; margin-right: auto"
-                  >
-                    <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png"
-                    />
-                    <p class="text-theme-title">OPEN LATE</p>
-                    <p class="text-content">Weekdays</p>
-                    <p class="text-content">10:00 a.m. - 6:00 p.m.</p>
-                    <p class="text-content">Weekends</p>
-                    <p class="text-content">10:00 a.m. - 6:00 p.m.</p>
+                  <div class="card" style="padding: 15px 10px 15px 0">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/battery.png"
+                            style="width: 70px; margin: auto"
+                          />
+                        </td>
+                        <td style="text-align: center">
+                          <p
+                            class="text-theme-title"
+                            style="white-space: nowrap"
+                          >
+                            LOSING POWER?
+                          </p>
+                          <p class="text-content">
+                            We offer free battery evaluations
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </td>
               <td class="battery-money" style="text-align: right">
-                <div style="margin-left: auto; height: -webkit-fill-available">
-                  <div class="card-shadow">
-                    <div class="card" style="padding: 15px 10px 15px 0">
-                      <table>
-                        <tr>
-                          <td>
-                            <img
-                              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png"
-                              style="width: 70px; margin: auto"
-                            />
-                          </td>
-                          <td style="text-align: center">
-                            <p
-                              class="text-theme-title"
-                              style="white-space: nowrap"
-                            >
-                              LOSING POWER?
-                            </p>
-                            <p class="text-content">
-                              We offer free battery evaluations
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="card-shadow">
-                    <div class="card" style="padding: 15px 10px 15px 0">
-                      <table>
-                        <tr>
-                          <td>
-                            <img
-                              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png"
-                              style="width: 70px"
-                            />
-                          </td>
-                          <td style="text-align: center">
-                            <p
-                              class="text-theme-title"
-                              style="white-space: nowrap"
-                            >
-                              TRADE IN PROGRAM
-                            </p>
-                            <p class="text-content">
-                              Trade in Old Devices for Cash or Credit
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
+                <div class="card-shadow">
+                  <div class="card" style="padding: 15px 10px 15px 0">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/money.png"
+                            style="width: 70px"
+                          />
+                        </td>
+                        <td style="text-align: center">
+                          <p
+                            class="text-theme-title"
+                            style="white-space: nowrap"
+                          >
+                            TRADE IN PROGRAM
+                          </p>
+                          <p class="text-content">
+                            Trade in Old Devices for Cash or Credit
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </td>
@@ -781,24 +768,12 @@
 
         <div class="section-2-mobile">
           <div class="card-shadow">
-            <div class="card" style="text-align: center; margin: auto">
-              <img
-                src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png"
-              />
-              <p class="text-subtitle">OPEN LATE</p>
-              <p class="text-theme-content">Weekdays</p>
-              <p class="text-theme-content">10:00 a.m. - 6:00 p.m.</p>
-              <p class="text-theme-content">Weekends</p>
-              <p class="text-theme-content">10:00 a.m. - 6:00 p.m.</p>
-            </div>
-          </div>
-          <div class="card-shadow">
             <div class="card">
               <table>
                 <tr>
                   <td>
                     <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png"
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/battery.png"
                       style="width: 80px"
                     />
                   </td>
@@ -818,7 +793,7 @@
                 <tr>
                   <td>
                     <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png"
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/money.png"
                       style="width: 80px"
                     />
                   </td>
@@ -846,8 +821,16 @@
             and more. Access will allow us to ensure the highest quality repair
             and customer service. If you are uncomfortable giving us your
             passcode we can run our pre and post service inspection in front of
-            you when you pickup the device. See Full Privacy Policy
+            you when you pickup the device.
           </p>
+          <a
+            class="text-theme-content"
+            href="https://mobiletechlab.ca/privacy_policy"
+            target="_blank"
+            rel="noreferrer"
+            style="text-decoration: underline"
+            >See Full Privacy Policy</a
+          >
         </div>
 
         <hr class="liner" />
@@ -857,9 +840,15 @@
             <tr>
               <td style="width: 50%; text-align: left">
                 <div class="bounce">
-                  <p class="text-theme-title">Get Bounce Screen Insurance</p>
-                  <p class="text-theme-content">Starting At $39/yr</p>
-                  <p class="text-theme-content">Zero Deductible</p>
+                  <p class="text-theme-title" style="color: white">
+                    Get Bounce Screen Insurance
+                  </p>
+                  <p class="text-theme-content" style="color: white">
+                    Starting At $39/yr
+                  </p>
+                  <p class="text-theme-content" style="color: white">
+                    Zero Deductible
+                  </p>
                   <img
                     src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
                     style="width: 60%; margin-top: 10px"
@@ -868,14 +857,14 @@
               </td>
               <td style="width: 50%; text-align: left">
                 <div class="mobile-groups">
-                  <p class="text-theme-title">
+                  <p class="text-theme-title" style="color: white">
                     Certified Pre-Owned Devices Starting from $79
                   </p>
                   <img
                     src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
                     style="width: 60%"
                   />
-                  <p class="text-theme-content">
+                  <p class="text-theme-content" style="color: white">
                     1 year warranty and free shipping. Shop online, pick up in
                     store
                   </p>
@@ -894,23 +883,29 @@
 
         <div class="section-4-mobile">
           <div class="bounce">
-            <p class="text-theme-title">Get Bounce Screen Insurance</p>
-            <p class="text-theme-content">Starting At $39/yr</p>
-            <p class="text-theme-content">Zero Deductible</p>
+            <p class="text-theme-title" style="color: white">
+              Get Bounce Screen Insurance
+            </p>
+            <p class="text-theme-content" style="color: white">
+              Starting At $39/yr
+            </p>
+            <p class="text-theme-content" style="color: white">
+              Zero Deductible
+            </p>
             <img
               src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
               style="width: 60%; margin-top: 10px"
             />
           </div>
           <div class="mobile-groups">
-            <p class="text-theme-title">
+            <p class="text-theme-title" style="color: white">
               Certified Pre-Owned Devices Starting from $79
             </p>
             <img
               src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
               style="width: 60%"
             />
-            <p class="text-theme-content">
+            <p class="text-theme-content" style="color: white">
               1 year warranty and free shipping. Shop online, pick up in store
             </p>
             <a
@@ -994,7 +989,7 @@
           <tr>
             <td style="text-align: left">
               <img
-                src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-footer.png"
+                src="https://storage.googleapis.com/adp_prod_images/assets/emails/2/logo-footer.png"
               />
             </td>
             <td style="text-align: center">

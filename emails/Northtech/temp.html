@@ -25,11 +25,11 @@
         margin: 1px 0;
         color: #313149;
       }
-      span {
-        color: #313149;
-      }
       button:hover {
         opacity: 0.7;
+      }
+      span {
+        color: #313149;
       }
       a {
         text-decoration: none;
@@ -53,7 +53,7 @@
         background-repeat: no-repeat;
       }
       .logo-header {
-        height: 35px;
+        height: 45px;
         width: 40%;
       }
       .logo-header img {
@@ -112,7 +112,7 @@
       }
       .box {
         background: linear-gradient(#fff, #fff) padding-box,
-          linear-gradient(to right, black, #ed1d24) border-box;
+          linear-gradient(to right, #2b388f, #f67500) border-box;
         color: #313149;
         padding: 15px;
         border: 2px solid transparent;
@@ -122,7 +122,7 @@
       }
       .liner {
         margin: 5px auto;
-        background: linear-gradient(to right, #ed1d24, black) border-box;
+        background: linear-gradient(to right, #2b388f, #f67500) border-box;
         color: #313149;
         display: inline-block;
         height: 2px;
@@ -163,7 +163,7 @@
         width: 100%;
         border: none;
         outline: none;
-        background: #ed1d24;
+        background: #2b388f;
         text-align: center;
         color: white;
         font-size: 12px;
@@ -193,11 +193,11 @@
         background: white;
         border-radius: 20px;
         text-align: center;
-        border: 2px solid #ed1d24;
+        border: 2px solid #2b388f;
         cursor: pointer;
         font-weight: bold;
         font-size: 16px;
-        color: #ed1d24;
+        color: #2b388f;
         margin-bottom: 10px;
       }
       .book-appointment p {
@@ -243,7 +243,6 @@
         border-radius: 5px;
         padding: 25px 15px 0 15px;
         text-align: center;
-        color: white;
         height: 270px;
         position: relative;
       }
@@ -255,7 +254,7 @@
       .mobile-groups {
         width: calc(100% - 38px);
         margin-left: auto;
-        background: #d01b0d;
+        background: #141d54;
         padding: 15px;
         text-align: center;
         box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
@@ -268,7 +267,7 @@
       }
       .mobile-groups button {
         font-size: 12px;
-        background: #ed1d24;
+        background: #2b388f;
         box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         height: 30px;
@@ -317,7 +316,7 @@
         width: 33.33%;
       }
       .footer img {
-        height: 25px;
+        height: 30px;
       }
       .header-mobile {
         display: none;
@@ -402,7 +401,7 @@
       }
       @media (max-width: 375px) {
         .footer img {
-          height: 18px;
+          height: 25px;
         }
         .container {
           padding: 0 15px;
@@ -415,7 +414,7 @@
       <div
         class="header"
         style="
-          background-image: url('https://storage.googleapis.com/adp_prod_images/assets/emails/4/top-banner.png');
+          background-image: url('https://storage.googleapis.com/adp_prod_images/assets/emails/5/top-banner.png');
         "
       >
         <table class="header-desktop">
@@ -428,7 +427,7 @@
                 style="opacity: 1"
               >
                 <img
-                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png"
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/logo-header.png"
                 />
               </a>
             </td>
@@ -448,7 +447,7 @@
             style="opacity: 1"
           >
             <img
-              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png"
+              src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/logo-header.png"
               style="margin-bottom: 10px"
             />
           </a>
@@ -711,72 +710,55 @@
             <tr>
               <td class="open-late" style="text-align: left">
                 <div class="card-shadow">
-                  <div
-                    class="card"
-                    style="text-align: center; margin-right: auto"
-                  >
-                    <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png"
-                    />
-                    <p class="text-theme-title">OPEN LATE</p>
-                    <p class="text-content">Weekdays</p>
-                    <p class="text-content">10:00 a.m. - 6:00 p.m.</p>
-                    <p class="text-content">Weekends</p>
-                    <p class="text-content">10:00 a.m. - 6:00 p.m.</p>
+                  <div class="card" style="padding: 15px 10px 15px 0">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/battery.png"
+                            style="width: 70px; margin: auto"
+                          />
+                        </td>
+                        <td style="text-align: center">
+                          <p
+                            class="text-theme-title"
+                            style="white-space: nowrap"
+                          >
+                            LOSING POWER?
+                          </p>
+                          <p class="text-content">
+                            We offer free battery evaluations
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </td>
               <td class="battery-money" style="text-align: right">
-                <div style="margin-left: auto; height: -webkit-fill-available">
-                  <div class="card-shadow">
-                    <div class="card" style="padding: 15px 10px 15px 0">
-                      <table>
-                        <tr>
-                          <td>
-                            <img
-                              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png"
-                              style="width: 70px; margin: auto"
-                            />
-                          </td>
-                          <td style="text-align: center">
-                            <p
-                              class="text-theme-title"
-                              style="white-space: nowrap"
-                            >
-                              LOSING POWER?
-                            </p>
-                            <p class="text-content">
-                              We offer free battery evaluations
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                  <div class="card-shadow">
-                    <div class="card" style="padding: 15px 10px 15px 0">
-                      <table>
-                        <tr>
-                          <td>
-                            <img
-                              src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png"
-                              style="width: 70px"
-                            />
-                          </td>
-                          <td style="text-align: center">
-                            <p
-                              class="text-theme-title"
-                              style="white-space: nowrap"
-                            >
-                              TRADE IN PROGRAM
-                            </p>
-                            <p class="text-content">
-                              Trade in Old Devices for Cash or Credit
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
+                <div class="card-shadow">
+                  <div class="card" style="padding: 15px 10px 15px 0">
+                    <table>
+                      <tr>
+                        <td>
+                          <img
+                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/money.png"
+                            style="width: 70px"
+                          />
+                        </td>
+                        <td style="text-align: center">
+                          <p
+                            class="text-theme-title"
+                            style="white-space: nowrap"
+                          >
+                            TRADE IN PROGRAM
+                          </p>
+                          <p class="text-content">
+                            Trade in Old Devices for Cash or Credit
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </td>
@@ -786,24 +768,12 @@
 
         <div class="section-2-mobile">
           <div class="card-shadow">
-            <div class="card" style="text-align: center; margin: auto">
-              <img
-                src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png"
-              />
-              <p class="text-subtitle">OPEN LATE</p>
-              <p class="text-theme-content">Weekdays</p>
-              <p class="text-theme-content">10:00 a.m. - 6:00 p.m.</p>
-              <p class="text-theme-content">Weekends</p>
-              <p class="text-theme-content">10:00 a.m. - 6:00 p.m.</p>
-            </div>
-          </div>
-          <div class="card-shadow">
             <div class="card">
               <table>
                 <tr>
                   <td>
                     <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png"
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/battery.png"
                       style="width: 80px"
                     />
                   </td>
@@ -823,7 +793,7 @@
                 <tr>
                   <td>
                     <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png"
+                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/money.png"
                       style="width: 80px"
                     />
                   </td>
@@ -1019,7 +989,7 @@
           <tr>
             <td style="text-align: left">
               <img
-                src="https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-footer.png"
+                src="https://storage.googleapis.com/adp_prod_images/assets/emails/5/logo-footer.png"
               />
             </td>
             <td style="text-align: center">

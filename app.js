@@ -6,7 +6,9 @@ const app = express();
 const Email = require('email-templates');
 const Handlebars = require("handlebars");
 
-const data = require("./data.json")
+// const mobileTechData = require("./emails/MobileTech/data.json")
+// const nanoTechData = require("./emails/Nanotech/data.json")
+const northTechData = require("./emails/Northtech/data.json")
 
 Handlebars.registerHelper('equals', function (a, b, opts) {
   if (a === b)
@@ -55,7 +57,7 @@ function sendEmail(folderName, data) {
     .send({
       template: folderName,
       message: {
-        to: ['jin.bestvictoria718@gmail.com', 'eosarhemen@gmail.com'],
+        to: ['jin.bestvictoria718@gmail.com'],
       },
       locals: data
     })
@@ -64,6 +66,10 @@ function sendEmail(folderName, data) {
 }
 
 app.get('/send-email', function(req, res) {
-  sendEmail('MobileTech', data);
+  
+  // sendEmail('MobileTech', mobileTechData);
+  // sendEmail('Nanotech', nanoTechData);
+  sendEmail('Northtech', northTechData);
+
   res.send('Email was sent successfully!');
 });

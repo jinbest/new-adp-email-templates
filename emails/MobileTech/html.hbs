@@ -6,7 +6,7 @@
     body {
       font-family: 'Poppins', sans-serif !important;
       margin: 0;
-      background: #fff;
+      background: #ddd;
       padding: 30px 0;
     }
 
@@ -24,15 +24,21 @@
     p {
       padding: 0;
       margin: 1px 0;
+      color: #313149;
     }
 
     button:hover {
       opacity: 0.7;
     }
 
+    span {
+      color: #313149;
+    }
+
     a {
       text-decoration: none;
       width: fit-content;
+      color: #313149;
     }
 
     a:hover {
@@ -338,6 +344,7 @@
       text-align: center;
       border: 1px solid black;
       border-radius: 20px;
+      margin: auto;
     }
 
     .fa-icon-button img {
@@ -801,6 +808,8 @@
         <p class="text-theme-content">
           {{ section3.content }}
         </p>
+        <a class="text-theme-content" href={{ section3.privacy.link }} target="_blank" rel="noreferrer"
+          style="text-decoration: underline; color: black">{{ section3.privacy.text }}</a>
       </div>
 
       <hr class="liner" />
@@ -812,17 +821,17 @@
           <tr>
             <td style="width: 50%; text-align: left;">
               <div class="bounce">
-                <p class="text-theme-title">{{ section4.bounce.title }}</p>
-                <p class="text-theme-content">{{ section4.bounce.content_1 }}</p>
-                <p class="text-theme-content">{{ section4.bounce.content_2 }}</p>
+                <p class="text-theme-title" style="color: white;">{{ section4.bounce.title }}</p>
+                <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_1 }}</p>
+                <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_2 }}</p>
                 <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
               </div>
             </td>
             <td style="width: 50%; text-align: left;">
               <div class="mobile-groups">
-                <p class="text-theme-title">{{ section4.certified.title }}</p>
+                <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
                 <img src={{ section4.certified.img }} style="width: 60%;" />
-                <p class="text-theme-content">{{ section4.certified.content }}</p>
+                <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
                 <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
                   <button>{{ section4.certified.shop_now.title }}</button>
                 </a>
@@ -834,15 +843,15 @@
 
       <div class="section-4-mobile">
         <div class="bounce">
-          <p class="text-theme-title">{{ section4.bounce.title }}</p>
-          <p class="text-theme-content">{{ section4.bounce.content_1 }}</p>
-          <p class="text-theme-content">{{ section4.bounce.content_2 }}</p>
+          <p class="text-theme-title" style="color: white;">{{ section4.bounce.title }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_1 }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_2 }}</p>
           <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
         </div>
         <div class="mobile-groups">
-          <p class="text-theme-title">{{ section4.certified.title }}</p>
+          <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
           <img src={{ section4.certified.img }} style="width: 60%;" />
-          <p class="text-theme-content">{{ section4.certified.content }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
           <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
             <button>{{ section4.certified.shop_now.title }}</button>
           </a>
@@ -856,6 +865,7 @@
         <p class="text-theme-title">{{ section5.title }}</p>
         <table style="width: 180px; margin: 0 auto 20px;">
           <tr>
+            {{#if section5.socials.instagram}}
             <td>
               <a href={{ section5.socials.instagram }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
@@ -863,6 +873,8 @@
                 </div>
               </a>
             </td>
+            {{/if}}
+            {{#if section5.socials.twitter}}
             <td>
               <a href={{ section5.socials.twitter }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
@@ -870,6 +882,8 @@
                 </div>
               </a>
             </td>
+            {{/if}}
+            {{#if section5.socials.linkedin}}
             <td>
               <a href={{ section5.socials.linkedin }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
@@ -878,6 +892,8 @@
                 </div>
               </a>
             </td>
+            {{/if}}
+            {{#if section5.socials.facebook}}
             <td>
               <a href={{ section5.socials.facebook }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
@@ -885,6 +901,7 @@
                 </div>
               </a>
             </td>
+            {{/if}}
           </tr>
         </table>
         <p class="mid-text">
