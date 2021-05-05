@@ -1,0 +1,914 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif !important;
+      margin: 0;
+      background: #ddd;
+      padding: 30px 0;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    table tr,
+    table td,
+    th {
+      padding: 0;
+      margin: 0;
+    }
+
+    p {
+      padding: 0;
+      margin: 1px 0;
+      color: #313149;
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+
+    span {
+      color: #313149;
+    }
+
+    a {
+      text-decoration: none;
+      width: fit-content;
+      color: #313149;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .main-div {
+      width: 100%;
+      max-width: 700px;
+      box-shadow: -10px -10px 30px rgba(174, 174, 192, 0.4),
+        -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
+      margin: auto;
+      background-color: #ffffff;
+    }
+
+    .header {
+      padding: 20px 20px 70px 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .logo-header {
+      height: 35px;
+      width: 40%;
+    }
+
+    .logo-header img {
+      height: 100%;
+    }
+
+    .header-text {
+      text-align: right;
+      width: 60%;
+    }
+
+    .header-text p {
+      color: white;
+      font-size: 16px;
+      line-height: 22px;
+      width: 300px;
+      margin-left: auto;
+      text-align: right;
+    }
+
+    .text-title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .text-subtitle {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .text-theme-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .text-theme-content {
+      font-size: 16px;
+      font-weight: 200;
+    }
+
+    .text-content {
+      font-size: 14px;
+      font-weight: 200;
+    }
+
+    .mid-text {
+      font-size: 12px;
+      font-weight: 200;
+    }
+
+    .t-bold {
+      font-weight: bold;
+    }
+
+    .col-white {
+      color: white;
+    }
+
+    .col-black {
+      color: black;
+    }
+
+    .container {
+      padding: 0 30px;
+    }
+
+    .section-1 {
+      text-align: center;
+    }
+
+    .box {
+      background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #6d6e72, #fca425) border-box;
+      color: #313149;
+      padding: 15px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      display: inline-block;
+      height: -webkit-fill-available;
+    }
+
+    .liner {
+      margin: 5px auto;
+      background: linear-gradient(to right, #6d6e72, #fca425) border-box;
+      color: #313149;
+      display: inline-block;
+      height: 2px;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+
+    .sec1-card-1 {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .sec1-card-1 table {
+      margin-top: 10px;
+    }
+
+    .sec1-info-card-desktop {
+      margin-top: 10px;
+      position: relative;
+      height: 265px;
+    }
+
+    .nearest-location {
+      text-align: left;
+      width: 50%;
+      height: 100%;
+    }
+
+    .nearest-location>div {
+      margin-right: auto;
+      width: calc(100% - 38px);
+      text-align: center;
+    }
+
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .buttons td {
+      width: 50%;
+    }
+
+    .buttons button {
+      height: 30px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: #fca425;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      border-radius: 15px;
+      cursor: pointer;
+      width: calc(100% - 3px);
+      margin-top: 5px;
+      max-width: 200px;
+    }
+
+    .customer-information {
+      text-align: right;
+      width: 50%;
+      height: 100%;
+    }
+
+    .customer-information>div {
+      margin-left: auto;
+      width: calc(100% - 38px);
+      text-align: center;
+    }
+
+    .book-appointment {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .book-appointment button {
+      width: 270px;
+      height: 40px;
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      border: 2px solid #fca425;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      color: #fca425;
+      margin-bottom: 10px;
+    }
+
+    .book-appointment p {
+      text-transform: uppercase;
+    }
+
+    .section-2-desktop {
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .open-late,
+    .battery-money {
+      width: 50%;
+    }
+
+    .section-2-desktop td>div {
+      width: calc(100% - 20px);
+    }
+
+    .card-shadow {
+      position: relative;
+      padding: 1px 2px 2px 1px;
+      background: linear-gradient(to right bottom, white, rgb(241, 238, 238)) border-box;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 5px;
+      padding: 15px;
+    }
+
+    .section-3 {
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .section-4-desktop {
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .bounce {
+      width: calc(100% - 38px);
+      margin-right: auto;
+      background: #4ccaf3;
+      box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      padding: 25px 15px 0 15px;
+      text-align: center;
+      height: 270px;
+      position: relative;
+    }
+
+    .bounce img {
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+    }
+
+    .mobile-groups {
+      width: calc(100% - 38px);
+      margin-left: auto;
+      background: #d89a40;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+      border-radius: 5px;
+      color: white;
+      height: 265px;
+    }
+
+    .mobile-groups img {
+      min-width: 150px;
+    }
+
+    .mobile-groups button {
+      font-size: 12px;
+      background: #fca425;
+      box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      height: 30px;
+      width: 170px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      margin: 5px 0;
+    }
+
+    .section-5 {
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .section-5 a {
+      color: black;
+    }
+
+    .fa-icon-button {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid #6d6e72;
+      border-radius: 20px;
+    }
+
+    .fa-icon-button img {
+      height: 60%;
+      margin-top: 20%;
+    }
+
+    .fa-icon-button:hover {
+      opacity: 0.7;
+    }
+
+    .fa-icon-button i {
+      margin: 7px;
+    }
+
+    .footer {
+      background-color: #6d6e72;
+      height: 35px;
+      padding: 20px 20px 15px;
+    }
+
+    .footer a {
+      color: white;
+      white-space: nowrap;
+    }
+
+    .footer td {
+      width: 33.33%;
+    }
+
+    .footer img {
+      height: 30px;
+    }
+
+    .header-mobile {
+      display: none;
+      text-align: center;
+    }
+
+    .header-mobile p {
+      color: white;
+    }
+
+    .sec1-info-card-mobile {
+      display: none;
+    }
+
+    .section-2-mobile,
+    .section-4-mobile {
+      display: none;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      .text-title {
+        font-size: 18px;
+      }
+
+      .text-subtitle {
+        font-size: 16px;
+      }
+
+      .text-theme-title,
+      .text-theme-content {
+        font-size: 14px;
+      }
+
+      .text-content {
+        font-size: 13px;
+      }
+
+      .mid-text {
+        font-size: 11px;
+      }
+
+      .section-2-desktop {
+        display: none;
+      }
+
+      .section-2-mobile {
+        display: block;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .header-desktop,
+      .sec1-info-card-desktop {
+        display: none;
+      }
+
+      .header-mobile {
+        display: block;
+      }
+
+      .header {
+        padding: 25px 20px 115px 20px;
+      }
+
+      .section-1 {
+        margin-top: -50px;
+      }
+
+      .sec1-info-card-mobile {
+        display: block;
+      }
+
+      .sec1-info-card-mobile .box {
+        width: calc(100% - 36px);
+        margin-top: 10px;
+      }
+
+      .book-appointment button {
+        width: 100%;
+      }
+
+      .section-4-desktop {
+        display: none;
+      }
+
+      .section-4-mobile {
+        display: block;
+        padding-top: 0;
+      }
+
+      .bounce,
+      .mobile-groups {
+        width: calc(100% - 30px);
+        margin: 20px auto 0;
+        height: auto;
+      }
+
+      .bounce img {
+        position: inherit;
+        left: 0;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .footer img {
+        height: 20px;
+      }
+
+      .container {
+        padding: 0 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-div" id="email-template">
+
+    <div class="header" style="background-image: url('{{ header.bgImg }}');">
+      <table class="header-desktop">
+        <tr>
+          <td class="logo-header">
+            <a href={{ domain.website }} target="_blank" rel="noreffer" style="opacity: 1;">
+              <img src={{ header.logo }}>
+            </a>
+          </td>
+          <td class="header-text">
+            <p class="text-theme-content">{{ header.text }}</p>
+          </td>
+        </tr>
+      </table>
+      <div class="header-mobile">
+        <a href={{ domain.website }} target="_blank" rel="noreffer" style="opacity: 1;">
+          <img src={{ header.logo }} style="margin-bottom: 10px;">
+        </a>
+        <p class="text-theme-content">{{ header.text }}</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      {{#if section1.visible}}
+      <div class="section-1">
+        <p class="text-title">
+          {{ section1.title }}
+        </p>
+        <p class="text-content">
+          {{ section1.content }}
+        </p>
+        <div class="box sec1-card-1">
+          <p class="text-subtitle" style="margin-bottom: 10px;">Quote Summary</p>
+          <hr class="liner">
+          <table>
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">Device:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{ section1.quoteSummary.device }}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">Service:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{ section1.quoteSummary.service }}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">Duration:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{ section1.quoteSummary.duration }}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">Warranty:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{ section1.quoteSummary.warranty }}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">Quoted Cost:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{ section1.quoteSummary.cost }}</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">As low as:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{ section1.quoteSummary.aslowas }}</p>
+              </td>
+            </tr>
+          </table>
+          <span class="text-content t-bold">{{ section1.quoteSummary.content.bold }}</span>
+          <span class="text-content">{{ section1.quoteSummary.content.normal }}</span>
+        </div>
+        <table class="sec1-info-card-desktop">
+          <tr>
+            <td class="nearest-location">
+              <div class="box">
+                <p class="text-subtitle">Nearest Location</p>
+                <hr class="liner" />
+                <p class="text-theme-title">{{ section1.nearestLoc.name }}</p>
+                <p class="text-theme-content">{{ section1.nearestLoc.address_1 }}</p>
+                <p class="text-theme-content">{{ section1.nearestLoc.address_2 }}</p>
+                <a class="text-theme-content" href="tel:{{ section1.nearestLoc.phone }}" style="color: black;">{{
+                  section1.nearestLoc.phone }}</a>
+                <table class="buttons">
+                  <tr>
+                    <td style="text-align: left;">
+                      <a href={{ section1.nearestLoc.buttons.email_us }} target="_blank" rel="noreferrer">
+                        <button>Email Us</button>
+                      </a>
+                    </td>
+                    <td style="text-align: right;">
+                      <a href={{ section1.nearestLoc.buttons.call_us }} target="_blank" rel="noreferrer">
+                        <button>Call Us</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      <a href={{ section1.nearestLoc.buttons.text_us }} target="_blank" rel="noreferrer">
+                        <button>Text Us</button>
+                      </a>
+                    </td>
+                    <td style="text-align: right;">
+                      <a href={{ section1.nearestLoc.buttons.get_direction }} target="_blank" rel="noreferrer">
+                        <button>Get Directions</button>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <td class="customer-information">
+              <div class="box">
+                <p class="text-subtitle">Customer Information</p>
+                <hr class="liner" />
+                <div style="margin-bottom: 10px;">
+                  <p class="text-theme-title">Customer Name:</p>
+                  <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <p class="text-theme-title">Contact Number:</p>
+                  <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
+                    section1.customerInfo.phone }}</a>
+                </div>
+                <div style="margin-bottom: 10px;">
+                  <p class="text-theme-title">Contact Email:</p>
+                  <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
+                    section1.customerInfo.email }}</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="sec1-info-card-mobile">
+          <div class="box">
+            <p class="text-subtitle">Nearest Location</p>
+            <hr class="liner" />
+            <p class="text-theme-title">{{ section1.nearestLoc.name }}</p>
+            <p class="text-theme-content">{{ section1.nearestLoc.address_1 }}</p>
+            <p class="text-theme-content">{{ section1.nearestLoc.address_2 }}</p>
+            <a class="text-theme-content" href="tel:{{ section1.nearestLoc.phone }}" style="color: black;">{{
+              section1.nearestLoc.phone }}</a>
+            <div class="buttons">
+              <a href={{ section1.nearestLoc.buttons.email_us }} target="_blank" rel="noreferrer">
+                <button>Email Us</button>
+              </a>
+              <a href={{ section1.nearestLoc.buttons.call_us }} target="_blank" rel="noreferrer">
+                <button>Call Us</button>
+              </a>
+              <a href={{ section1.nearestLoc.buttons.text_us }} target="_blank" rel="noreferrer">
+                <button>Text Us</button>
+              </a>
+              <a href={{ section1.nearestLoc.buttons.get_direction }} target="_blank" rel="noreferrer">
+                <button>Get Directions</button>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <p class="text-subtitle">Customer Information</p>
+            <hr class="liner" />
+            <div style="margin-bottom: 10px;">
+              <p class="text-theme-title">Customer Name:</p>
+              <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
+            </div>
+            <div style="margin-bottom: 10px;">
+              <p class="text-theme-title">Contact Number:</p>
+              <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
+                section1.customerInfo.phone }}</a>
+            </div>
+            <div style="margin-bottom: 10px;">
+              <p class="text-theme-title">Contact Email:</p>
+              <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
+                section1.customerInfo.email }}</a>
+            </div>
+          </div>
+        </div>
+        <div class="book-appointment">
+          <a href={{ section1.book_appointment.link }} target="_blank" rel="noreferrer">
+            <button>Book Appointment</button>
+          </a>
+          <p class="text-theme-title">{{ section1.book_appointment.description }}</p>
+        </div>
+      </div>
+
+      <hr class="liner" />
+      {{/if}}
+
+      {{#if section2.visible}}
+      <div class="section-2-desktop">
+        <table>
+          <tr>
+            <td class="open-late" style="text-align: left;">
+              <div class="card-shadow">
+                <div class="card" style="padding: 15px 10px 15px 0;">
+                  <table>
+                    <tr>
+                      <td>
+                        <img src={{ section2.losing_power.img}} style="width: 70px; margin: auto;" />
+                      </td>
+                      <td style="text-align: center;">
+                        <p class="text-theme-title" style="white-space: nowrap;">{{ section2.losing_power.title}}</p>
+                        <p class="text-content">{{ section2.losing_power.content}}</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+            <td class="battery-money" style="text-align: right; ">
+              <div class="card-shadow">
+                <div class="card" style="padding: 15px 10px 15px 0;">
+                  <table>
+                    <tr>
+                      <td>
+                        <img src={{ section2.trade_program.img}} style="width: 70px;" />
+                      </td>
+                      <td style="text-align: center;">
+                        <p class="text-theme-title" style="white-space: nowrap;">{{ section2.trade_program.title}}</p>
+                        <p class="text-content">{{ section2.trade_program.content}}</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section-2-mobile">
+        <div class="card-shadow">
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img src={{ section2.losing_power.img}} style="width: 80px;" />
+                </td>
+                <td style="text-align: center;">
+                  <p class="text-subtitle">{{ section2.losing_power.title}}</p>
+                  <p class="text-theme-content">{{ section2.losing_power.content}}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="card-shadow">
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img src={{ section2.trade_program.img}} style="width: 80px;" />
+                </td>
+                <td style="text-align: center;">
+                  <p class="text-subtitle">{{ section2.trade_program.title}}</p>
+                  <p class="text-theme-content">{{ section2.trade_program.content}}</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <hr class="liner" />
+      {{/if}}
+
+      {{#if section3.visible}}
+      <div class="section-3">
+        <p class="text-title">
+          {{ section3.title }}
+        </p>
+        <p class="text-theme-content">
+          {{ section3.content }}
+        </p>
+        <a class="text-theme-content" href={{ section3.privacy.link }} target="_blank" rel="noreferrer"
+          style="text-decoration: underline; color: black">{{ section3.privacy.text }}</a>
+      </div>
+
+      <hr class="liner" />
+      {{/if}}
+
+      {{#if section4.visible}}
+      <div class="section-4-desktop">
+        <table>
+          <tr>
+            <td style="width: 50%; text-align: left;">
+              <div class="bounce">
+                <p class="text-theme-title" style="color: white;">{{ section4.bounce.title }}</p>
+                <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_1 }}</p>
+                <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_2 }}</p>
+                <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
+              </div>
+            </td>
+            <td style="width: 50%; text-align: left;">
+              <div class="mobile-groups">
+                <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
+                <img src={{ section4.certified.img }} style="width: 60%;" />
+                <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
+                <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
+                  <button>{{ section4.certified.shop_now.title }}</button>
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section-4-mobile">
+        <div class="bounce">
+          <p class="text-theme-title" style="color: white;">{{ section4.bounce.title }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_1 }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_2 }}</p>
+          <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
+        </div>
+        <div class="mobile-groups">
+          <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
+          <img src={{ section4.certified.img }} style="width: 60%;" />
+          <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
+          <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
+            <button>{{ section4.certified.shop_now.title }}</button>
+          </a>
+        </div>
+      </div>
+
+      <hr class="liner" />
+      {{/if}}
+
+      <div class="section-5">
+        <p class="text-theme-title">{{ section5.title }}</p>
+        <table style="width: 180px; margin: 0 auto 20px;">
+          <tr>
+            {{#if section5.socials.instagram}}
+            <td>
+              <a href={{ section5.socials.instagram }} target="_blank" rel="noreferrer">
+                <div class="fa-icon-button">
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.png" />
+                </div>
+              </a>
+            </td>
+            {{/if}}
+            {{#if section5.socials.twitter}}
+            <td>
+              <a href={{ section5.socials.twitter }} target="_blank" rel="noreferrer">
+                <div class="fa-icon-button">
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.png" />
+                </div>
+              </a>
+            </td>
+            {{/if}}
+            {{#if section5.socials.linkedin}}
+            <td>
+              <a href={{ section5.socials.linkedin }} target="_blank" rel="noreferrer">
+                <div class="fa-icon-button">
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.png"
+                    style="margin-top: 15%" />
+                </div>
+              </a>
+            </td>
+            {{/if}}
+            {{#if section5.socials.facebook}}
+            <td>
+              <a href={{ section5.socials.facebook }} target="_blank" rel="noreferrer">
+                <div class="fa-icon-button">
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.png" />
+                </div>
+              </a>
+            </td>
+            {{/if}}
+          </tr>
+        </table>
+        <p class="mid-text">
+          {{ section5.content_1 }}
+        </p>
+        <p class="mid-text" style="margin-top: 15px;">
+          {{ section5.content_2 }}
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <table>
+        <tr>
+          <td style="text-align: left;">
+            <img src={{ footer.logo }} />
+          </td>
+          <td style="text-align: center;">
+            <a href={{ footer.domain.link }} target="_blank" rel="noreferrer" class="mid-text">{{ footer.domain.name
+              }}</a>
+          </td>
+          <td style="text-align: right;">
+            <a href={{ footer.privacy_policy.link }} target="_blank" rel="noreferrer" class="mid-text"
+              style="text-decoration: underline;">{{ footer.privacy_policy.name }}</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</body>
+
+</html>

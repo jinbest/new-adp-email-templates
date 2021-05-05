@@ -6,10 +6,6 @@ const app = express();
 const Email = require('email-templates');
 const Handlebars = require("handlebars");
 
-// const mobileTechData = require("./emails/MobileTech/data.json")
-// const nanoTechData = require("./emails/Nanotech/data.json")
-const northTechData = require("./emails/Northtech/data.json")
-
 Handlebars.registerHelper('equals', function (a, b, opts) {
   if (a === b)
     return opts.fn(this);
@@ -65,11 +61,22 @@ function sendEmail(folderName, data) {
     .catch(console.error);
 }
 
+
+// const mobileTechData = require("./emails/MobileTech/data.json")
+// const nanoTechData = require("./emails/Nanotech/data.json")
+// const northTechData = require("./emails/Northtech/data.json")
+// const phonephixData = require("./emails/Phonephix/data.json")
+// const wirelessData = require("./emails/Wireless/data.json")
+const geeboData = require("./emails/Geebo/data.json")
+
 app.get('/send-email', function(req, res) {
   
   // sendEmail('MobileTech', mobileTechData);
   // sendEmail('Nanotech', nanoTechData);
-  sendEmail('Northtech', northTechData);
+  // sendEmail('Northtech', northTechData);
+  // sendEmail('Phonephix', phonephixData);
+  // sendEmail('Wireless', wirelessData);
+  sendEmail('Geebo', geeboData);
 
   res.send('Email was sent successfully!');
 });
