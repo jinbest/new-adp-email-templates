@@ -527,64 +527,41 @@
           {{ section1.content }}
         </p>
         <div class="box sec1-card-1">
-          <p class="text-subtitle" style="margin-bottom: 10px;">Quote Summary</p>
+          <p class="text-subtitle" style="margin-bottom: 10px;">{{ section1.summary.title }}</p>
           <hr class="liner">
 
-          {{#each section1.quoteSummary}}
+          {{#if section1.summary.data.method.length}}
           <table>
+            {{#each section1.summary.data.method}}
             <tr>
               <td style="width: 150px;">
-                <p class="text-theme-title">Device:</p>
+                <p class="text-theme-title">{{ this.title}}:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ this.device }}</p>
+                <p class="text-theme-content">{{ this.content }}</p>
               </td>
             </tr>
+            {{/each}}
+          </table>
+          {{/if}}
+
+          {{#each section1.summary.data.summaries}}
+          <table>
+            {{#each this}}
             <tr>
               <td style="width: 150px;">
-                <p class="text-theme-title">Service:</p>
+                <p class="text-theme-title">{{ this.title}}:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ this.service }}</p>
+                <p class="text-theme-content">{{ this.content }}</p>
               </td>
             </tr>
-            <tr>
-              <td style="width: 150px;">
-                <p class="text-theme-title">Duration:</p>
-              </td>
-              <td>
-                <p class="text-theme-content">{{ this.duration }}</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 150px;">
-                <p class="text-theme-title">Warranty:</p>
-              </td>
-              <td>
-                <p class="text-theme-content">{{ this.warranty }}</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 150px;">
-                <p class="text-theme-title">Quoted Cost:</p>
-              </td>
-              <td>
-                <p class="text-theme-content">{{ this.cost }}</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="width: 150px;">
-                <p class="text-theme-title">As low as:</p>
-              </td>
-              <td>
-                <p class="text-theme-content">{{ this.aslowas }}</p>
-              </td>
-            </tr>
+            {{/each}}
           </table>
           {{/each}}
 
-          <span class="text-content t-bold">{{ section1.summaryContent.bold }}</span>
-          <span class="text-content">{{ section1.summaryContent.normal }}</span>
+          <span class="text-content t-bold">{{ section1.summary.content.bold }}</span>
+          <span class="text-content">{{ section1.summary.content.normal }}</span>
 
         </div>
         <table class="sec1-info-card-desktop">
