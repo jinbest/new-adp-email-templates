@@ -11,17 +11,27 @@
   "section1": {
     "title": "Here is the quote you requested!",
     "content": "We look forward to seeing you instore! When you visit us, our staf will check you in, inspect your device and confirm pricing and approximate turnaround time.",
-    "quoteSummary": {
-      "device": "iPhone XR",
-      "service": "Walk In Battery Replacement",
-      "duration": "1 Hour",
-      "warranty": "90 Days",
-      "cost": "$89.00",
-      "aslowas": "$7.00 per month at 0% APR with financing",
-      "content": {
-        "bold": "We price match any repair shop.",
-        "normal": "Simply reply to this email with the name of the shop and the price you were quoted."
+    "quoteSummary": [
+      {
+        "device": "iPhone XR",
+        "service": "Walk In Battery Replacement",
+        "duration": "1 Hour",
+        "warranty": "90 Days",
+        "cost": "$89.00",
+        "aslowas": "$7.00 per month at 0% APR with financing"
+      },
+      {
+        "device": "iPhone XR",
+        "service": "Walk In Battery Replacement",
+        "duration": "1 Hour",
+        "warranty": "90 Days",
+        "cost": "$89.00",
+        "aslowas": "$7.00 per month at 0% APR with financing"
       }
+    ],
+    "summaryContent": {
+      "bold": "We price match any repair shop.",
+      "normal": "Simply reply to this email with the name of the shop and the price you were quoted."
     },
     "nearestLoc": {
       "name": "Banana Services Corydon",

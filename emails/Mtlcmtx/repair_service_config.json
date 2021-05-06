@@ -1,0 +1,130 @@
+{
+  "domain": {
+    "name": "Banana Services",
+    "website": "https://bananaservices.ca/"
+  },
+  "header": {
+    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/logo-header.png",
+    "bgImg": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/top-banner.png",
+    "text": "Please call prior to visiting for parts availability and turnaround time."
+  },
+  "section1": {
+    "title": "Here is the quote you requested!",
+    "content": "We look forward to seeing you instore! When you visit us, our staf will check you in, inspect your device and confirm pricing and approximate turnaround time.",
+    "quoteSummary": [
+      {
+        "device": "iPhone XR",
+        "service": "Walk In Battery Replacement",
+        "duration": "1 Hour",
+        "warranty": "90 Days",
+        "cost": "$89.00",
+        "aslowas": "$7.00 per month at 0% APR with financing"
+      },
+      {
+        "device": "iPhone XR",
+        "service": "Walk In Battery Replacement",
+        "duration": "1 Hour",
+        "warranty": "90 Days",
+        "cost": "$89.00",
+        "aslowas": "$7.00 per month at 0% APR with financing"
+      }
+    ],
+    "summaryContent": {
+      "bold": "We price match any repair shop.",
+      "normal": "Simply reply to this email with the name of the shop and the price you were quoted."
+    },
+    "nearestLoc": {
+      "name": "Banana Services Corydon",
+      "address_1": "Unit F - 2020 Corydon Avenue",
+      "address_2": "Winnipeg, MB R3P 0N2",
+      "phone": "(204) 808-9416",
+      "buttons": {
+        "email_us": "https://bananaservices.ca/get-quote",
+        "call_us": "https://bananaservices.ca/get-quote",
+        "text_us": "https://bananaservices.ca/get-quote",
+        "get_direction": "https://bananaservices.ca/get-quote"
+      }
+    },
+    "customerInfo": {
+      "name": "Tim Green",
+      "phone": "(204) 995 - 1430",
+      "email": "tim@green.ca"
+    },
+    "book_appointment": {
+      "link": "https://bananaservices.ca/get-quote",
+      "description": "IT ONLY TAKES 2 MINUTES"
+    },
+    "visible": true
+  },
+  "section2": {
+    "open_late": {
+      "img": "",
+      "title": "",
+      "hours": {
+        "weekdays": "",
+        "weekends": ""
+      }
+    },
+    "losing_power": {
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png",
+      "title": "LOSING POWER?",
+      "content": "We offer free battery evaluations"
+    },
+    "trade_program": {
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png",
+      "title": "TRADE IN PROGRAM",
+      "content": "Trade in Old Devices for Cash or Credit"
+    },
+    "visible": true
+  },
+  "section3": {
+    "title": "Why do we ask for your personal information?",
+    "content": "Our staff may ask for the passcode for your device upon intake. This is only to perform our 30-point pre-repair and post-repair inspection to ensure your device is in perfect working order. We'll test your front and rear camera, microphone, loudspeaker, sensors, and more. Access will allow us to ensure the highest quality repair and customer service. If you are uncomfortable giving us your passcode we can run our pre and post service inspection in front of you when you pickup the device.",
+    "privacy": {
+      "text": "See Full Privacy Policy",
+      "link": "https://bananaservices.ca/"
+    },
+    "visible": true
+  },
+  "section4": {
+    "bounce": {
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png",
+      "title": "Get Bounce Screen Insurance",
+      "content_1": "Starting At $39/yr",
+      "content_2": "Zero Deductible"
+    },
+    "certified": {
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png",
+      "title": "Certified Pre-Owned Devices Starting from $79",
+      "content": "1 year warranty and free shipping. Shop online, pick up in store",
+      "shop_now": {
+        "title": "Shop Now",
+        "link": ""
+      }
+    },
+    "visible": true
+  },
+  "section5": {
+    "title": "Find us on",
+    "socials": {
+      "instagram": "https://www.instagram.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/",
+      "facebook": "https://www.facebook.com/"
+    },
+    "content_1": "Turnaround times and costs vary based upon the nature of the service, parts availability, your warranty status, and other factors. Once your device is in the shop, we will diagnose your problem and contact you as soon as we can to provide any details and specific time and cost estimate. Diagnostic and/or repair fees may apply if work to be performed is not covered under warranty. Offer expires one week after Free Estimate Request submitted.",
+    "content_2": "© 2021 Banana Services Inc. All Rights Reserved. All product and company names are trademarks of their respective holders. iPhone, iPad, iPod, iPod touch, Mac and iMac are registered trademarks and property of Apple, Inc. Banana Services Inc. does not own or make claim to those trademarks used on this website in which it is not the holder. Banana Services is a third-party repair company and is not affiliated with Apple.",
+    "visible": true
+  },
+  "footer": {
+    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/logo-footer.png",
+    "domain": {
+      "name": "bananaservices.ca",
+      "link": "https://bananaservices.ca/"
+    },
+    "privacy_policy": {
+      "name": "Privacy Policy",
+      "link": "https://bananaservices.ca/"
+    }
+  }
+}

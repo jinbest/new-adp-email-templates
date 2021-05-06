@@ -62,25 +62,27 @@ function sendEmail(folderName, data) {
 }
 
 
-// const mobileTechData = require("./emails/MobileTech/data.json")
-// const nanoTechData = require("./emails/Nanotech/data.json")
-// const northTechData = require("./emails/Northtech/data.json")
-// const phonephixData = require("./emails/Phonephix/data.json")
-// const wirelessData = require("./emails/Wireless/data.json")
-// const geeboData = require("./emails/Geebo/data.json")
-// const bananaData = require("./emails/Banana/data.json")
-const reparaData = require("./emails/Reparation/data.json")
+// const bananaData = require("./emails/Banana/repair_service_config.json")
+const blackappleData = require("./emails/BlackApple/repair_service_config.json")
+// const geeboData = require("./emails/Geebo/repair_service_config.json")
+// const mobileTechData = require("./emails/MobileTech/repair_service_config.json")
+// const nanoTechData = require("./emails/Nanotech/repair_service_config.json")
+// const northTechData = require("./emails/Northtech/repair_service_config.json")
+// const phonephixData = require("./emails/Phonephix/repair_service_config.json")
+// const reparaData = require("./emails/Reparation/repair_service_config.json")
+// const wirelessData = require("./emails/Wireless/repair_service_config.json")
 
 app.get('/send-email', function(req, res) {
   
+  // sendEmail('Banana', bananaData);
+  sendEmail('BlackApple', blackappleData);
+  // sendEmail('Geebo', geeboData);
   // sendEmail('MobileTech', mobileTechData);
   // sendEmail('Nanotech', nanoTechData);
   // sendEmail('Northtech', northTechData);
   // sendEmail('Phonephix', phonephixData);
+  // sendEmail('Reparation', reparaData);
   // sendEmail('Wireless', wirelessData);
-  // sendEmail('Geebo', geeboData);
-  // sendEmail('Banana', bananaData);
-  sendEmail('Reparation', reparaData);
 
   res.send('Email was sent successfully!');
 });

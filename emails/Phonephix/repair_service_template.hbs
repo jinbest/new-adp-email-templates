@@ -161,7 +161,7 @@
     }
 
     .sec1-card-1 table {
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     .sec1-info-card-desktop {
@@ -338,16 +338,14 @@
 
     .fa-icon-button {
       cursor: pointer;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       text-align: center;
-      border: 1px solid #6d6e72;
       border-radius: 20px;
     }
 
     .fa-icon-button img {
-      height: 60%;
-      margin-top: 20%;
+      height: 100%;
     }
 
     .fa-icon-button:hover {
@@ -530,13 +528,15 @@
         <div class="box sec1-card-1">
           <p class="text-subtitle" style="margin-bottom: 10px;">Quote Summary</p>
           <hr class="liner">
+
+          {{#each section1.quoteSummary}}
           <table>
             <tr>
               <td style="width: 150px;">
                 <p class="text-theme-title">Device:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.device }}</p>
+                <p class="text-theme-content">{{ this.device }}</p>
               </td>
             </tr>
             <tr>
@@ -544,7 +544,7 @@
                 <p class="text-theme-title">Service:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.service }}</p>
+                <p class="text-theme-content">{{ this.service }}</p>
               </td>
             </tr>
             <tr>
@@ -552,7 +552,7 @@
                 <p class="text-theme-title">Duration:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.duration }}</p>
+                <p class="text-theme-content">{{ this.duration }}</p>
               </td>
             </tr>
             <tr>
@@ -560,7 +560,7 @@
                 <p class="text-theme-title">Warranty:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.warranty }}</p>
+                <p class="text-theme-content">{{ this.warranty }}</p>
               </td>
             </tr>
             <tr>
@@ -568,7 +568,7 @@
                 <p class="text-theme-title">Quoted Cost:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.cost }}</p>
+                <p class="text-theme-content">{{ this.cost }}</p>
               </td>
             </tr>
             <tr>
@@ -576,12 +576,15 @@
                 <p class="text-theme-title">As low as:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.aslowas }}</p>
+                <p class="text-theme-content">{{ this.aslowas }}</p>
               </td>
             </tr>
           </table>
-          <span class="text-content t-bold">{{ section1.quoteSummary.content.bold }}</span>
-          <span class="text-content">{{ section1.quoteSummary.content.normal }}</span>
+          {{/each}}
+
+          <span class="text-content t-bold">{{ section1.summaryContent.bold }}</span>
+          <span class="text-content">{{ section1.summaryContent.normal }}</span>
+
         </div>
         <table class="sec1-info-card-desktop">
           <tr>
@@ -849,7 +852,7 @@
             <td>
               <a href={{ section5.socials.instagram }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.png" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.svg" />
                 </div>
               </a>
             </td>
@@ -858,7 +861,7 @@
             <td>
               <a href={{ section5.socials.twitter }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.png" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.svg" />
                 </div>
               </a>
             </td>
@@ -867,8 +870,7 @@
             <td>
               <a href={{ section5.socials.linkedin }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.png"
-                    style="margin-top: 15%" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.svg" />
                 </div>
               </a>
             </td>
@@ -877,7 +879,7 @@
             <td>
               <a href={{ section5.socials.facebook }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.png" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.svg" />
                 </div>
               </a>
             </td>

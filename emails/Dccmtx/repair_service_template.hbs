@@ -4,7 +4,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Poppins', sans-serif !important;
+      font-family: "Poppins", sans-serif !important;
       margin: 0;
       background: #ddd;
       padding: 30px 0;
@@ -48,9 +48,10 @@
     .main-div {
       width: 100%;
       max-width: 700px;
-      box-shadow: -10px -10px 30px rgba(174, 174, 192, 0.4), -10px -10px 30px #FFFFFF, 10px 10px 30px rgba(174, 174, 192, 0.4);
+      box-shadow: -10px -10px 30px rgba(174, 174, 192, 0.4),
+        -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
       margin: auto;
-      background-color: #FFFFFF;
+      background-color: #ffffff;
     }
 
     .header {
@@ -60,7 +61,7 @@
     }
 
     .logo-header {
-      height: 35px;
+      height: 45px;
       width: 40%;
     }
 
@@ -133,9 +134,8 @@
     }
 
     .box {
-      background:
-        linear-gradient(#fff, #fff) padding-box,
-        linear-gradient(to right, black, #ED1D24) border-box;
+      background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #2b388f, #f67500) border-box;
       color: #313149;
       padding: 15px;
       border: 2px solid transparent;
@@ -146,7 +146,7 @@
 
     .liner {
       margin: 5px auto;
-      background: linear-gradient(to right, #ed1d24, black) border-box;
+      background: linear-gradient(to right, #2b388f, #f67500) border-box;
       color: #313149;
       display: inline-block;
       height: 2px;
@@ -161,7 +161,7 @@
     }
 
     .sec1-card-1 table {
-      margin-top: 10px;
+      margin: 10px 0;
     }
 
     .sec1-info-card-desktop {
@@ -195,7 +195,7 @@
       width: 100%;
       border: none;
       outline: none;
-      background: #ED1D24;
+      background: #2b388f;
       text-align: center;
       color: white;
       font-size: 12px;
@@ -229,11 +229,11 @@
       background: white;
       border-radius: 20px;
       text-align: center;
-      border: 2px solid #ED1D24;
+      border: 2px solid #2b388f;
       cursor: pointer;
       font-weight: bold;
       font-size: 16px;
-      color: #ED1D24;
+      color: #2b388f;
       margin-bottom: 10px;
     }
 
@@ -282,12 +282,11 @@
     .bounce {
       width: calc(100% - 38px);
       margin-right: auto;
-      background: #4CCAF3;
+      background: #4ccaf3;
       box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
       border-radius: 5px;
       padding: 25px 15px 0 15px;
       text-align: center;
-      color: white;
       height: 270px;
       position: relative;
     }
@@ -301,7 +300,7 @@
     .mobile-groups {
       width: calc(100% - 38px);
       margin-left: auto;
-      background: #D01B0D;
+      background: #141d54;
       padding: 15px;
       text-align: center;
       box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
@@ -316,7 +315,7 @@
 
     .mobile-groups button {
       font-size: 12px;
-      background: #ED1D24;
+      background: #2b388f;
       box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
       border-radius: 20px;
       height: 30px;
@@ -339,17 +338,14 @@
 
     .fa-icon-button {
       cursor: pointer;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       text-align: center;
-      border: 1px solid black;
       border-radius: 20px;
-      margin: auto;
     }
 
     .fa-icon-button img {
-      height: 60%;
-      margin-top: 20%;
+      height: 100%;
     }
 
     .fa-icon-button:hover {
@@ -376,7 +372,7 @@
     }
 
     .footer img {
-      height: 25px;
+      height: 30px;
     }
 
     .header-mobile {
@@ -485,7 +481,7 @@
 
     @media (max-width: 375px) {
       .footer img {
-        height: 18px;
+        height: 25px;
       }
 
       .container {
@@ -532,13 +528,15 @@
         <div class="box sec1-card-1">
           <p class="text-subtitle" style="margin-bottom: 10px;">Quote Summary</p>
           <hr class="liner">
+
+          {{#each section1.quoteSummary}}
           <table>
             <tr>
               <td style="width: 150px;">
                 <p class="text-theme-title">Device:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.device }}</p>
+                <p class="text-theme-content">{{ this.device }}</p>
               </td>
             </tr>
             <tr>
@@ -546,7 +544,7 @@
                 <p class="text-theme-title">Service:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.service }}</p>
+                <p class="text-theme-content">{{ this.service }}</p>
               </td>
             </tr>
             <tr>
@@ -554,7 +552,7 @@
                 <p class="text-theme-title">Duration:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.duration }}</p>
+                <p class="text-theme-content">{{ this.duration }}</p>
               </td>
             </tr>
             <tr>
@@ -562,7 +560,7 @@
                 <p class="text-theme-title">Warranty:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.warranty }}</p>
+                <p class="text-theme-content">{{ this.warranty }}</p>
               </td>
             </tr>
             <tr>
@@ -570,7 +568,7 @@
                 <p class="text-theme-title">Quoted Cost:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.cost }}</p>
+                <p class="text-theme-content">{{ this.cost }}</p>
               </td>
             </tr>
             <tr>
@@ -578,12 +576,15 @@
                 <p class="text-theme-title">As low as:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ section1.quoteSummary.aslowas }}</p>
+                <p class="text-theme-content">{{ this.aslowas }}</p>
               </td>
             </tr>
           </table>
-          <span class="text-content t-bold">{{ section1.quoteSummary.content.bold }}</span>
-          <span class="text-content">{{ section1.quoteSummary.content.normal }}</span>
+          {{/each}}
+
+          <span class="text-content t-bold">{{ section1.summaryContent.bold }}</span>
+          <span class="text-content">{{ section1.summaryContent.normal }}</span>
+
         </div>
         <table class="sec1-info-card-desktop">
           <tr>
@@ -706,47 +707,35 @@
           <tr>
             <td class="open-late" style="text-align: left;">
               <div class="card-shadow">
-                <div class="card" style="text-align: center; margin-right: auto;">
-                  <img src={{ section2.open_late.img}} />
-                  <p class="text-theme-title">{{ section2.open_late.title}}</p>
-                  <p class="text-content">Weekdays</p>
-                  <p class="text-content">{{ section2.open_late.hours.weekdays}}</p>
-                  <p class="text-content">Weekends</p>
-                  <p class="text-content">{{ section2.open_late.hours.weekends}}</p>
+                <div class="card" style="padding: 15px 10px 15px 0;">
+                  <table>
+                    <tr>
+                      <td>
+                        <img src={{ section2.losing_power.img}} style="width: 70px; margin: auto;" />
+                      </td>
+                      <td style="text-align: center;">
+                        <p class="text-theme-title" style="white-space: nowrap;">{{ section2.losing_power.title}}</p>
+                        <p class="text-content">{{ section2.losing_power.content}}</p>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </td>
             <td class="battery-money" style="text-align: right; ">
-              <div style="margin-left: auto; height: -webkit-fill-available;">
-                <div class="card-shadow">
-                  <div class="card" style="padding: 15px 10px 15px 0;">
-                    <table>
-                      <tr>
-                        <td>
-                          <img src={{ section2.losing_power.img}} style="width: 70px; margin: auto;" />
-                        </td>
-                        <td style="text-align: center;">
-                          <p class="text-theme-title" style="white-space: nowrap;">{{ section2.losing_power.title}}</p>
-                          <p class="text-content">{{ section2.losing_power.content}}</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="card-shadow">
-                  <div class="card" style="padding: 15px 10px 15px 0;">
-                    <table>
-                      <tr>
-                        <td>
-                          <img src={{ section2.trade_program.img}} style="width: 70px;" />
-                        </td>
-                        <td style="text-align: center;">
-                          <p class="text-theme-title" style="white-space: nowrap;">{{ section2.trade_program.title}}</p>
-                          <p class="text-content">{{ section2.trade_program.content}}</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
+              <div class="card-shadow">
+                <div class="card" style="padding: 15px 10px 15px 0;">
+                  <table>
+                    <tr>
+                      <td>
+                        <img src={{ section2.trade_program.img}} style="width: 70px;" />
+                      </td>
+                      <td style="text-align: center;">
+                        <p class="text-theme-title" style="white-space: nowrap;">{{ section2.trade_program.title}}</p>
+                        <p class="text-content">{{ section2.trade_program.content}}</p>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </td>
@@ -755,16 +744,6 @@
       </div>
 
       <div class="section-2-mobile">
-        <div class="card-shadow">
-          <div class="card" style="text-align: center; margin: auto;">
-            <img src={{ section2.open_late.img}} />
-            <p class="text-subtitle">{{ section2.open_late.title}}</p>
-            <p class="text-theme-content">Weekdays</p>
-            <p class="text-theme-content">{{ section2.open_late.hours.weekdays}}</p>
-            <p class="text-theme-content">Weekends</p>
-            <p class="text-theme-content">{{ section2.open_late.hours.weekends}}</p>
-          </div>
-        </div>
         <div class="card-shadow">
           <div class="card">
             <table>
@@ -873,7 +852,7 @@
             <td>
               <a href={{ section5.socials.instagram }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.png" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.svg" />
                 </div>
               </a>
             </td>
@@ -882,7 +861,7 @@
             <td>
               <a href={{ section5.socials.twitter }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.png" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.svg" />
                 </div>
               </a>
             </td>
@@ -891,8 +870,7 @@
             <td>
               <a href={{ section5.socials.linkedin }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.png"
-                    style="margin-top: 15%" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.svg" />
                 </div>
               </a>
             </td>
@@ -901,7 +879,7 @@
             <td>
               <a href={{ section5.socials.facebook }} target="_blank" rel="noreferrer">
                 <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.png" />
+                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.svg" />
                 </div>
               </a>
             </td>
