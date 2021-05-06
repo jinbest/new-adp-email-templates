@@ -67,7 +67,9 @@ function sendEmail(folderName, data) {
 // const northTechData = require("./emails/Northtech/data.json")
 // const phonephixData = require("./emails/Phonephix/data.json")
 // const wirelessData = require("./emails/Wireless/data.json")
-const geeboData = require("./emails/Geebo/data.json")
+// const geeboData = require("./emails/Geebo/data.json")
+// const bananaData = require("./emails/Banana/data.json")
+const reparaData = require("./emails/Reparation/data.json")
 
 app.get('/send-email', function(req, res) {
   
@@ -76,7 +78,9 @@ app.get('/send-email', function(req, res) {
   // sendEmail('Northtech', northTechData);
   // sendEmail('Phonephix', phonephixData);
   // sendEmail('Wireless', wirelessData);
-  sendEmail('Geebo', geeboData);
+  // sendEmail('Geebo', geeboData);
+  // sendEmail('Banana', bananaData);
+  sendEmail('Reparation', reparaData);
 
   res.send('Email was sent successfully!');
 });

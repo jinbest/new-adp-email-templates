@@ -812,9 +812,11 @@
                 <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
                 <img src={{ section4.certified.img }} style="width: 60%;" />
                 <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
+                {{#if section4.certified.shop_now.link}}
                 <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
                   <button>{{ section4.certified.shop_now.title }}</button>
                 </a>
+                {{/if}}
               </div>
             </td>
           </tr>
@@ -832,9 +834,11 @@
           <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
           <img src={{ section4.certified.img }} style="width: 60%;" />
           <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
+          {{#if section4.certified.shop_now.link}}
           <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
             <button>{{ section4.certified.shop_now.title }}</button>
           </a>
+          {{/if}}
         </div>
       </div>
 
