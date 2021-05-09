@@ -671,12 +671,16 @@
             </div>
           </div>
         </div>
+        {{#if section1.book_appointment.link}}
+        {{#if section1.book_appointment.description}}
         <div class="book-appointment">
           <a href={{ section1.book_appointment.link }} target="_blank" rel="noreferrer">
             <button>Book Appointment</button>
           </a>
           <p class="text-theme-title">{{ section1.book_appointment.description }}</p>
         </div>
+        {{/if}}
+        {{/if}}
       </div>
 
       <hr class="liner" />
