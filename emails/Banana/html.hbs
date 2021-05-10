@@ -126,7 +126,7 @@
     }
 
     .container {
-      padding: 0 30px;
+      padding: 0 30px 20px;
     }
 
     .section-1 {
@@ -484,7 +484,7 @@
 
     @media (max-width: 375px) {
       .container {
-        padding: 0 15px;
+        padding: 0 15px 20px;
       }
     }
   </style>
@@ -710,7 +710,9 @@
         {{/if}}
       </div>
 
+      {{#if section1.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section2.visible}}
@@ -788,7 +790,9 @@
         </div>
       </div>
 
+      {{#if section2.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section3.visible}}
@@ -807,7 +811,9 @@
         {{/if}}
       </div>
 
+      {{#if section3.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section4.visible}}
@@ -857,7 +863,9 @@
         </div>
       </div>
 
+      {{#if section4.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section5.visible}}

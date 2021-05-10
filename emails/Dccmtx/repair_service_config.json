@@ -17,6 +17,7 @@
         "bold": "We price match any repair shop.",
         "normal": "Simply reply to this email with the name of the shop and the price you were quoted."
       },
+      "visible": true,
       "data": {
         "method": [],
         "summaries": [
@@ -78,7 +79,8 @@
       "link": "https://northtechcellsolutions.ca/get-quote",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
-    "visible": true
+    "visible": true,
+    "linerVisible": true
   },
   "section2": {
     "open_late": {
@@ -99,7 +101,8 @@
       "title": "TRADE IN PROGRAM",
       "content": "Trade in Old Devices for Cash or Credit"
     },
-    "visible": true
+    "visible": true,
+    "linerVisible": true
   },
   "section3": {
     "title": "Why do we ask for your personal information?",
@@ -108,7 +111,8 @@
       "text": "See Full Privacy Policy",
       "link": "https://northtechcellsolutions.ca/"
     },
-    "visible": true
+    "visible": true,
+    "linerVisible": true
   },
   "section4": {
     "bounce": {
@@ -126,7 +130,8 @@
         "link": "http://northtechshop.ca/"
       }
     },
-    "visible": true
+    "visible": true,
+    "linerVisible": true
   },
   "section5": {
     "title": "Find us on",

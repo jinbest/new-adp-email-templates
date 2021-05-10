@@ -79,7 +79,7 @@ function sendEmail(folderName, data) {
     .send({
       template: folderName,
       message: {
-        to: ["jingang718@outlook.com", "jin.bestvictoria718@gmail.com"],
+        to: ["jingang718@outlook.com"],
       },
       locals: data,
     })

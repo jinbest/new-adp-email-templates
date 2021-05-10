@@ -126,7 +126,7 @@
     }
 
     .container {
-      padding: 0 30px;
+      padding: 0 30px 20px;
     }
 
     .section-1 {
@@ -485,7 +485,7 @@
       }
 
       .container {
-        padding: 0 15px;
+        padding: 0 15px 20px;
       }
     }
   </style>
@@ -525,9 +525,11 @@
         <p class="text-content">
           {{t section1.content }}
         </p>
+
+        {{#if section1.summary.visible}}
         <div class="box sec1-card-1">
           <p class="text-subtitle" style="margin-bottom: 10px;">{{t section1.summary.title }}</p>
-          <hr class="liner">
+          <hr class="liner" />
 
           {{#if section1.summary.data.method.length}}
           <table>
@@ -563,6 +565,9 @@
           <span class="text-content">{{t section1.summary.content.normal }}</span>
 
         </div>
+        {{/if}}
+
+        {{#ifCond section1.nearestLoc.visible '||' section1.customerInfo.visible}}
         <table class="sec1-info-card-desktop" {{#if section1.customerInfo.company.visible}}style="height:290px" {{/if}}>
           <tr>
             {{#if section1.nearestLoc.visible}}
@@ -691,6 +696,8 @@
           </div>
           {{/if}}
         </div>
+        {{/ifCond}}
+
         {{#if section1.book_appointment.link}}
         {{#if section1.book_appointment.description}}
         <div class="book-appointment">
@@ -703,7 +710,9 @@
         {{/if}}
       </div>
 
+      {{#if section1.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section2.visible}}
@@ -781,7 +790,9 @@
         </div>
       </div>
 
+      {{#if section2.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section3.visible}}
@@ -800,7 +811,9 @@
         {{/if}}
       </div>
 
+      {{#if section3.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section4.visible}}
@@ -850,7 +863,9 @@
         </div>
       </div>
 
+      {{#if section4.linerVisible}}
       <hr class="liner" />
+      {{/if}}
       {{/if}}
 
       {{#if section5.visible}}

@@ -35,7 +35,7 @@
         "text_us": "https://bananaservices.ca/get-quote",
         "get_direction": "https://bananaservices.ca/get-quote"
       },
-      "visible": false
+      "visible": true
     },
     "customerInfo": {
       "title": "Customer Information",
@@ -46,13 +46,14 @@
       },
       "phone": "(204) 995 - 1430",
       "email": "tim@green.ca",
-      "visible": false
+      "visible": true
     },
     "book_appointment": {
       "link": "",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
-    "visible": true
+    "visible": true,
+    "linerVisible": true
   },
   "section2": {
     "open_late": {
@@ -73,7 +74,8 @@
       "title": "TRADE IN PROGRAM",
       "content": "Trade in Old Devices for Cash or Credit"
     },
-    "visible": false
+    "visible": false,
+    "linerVisible": true
   },
   "section3": {
     "title": "Why do we ask for your personal information?",
@@ -82,7 +84,8 @@
       "text": "See Full Privacy Policy",
       "link": "https://bananaservices.ca/"
     },
-    "visible": false
+    "visible": false,
+    "linerVisible": true
   },
   "section4": {
     "bounce": {
@@ -100,7 +103,8 @@
         "link": ""
       }
     },
-    "visible": false
+    "visible": false,
+    "linerVisible": true
   },
   "section5": {
     "title": "Find us on",
