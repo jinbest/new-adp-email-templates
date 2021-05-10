@@ -590,25 +590,25 @@
                 <table class="buttons">
                   <tr>
                     <td style="text-align: left;">
-                      <a href="mailto:{{ section1.nearestLoc.buttons.email_us }}" target="_blank" rel="noreferrer">
-                        <button>{{t "Email Us"}}</button>
+                      <a href="mailto:{{ section1.nearestLoc.buttons.email_us.text }}" target="_blank" rel="noreferrer">
+                        <button>{{t section1.nearestLoc.buttons.email_us.title}}</button>
                       </a>
                     </td>
                     <td style="text-align: right;">
-                      <a href="tel:{{ section1.nearestLoc.buttons.call_us }}" target="_blank" rel="noreferrer">
-                        <button>{{t "Call Us"}}</button>
+                      <a href="tel:{{ section1.nearestLoc.buttons.call_us.text }}" target="_blank" rel="noreferrer">
+                        <button>{{t section1.nearestLoc.buttons.call_us.title}}</button>
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td style="text-align: left;">
-                      <a href={{ section1.nearestLoc.buttons.text_us }} target="_blank" rel="noreferrer">
-                        <button>{{t "Text Us"}}</button>
+                      <a href={{ section1.nearestLoc.buttons.text_us.link }} target="_blank" rel="noreferrer">
+                        <button>{{t section1.nearestLoc.buttons.text_us.title}}</button>
                       </a>
                     </td>
                     <td style="text-align: right;">
-                      <a href={{ section1.nearestLoc.buttons.get_direction }} target="_blank" rel="noreferrer">
-                        <button>{{t "Get Directions"}}</button>
+                      <a href={{ section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
+                        <button>{{t section1.nearestLoc.buttons.get_direction.title}}</button>
                       </a>
                     </td>
                   </tr>
@@ -622,24 +622,24 @@
                 <p class="text-subtitle">{{t section1.customerInfo.title}}</p>
                 <hr class="liner" />
                 <div style="margin-bottom: 5px;">
-                  <p class="text-theme-title">{{t "Customer Name"}}:</p>
+                  <p class="text-theme-title">{{t section1.customerInfo.topic.customer_name}}:</p>
                   <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
                 </div>
                 {{#if section1.customerInfo.company.visible}}
                 {{#if section1.customerInfo.company.name}}
                 <div style="margin-bottom: 5px;">
-                  <p class="text-theme-title">{{t "Company Name"}}:</p>
+                  <p class="text-theme-title">{{t section1.customerInfo.topic.company_name}}:</p>
                   <p class="text-theme-content">{{ section1.customerInfo.company.name }}</p>
                 </div>
                 {{/if}}
                 {{/if}}
                 <div style="margin-bottom: 5px;">
-                  <p class="text-theme-title">{{t "Contact Number"}}:</p>
+                  <p class="text-theme-title">{{t section1.customerInfo.topic.contact_number}}:</p>
                   <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
                     section1.customerInfo.phone }}</a>
                 </div>
                 <div style="margin-bottom: 5px;">
-                  <p class="text-theme-title">{{t "Contact Email"}}:</p>
+                  <p class="text-theme-title">{{t section1.customerInfo.topic.contact_email}}:</p>
                   <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
                     section1.customerInfo.email }}</a>
                 </div>
@@ -659,17 +659,17 @@
             <a class="text-theme-content" href="tel:{{ section1.nearestLoc.phone }}" style="color: black;">{{
               section1.nearestLoc.phone }}</a>
             <div class="buttons">
-              <a href="mailto:{{ section1.nearestLoc.buttons.email_us }}" target="_blank" rel="noreferrer">
-                <button>{{t "Email Us"}}</button>
+              <a href="mailto:{{ section1.nearestLoc.buttons.email_us.text }}" target="_blank" rel="noreferrer">
+                <button>{{t section1.nearestLoc.buttons.email_us.title}}</button>
               </a>
-              <a href="tel:{{ section1.nearestLoc.buttons.call_us }}" target="_blank" rel="noreferrer">
-                <button>{{t "Call Us"}}</button>
+              <a href="tel:{{ section1.nearestLoc.buttons.call_us.text }}" target="_blank" rel="noreferrer">
+                <button>{{t section1.nearestLoc.buttons.call_us.title}}</button>
               </a>
-              <a href={{ section1.nearestLoc.buttons.text_us }} target="_blank" rel="noreferrer">
-                <button>{{t "Text Us"}}</button>
+              <a href={{ section1.nearestLoc.buttons.text_us.link }} target="_blank" rel="noreferrer">
+                <button>{{t section1.nearestLoc.buttons.text_us.title}}</button>
               </a>
-              <a href={{ section1.nearestLoc.buttons.get_direction }} target="_blank" rel="noreferrer">
-                <button>{{t "Get Directions"}}</button>
+              <a href={{ section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
+                <button>{{t section1.nearestLoc.buttons.get_direction.title}}</button>
               </a>
             </div>
           </div>
@@ -679,24 +679,24 @@
             <p class="text-subtitle">{{t section1.customerInfo.title}}</p>
             <hr class="liner" />
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t "Customer Name"}}:</p>
+              <p class="text-theme-title">{{t section1.customerInfo.topic.customer_name}}:</p>
               <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
             </div>
             {{#if section1.customerInfo.company.visible}}
             {{#if section1.customerInfo.company.name}}
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t "Company Name"}}:</p>
+              <p class="text-theme-title">{{t section1.customerInfo.topic.company_name}}:</p>
               <p class="text-theme-content">{{ section1.customerInfo.company.name }}</p>
             </div>
             {{/if}}
             {{/if}}
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t "Contact Number"}}:</p>
+              <p class="text-theme-title">{{t section1.customerInfo.topic.contact_number}}:</p>
               <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
                 section1.customerInfo.phone }}</a>
             </div>
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t "Contact Email"}}:</p>
+              <p class="text-theme-title">{{t section1.customerInfo.topic.contact_email}}:</p>
               <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
                 section1.customerInfo.email }}</a>
             </div>
@@ -709,7 +709,7 @@
         {{#if section1.book_appointment.description}}
         <div class="book-appointment">
           <a href={{ section1.book_appointment.link }} target="_blank" rel="noreferrer">
-            <button>{{t "Book Appointment"}}</button>
+            <button>{{t section1.book_appointment.title}}</button>
           </a>
           <p class="text-theme-title">{{t section1.book_appointment.description }}</p>
         </div>

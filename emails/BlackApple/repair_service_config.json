@@ -1,7 +1,7 @@
 {
   "domain": {
     "name": "Prado Wireless",
-    "website": "https://pradowireless.com/"
+    "website": "https://blackapplecellularvictoria.com/"
   },
   "header": {
     "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/logo.png",
@@ -57,10 +57,22 @@
       "address_2": "Winnipeg, MB R3P 0N2",
       "phone": "(204) 808-9416",
       "buttons": {
-        "email_us": "tim@green.ca",
-        "call_us": "(204) 995 - 1430",
-        "text_us": "https://pradowireless.com/get-quote",
-        "get_direction": "https://pradowireless.com/get-quote"
+        "email_us": {
+          "title": "Email Us",
+          "text": "tim@green.ca"
+        },
+        "call_us": {
+          "title": "Call Us",
+          "text": "(204) 995 - 1430"
+        },
+        "text_us": {
+          "title": "Text Us",
+          "link": "https://blackapplecellularvictoria.com/get-quote"
+        },
+        "get_direction": {
+          "title": "Get Direction",
+          "link": "https://blackapplecellularvictoria.com/get-quote"
+        }
       },
       "visible": true
     },
@@ -73,10 +85,17 @@
       },
       "phone": "(204) 995 - 1430",
       "email": "tim@green.ca",
+      "topic": {
+        "customer_name": "Customer Name",
+        "company_name": "Company Name",
+        "contact_number": "Contact Number",
+        "contact_email": "Contact Email"
+      },
       "visible": true
     },
     "book_appointment": {
-      "link": "https://pradowireless.com/get-quote",
+      "title": "Book Appointment",
+      "link": "https://blackapplecellularvictoria.com/get-quote",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
     "visible": true,
@@ -109,7 +128,7 @@
     "content": "Our staff may ask for the passcode for your device upon intake. This is only to perform our 30-point pre-repair and post-repair inspection to ensure your device is in perfect working order. We'll test your front and rear camera, microphone, loudspeaker, sensors, and more. Access will allow us to ensure the highest quality repair and customer service. If you are uncomfortable giving us your passcode we can run our pre and post service inspection in front of you when you pickup the device.",
     "privacy": {
       "text": "See Full Privacy Policy",
-      "link": "https://pradowireless.com/"
+      "link": "https://blackapplecellularvictoria.com/"
     },
     "visible": true,
     "linerVisible": true
@@ -149,11 +168,11 @@
     "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/logo.png",
     "domain": {
       "name": "pradowireless.com",
-      "link": "https://pradowireless.com/"
+      "link": "https://blackapplecellularvictoria.com/"
     },
     "privacy_policy": {
       "name": "Privacy Policy",
-      "link": "https://pradowireless.com/"
+      "link": "https://blackapplecellularvictoria.com/"
     }
   }
 }

@@ -57,10 +57,22 @@
       "address_2": "Winnipeg, MB R3P 0N2",
       "phone": "(204) 808-9416",
       "buttons": {
-        "email_us": "tim@green.ca",
-        "call_us": "(204) 995 - 1430",
-        "text_us": "https://nanotechmobile.ca/get-quote",
-        "get_direction": "https://nanotechmobile.ca/get-quote"
+        "email_us": {
+          "title": "Email Us",
+          "text": "tim@green.ca"
+        },
+        "call_us": {
+          "title": "Call Us",
+          "text": "(204) 995 - 1430"
+        },
+        "text_us": {
+          "title": "Text Us",
+          "link": "https://nanotechmobile.ca/get-quote"
+        },
+        "get_direction": {
+          "title": "Get Direction",
+          "link": "https://nanotechmobile.ca/get-quote"
+        }
       },
       "visible": true
     },
@@ -73,9 +85,16 @@
       },
       "phone": "(204) 995 - 1430",
       "email": "tim@green.ca",
+      "topic": {
+        "customer_name": "Customer Name",
+        "company_name": "Company Name",
+        "contact_number": "Contact Number",
+        "contact_email": "Contact Email"
+      },
       "visible": true
     },
     "book_appointment": {
+      "title": "Book Appointment",
       "link": "https://nanotechmobile.ca/get-quote",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
