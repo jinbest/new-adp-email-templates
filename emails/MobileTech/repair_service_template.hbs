@@ -537,10 +537,10 @@
             {{#each section1.summary.data.method}}
             <tr>
               <td style="width: 150px;">
-                <p class="text-theme-title">{{ this.title }}:</p>
+                <p class="text-theme-title">{{t this.title }}:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ this.content }}</p>
+                <p class="text-theme-content">{{t this.content }}</p>
               </td>
             </tr>
             {{/each}}
@@ -555,7 +555,7 @@
                 <p class="text-theme-title">{{t this.title}}:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{ this.content }}</p>
+                <p class="text-theme-content">{{t this.content }}</p>
               </td>
             </tr>
             {{/each}}
