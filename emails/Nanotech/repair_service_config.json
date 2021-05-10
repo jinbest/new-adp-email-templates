@@ -59,12 +59,18 @@
         "call_us": "(204) 995 - 1430",
         "text_us": "https://nanotechmobile.ca/get-quote",
         "get_direction": "https://nanotechmobile.ca/get-quote"
-      }
+      },
+      "visible": true
     },
     "customerInfo": {
       "name": "Tim Green",
+      "company": {
+        "name": "Company",
+        "visible": false
+      },
       "phone": "(204) 995 - 1430",
-      "email": "tim@green.ca"
+      "email": "tim@green.ca",
+      "visible": true
     },
     "book_appointment": {
       "link": "https://nanotechmobile.ca/get-quote",

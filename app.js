@@ -52,7 +52,7 @@ function sendEmail(folderName, data) {
     .send({
       template: folderName,
       message: {
-        to: ["jin.bestvictoria718@gmail.com"],
+        to: ["jingang718@outlook.com", "jin.bestvictoria718@gmail.com"],
       },
       locals: data,
     })

@@ -535,7 +535,7 @@
             {{#each section1.summary.data.method}}
             <tr>
               <td style="width: 150px;">
-                <p class="text-theme-title">{{ this.title}}:</p>
+                <p class="text-theme-title">{{ this.title }}:</p>
               </td>
               <td>
                 <p class="text-theme-content">{{ this.content }}</p>
@@ -564,8 +564,9 @@
           <span class="text-content">{{t section1.summary.content.normal }}</span>
 
         </div>
-        <table class="sec1-info-card-desktop">
+        <table class="sec1-info-card-desktop" {{#if section1.customerInfo.company.visible}}style="height:290px" {{/if}}>
           <tr>
+            {{#if section1.nearestLoc.visible}}
             <td class="nearest-location">
               <div class="box">
                 <p class="text-subtitle">{{t "Nearest Location"}}</p>
@@ -603,29 +604,41 @@
                 </table>
               </div>
             </td>
+            {{/if}}
+            {{#if section1.customerInfo.visible}}
             <td class="customer-information">
               <div class="box">
                 <p class="text-subtitle">{{t "Customer Information"}}</p>
                 <hr class="liner" />
-                <div style="margin-bottom: 10px;">
+                <div style="margin-bottom: 5px;">
                   <p class="text-theme-title">{{t "Customer Name"}}:</p>
                   <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
                 </div>
-                <div style="margin-bottom: 10px;">
+                {{#if section1.customerInfo.company.visible}}
+                {{#if section1.customerInfo.company.name}}
+                <div style="margin-bottom: 5px;">
+                  <p class="text-theme-title">{{t "Company Name"}}:</p>
+                  <p class="text-theme-content">{{ section1.customerInfo.company.name }}</p>
+                </div>
+                {{/if}}
+                {{/if}}
+                <div style="margin-bottom: 5px;">
                   <p class="text-theme-title">{{t "Contact Number"}}:</p>
                   <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
                     section1.customerInfo.phone }}</a>
                 </div>
-                <div style="margin-bottom: 10px;">
+                <div style="margin-bottom: 5px;">
                   <p class="text-theme-title">{{t "Contact Email"}}:</p>
                   <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
                     section1.customerInfo.email }}</a>
                 </div>
               </div>
             </td>
+            {{/if}}
           </tr>
         </table>
         <div class="sec1-info-card-mobile">
+          {{#if section1.nearestLoc.visible}}
           <div class="box">
             <p class="text-subtitle">{{t "Nearest Location"}}</p>
             <hr class="liner" />
@@ -649,24 +662,35 @@
               </a>
             </div>
           </div>
+          {{/if}}
+          {{#if section1.customerInfo.visible}}
           <div class="box">
             <p class="text-subtitle">{{t "Customer Information"}}</p>
             <hr class="liner" />
-            <div style="margin-bottom: 10px;">
+            <div style="margin-bottom: 5px;">
               <p class="text-theme-title">{{t "Customer Name"}}:</p>
               <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
             </div>
-            <div style="margin-bottom: 10px;">
+            {{#if section1.customerInfo.company.visible}}
+            {{#if section1.customerInfo.company.name}}
+            <div style="margin-bottom: 5px;">
+              <p class="text-theme-title">{{t "Company Name"}}:</p>
+              <p class="text-theme-content">{{ section1.customerInfo.company.name }}</p>
+            </div>
+            {{/if}}
+            {{/if}}
+            <div style="margin-bottom: 5px;">
               <p class="text-theme-title">{{t "Contact Number"}}:</p>
               <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
                 section1.customerInfo.phone }}</a>
             </div>
-            <div style="margin-bottom: 10px;">
+            <div style="margin-bottom: 5px;">
               <p class="text-theme-title">{{t "Contact Email"}}:</p>
               <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
                 section1.customerInfo.email }}</a>
             </div>
           </div>
+          {{/if}}
         </div>
         {{#if section1.book_appointment.link}}
         {{#if section1.book_appointment.description}}
@@ -853,6 +877,7 @@
       <hr class="liner" />
       {{/if}}
 
+      {{#if section5.visible}}
       <div class="section-5">
         <p class="text-theme-title">{{t section5.title }}</p>
         <table style="width: 180px; margin: 0 auto 20px;">
@@ -902,6 +927,7 @@
           {{t section5.content_2 }}
         </p>
       </div>
+      {{/if}}
 
     </div>
 
