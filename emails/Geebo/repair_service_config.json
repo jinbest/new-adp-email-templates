@@ -50,6 +50,7 @@
       }
     },
     "nearestLoc": {
+      "title": "Nearest Location",
       "name": "Geebo Device Repair Corydon",
       "address_1": "Unit F - 2020 Corydon Avenue",
       "address_2": "Winnipeg, MB R3P 0N2",
@@ -63,6 +64,7 @@
       "visible": true
     },
     "customerInfo": {
+      "title": "Customer Information",
       "name": "Tim Green",
       "company": {
         "name": "Company",

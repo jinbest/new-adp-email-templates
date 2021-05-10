@@ -1,67 +1,41 @@
 {
   "domain": {
-    "name": "Prado Wireless",
-    "website": "https://pradowireless.com/"
+    "name": "Banana Services",
+    "website": "https://bananaservices.ca/"
   },
   "header": {
-    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/logo.png",
-    "bgImg": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/top-banner.png",
+    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/logo-header.png",
+    "bgImg": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/top-banner.png",
     "text": "Please call prior to visiting for parts availability and turnaround time."
   },
   "section1": {
     "title": "Here is the quote you requested!",
     "content": "We look forward to seeing you instore! When you visit us, our staff will check you in, inspect your device and confirm pricing and approximate turnaround time.",
     "summary": {
-      "title": "Quote Summary",
+      "title": "",
       "content": {
-        "bold": "We price match any repair shop.",
-        "normal": "Simply reply to this email with the name of the shop and the price you were quoted."
+        "bold": "",
+        "normal": ""
       },
       "data": {
         "method": [],
-        "summaries": [
-          [
-            {
-              "title": "Device",
-              "content": "iPhone XR"
-            },
-            {
-              "title": "Service",
-              "content": "Walk In Battery Replacement"
-            },
-            {
-              "title": "Duration",
-              "content": "1 Hour"
-            },
-            {
-              "title": "Warranty",
-              "content": "90 Days"
-            },
-            {
-              "title": "Quoted Cost",
-              "content": "$89.00"
-            },
-            {
-              "title": "As low as",
-              "content": "$7.00 per month at 0% APR with financing"
-            }
-          ]
-        ]
-      }
+        "summaries": []
+      },
+      "visible": false
     },
     "nearestLoc": {
       "title": "Nearest Location",
-      "name": "Prado Wireless Corydon",
+      "name": "Banana Services Corydon",
       "address_1": "Unit F - 2020 Corydon Avenue",
       "address_2": "Winnipeg, MB R3P 0N2",
       "phone": "(204) 808-9416",
       "buttons": {
         "email_us": "tim@green.ca",
         "call_us": "(204) 995 - 1430",
-        "text_us": "https://pradowireless.com/get-quote",
-        "get_direction": "https://pradowireless.com/get-quote"
+        "text_us": "https://bananaservices.ca/get-quote",
+        "get_direction": "https://bananaservices.ca/get-quote"
       },
-      "visible": true
+      "visible": false
     },
     "customerInfo": {
       "title": "Customer Information",
@@ -72,10 +46,10 @@
       },
       "phone": "(204) 995 - 1430",
       "email": "tim@green.ca",
-      "visible": true
+      "visible": false
     },
     "book_appointment": {
-      "link": "https://pradowireless.com/get-quote",
+      "link": "",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
     "visible": true
@@ -90,25 +64,25 @@
       }
     },
     "losing_power": {
-      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/battery.png",
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png",
       "title": "LOSING POWER?",
       "content": "We offer free battery evaluations"
     },
     "trade_program": {
-      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/money.png",
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png",
       "title": "TRADE IN PROGRAM",
       "content": "Trade in Old Devices for Cash or Credit"
     },
-    "visible": true
+    "visible": false
   },
   "section3": {
     "title": "Why do we ask for your personal information?",
     "content": "Our staff may ask for the passcode for your device upon intake. This is only to perform our 30-point pre-repair and post-repair inspection to ensure your device is in perfect working order. We'll test your front and rear camera, microphone, loudspeaker, sensors, and more. Access will allow us to ensure the highest quality repair and customer service. If you are uncomfortable giving us your passcode we can run our pre and post service inspection in front of you when you pickup the device.",
     "privacy": {
       "text": "See Full Privacy Policy",
-      "link": "https://pradowireless.com/"
+      "link": "https://bananaservices.ca/"
     },
-    "visible": true
+    "visible": false
   },
   "section4": {
     "bounce": {
@@ -123,10 +97,10 @@
       "content": "1 year warranty and free shipping. Shop online, pick up in store",
       "shop_now": {
         "title": "Shop Now",
-        "link": "http://shop.pradowireless.com/"
+        "link": ""
       }
     },
-    "visible": true
+    "visible": false
   },
   "section5": {
     "title": "Find us on",
@@ -137,18 +111,18 @@
       "facebook": "https://www.facebook.com/"
     },
     "content_1": "Turnaround times and costs vary based upon the nature of the service, parts availability, your warranty status, and other factors. Once your device is in the shop, we will diagnose your problem and contact you as soon as we can to provide any details and specific time and cost estimate. Diagnostic and/or repair fees may apply if work to be performed is not covered under warranty. Offer expires one week after Free Estimate Request submitted.",
-    "content_2": "© 2021 Prado Wireless Inc. All Rights Reserved. All product and company names are trademarks of their respective holders. iPhone, iPad, iPod, iPod touch, Mac and iMac are registered trademarks and property of Apple, Inc. Prado Wireless Inc. does not own or make claim to those trademarks used on this website in which it is not the holder. Prado Wireless is a third-party repair company and is not affiliated with Apple.",
-    "visible": true
+    "content_2": "© 2021 Banana Services Inc. All Rights Reserved. All product and company names are trademarks of their respective holders. iPhone, iPad, iPod, iPod touch, Mac and iMac are registered trademarks and property of Apple, Inc. Banana Services Inc. does not own or make claim to those trademarks used on this website in which it is not the holder. Banana Services is a third-party repair company and is not affiliated with Apple.",
+    "visible": false
   },
   "footer": {
-    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/10/logo.png",
+    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/logo-footer.png",
     "domain": {
-      "name": "pradowireless.com",
-      "link": "https://pradowireless.com/"
+      "name": "bananaservices.ca",
+      "link": "https://bananaservices.ca/"
     },
     "privacy_policy": {
       "name": "Privacy Policy",
-      "link": "https://pradowireless.com/"
+      "link": "https://bananaservices.ca/"
     }
   }
 }
