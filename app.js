@@ -1,16 +1,15 @@
-const bodyParser = require('body-parser');
-const express = require('express');
-const nodemailer = require('nodemailer');
-const port = process.env.PORT || 8000;
+const bodyParser = require("body-parser");
+const express = require("express");
+const nodemailer = require("nodemailer");
+// const port = process.env.PORT || 8000;
+const port = 3000;
 const app = express();
-const Email = require('email-templates');
+const Email = require("email-templates");
 const Handlebars = require("handlebars");
 
-Handlebars.registerHelper('equals', function (a, b, opts) {
-  if (a === b)
-    return opts.fn(this);
-  else
-    return opts.inverse(this);
+Handlebars.registerHelper("equals", function (a, b, opts) {
+  if (a === b) return opts.fn(this);
+  else return opts.inverse(this);
 });
 
 app.use(bodyParser.json());
@@ -20,11 +19,11 @@ app.listen(port, () =>
 );
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
-    user: 'jinming9420@gmail.com',
-    pass: 'rokpjokmrqznywqi'
-  }
+    user: "jinming9420@gmail.com",
+    pass: "rokpjokmrqznywqi",
+  },
 });
 
 // const transporter = nodemailer.createTransport({
@@ -37,15 +36,15 @@ const transporter = nodemailer.createTransport({
 
 const email = new Email({
   message: {
-    from: 'jinming9420@gmail.com'
+    from: "jinming9420@gmail.com",
   },
   send: true,
   views: {
     options: {
-      extension: 'hbs'
-    }
+      extension: "hbs",
+    },
   },
-  transport: transporter
+  transport: transporter,
 });
 
 function sendEmail(folderName, data) {
@@ -53,17 +52,16 @@ function sendEmail(folderName, data) {
     .send({
       template: folderName,
       message: {
-        to: ['jin.bestvictoria718@gmail.com'],
+        to: ["jin.bestvictoria718@gmail.com"],
       },
-      locals: data
+      locals: data,
     })
     .then(console.log)
     .catch(console.error);
 }
 
-
-// const bananaData = require("./emails/Banana/repair_service_config.json")
-const blackappleData = require("./emails/BlackApple/repair_service_config.json")
+const bananaData = require("./emails/Banana/repair_service_config.json");
+// const blackappleData = require("./emails/BlackApple/repair_service_config.json")
 // const geeboData = require("./emails/Geebo/repair_service_config.json")
 // const mobileTechData = require("./emails/MobileTech/repair_service_config.json")
 // const nanoTechData = require("./emails/Nanotech/repair_service_config.json")
@@ -72,10 +70,9 @@ const blackappleData = require("./emails/BlackApple/repair_service_config.json")
 // const reparaData = require("./emails/Reparation/repair_service_config.json")
 // const wirelessData = require("./emails/Wireless/repair_service_config.json")
 
-app.get('/send-email', function(req, res) {
-  
-  // sendEmail('Banana', bananaData);
-  sendEmail('BlackApple', blackappleData);
+app.get("/send-email", function (req, res) {
+  sendEmail("Banana", bananaData);
+  // sendEmail('BlackApple', blackappleData);
   // sendEmail('Geebo', geeboData);
   // sendEmail('MobileTech', mobileTechData);
   // sendEmail('Nanotech', nanoTechData);
@@ -84,5 +81,5 @@ app.get('/send-email', function(req, res) {
   // sendEmail('Reparation', reparaData);
   // sendEmail('Wireless', wirelessData);
 
-  res.send('Email was sent successfully!');
+  res.send("Email was sent successfully!");
 });
