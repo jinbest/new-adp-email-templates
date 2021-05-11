@@ -135,21 +135,18 @@
     }
 
     .box {
-      background: linear-gradient(#fff, #fff) padding-box,
-        linear-gradient(to right, #6eb24f, #000000) border-box;
       color: #313149;
       padding: 15px;
-      border: 2px solid transparent;
+      border: 2px solid #6eb24f;
       border-radius: 5px;
-      display: inline-block;
-      height: -webkit-fill-available;
+      height: 100%;
+      box-sizing: border-box;
     }
 
     .liner {
       margin: 5px auto;
-      background: linear-gradient(to right, #6eb24f, #000000) border-box;
+      background: #6eb24f;
       color: #313149;
-      display: inline-block;
       height: 2px;
       width: 100%;
       border: none;
@@ -179,7 +176,6 @@
 
     .nearest-location>div {
       margin-right: auto;
-      width: calc(100% - 38px);
       text-align: center;
     }
 
@@ -215,7 +211,6 @@
 
     .customer-information>div {
       margin-left: auto;
-      width: calc(100% - 38px);
       text-align: center;
     }
 
@@ -259,13 +254,14 @@
     .card-shadow {
       position: relative;
       padding: 1px 2px 2px 1px;
-      background: linear-gradient(to right bottom, white, rgb(241, 238, 238)) border-box;
+      background: transparent;
       border-radius: 5px;
       margin: 10px 0;
     }
 
     .card {
       background: #ffffff;
+      border: 2px solid #6eb24f;
       border-radius: 5px;
       padding: 15px;
     }
@@ -281,7 +277,6 @@
     }
 
     .bounce {
-      width: calc(100% - 38px);
       margin-right: auto;
       background: #4ccaf3;
       box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
@@ -299,7 +294,6 @@
     }
 
     .mobile-groups {
-      width: calc(100% - 38px);
       margin-left: auto;
       background: #398418;
       padding: 15px;
@@ -474,7 +468,6 @@
 
       .bounce,
       .mobile-groups {
-        width: calc(100% - 30px);
         margin: 20px auto 0;
         height: auto;
       }
