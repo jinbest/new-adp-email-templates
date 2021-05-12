@@ -640,10 +640,10 @@
 
         {{#ifCond section1.book_appointment.link '&&' section1.book_appointment.description}}
         <div class="book-appointment">
-          <a href={{ section1.book_appointment.link }} target="_blank" rel="noreferrer">
-            <button>{{t section1.book_appointment.title}}</button>
+          <a href={{ ../section1.book_appointment.link }} target="_blank" rel="noreferrer">
+            <button>{{t ../section1.book_appointment.title}}</button>
           </a>
-          <p class="text-theme-title">{{t section1.book_appointment.description }}</p>
+          <p class="text-theme-title">{{t ../section1.book_appointment.description }}</p>
         </div>
         {{/ifCond}}
       </div>
