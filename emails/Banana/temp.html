@@ -50,8 +50,6 @@
       .main-div {
         width: 100%;
         max-width: 700px;
-        box-shadow: -10px -10px 30px rgba(174, 174, 192, 0.4),
-          -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
         margin: auto;
         background-color: #ffffff;
       }
@@ -140,8 +138,6 @@
         padding: 15px;
         border: 2px solid #7bba42;
         border-radius: 5px;
-        height: 100%;
-        box-sizing: border-box;
       }
 
       .liner {
@@ -165,19 +161,12 @@
 
       .sec1-info-card-desktop {
         margin-top: 10px;
-        position: relative;
-        height: 265px;
       }
 
       .nearest-location {
-        text-align: left;
+        text-align: center;
         width: 50%;
         height: 100%;
-      }
-
-      .nearest-location > div {
-        margin-right: auto;
-        text-align: center;
       }
 
       .buttons {
@@ -205,14 +194,9 @@
       }
 
       .customer-information {
-        text-align: right;
+        text-align: center;
         width: 50%;
         height: 100%;
-      }
-
-      .customer-information > div {
-        margin-left: auto;
-        text-align: center;
       }
 
       .book-appointment {
@@ -240,12 +224,6 @@
 
       .section-2-desktop {
         padding: 20px 0;
-        position: relative;
-        height: 130px;
-      }
-
-      .section-2-desktop table {
-        height: 100%;
       }
 
       .open-late,
@@ -253,23 +231,12 @@
         width: 50%;
       }
 
-      .card-shadow {
-        position: relative;
-        padding: 1px 2px 2px 1px;
-        background: transparent;
-        border-radius: 5px;
-        margin: 10px 0;
-        height: 100%;
-        box-sizing: border-box;
-      }
-
       .card {
         background: #ffffff;
         border: 2px solid #7bba42;
         border-radius: 5px;
         padding: 15px;
-        height: 100%;
-        box-sizing: border-box;
+        margin: 5px 0;
       }
 
       .section-3 {
@@ -279,35 +246,23 @@
 
       .section-4-desktop {
         padding: 20px 0;
-        position: relative;
       }
 
       .bounce {
-        margin-right: auto;
         background: #4ccaf3;
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         padding: 25px 15px 0 15px;
         text-align: center;
-        height: 270px;
-        position: relative;
-      }
-
-      .bounce img {
-        position: absolute;
-        bottom: 0;
-        left: 20%;
+        width: 50%;
       }
 
       .mobile-groups {
-        margin-left: auto;
         background: #619631;
         padding: 15px;
         text-align: center;
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         color: white;
-        height: 265px;
+        width: 50%;
       }
 
       .mobile-groups img {
@@ -317,7 +272,6 @@
       .mobile-groups button {
         font-size: 12px;
         background: #7bba42;
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         height: 30px;
         width: 170px;
@@ -476,11 +430,7 @@
         .mobile-groups {
           margin: 20px auto 0;
           height: auto;
-        }
-
-        .bounce img {
-          position: inherit;
-          left: 0;
+          width: inherit;
         }
       }
 
@@ -491,6 +441,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="main-div" id="email-template">
       <div
@@ -548,6 +499,7 @@
             will check you in, inspect your device and confirm pricing and
             approximate turnaround time.
           </p>
+
           <div class="box sec1-card-1">
             <p class="text-subtitle" style="margin-bottom: 10px">
               Quote Summary
@@ -668,10 +620,10 @@
               price you were quoted.</span
             >
           </div>
+
           <table class="sec1-info-card-desktop">
             <tr>
               <td class="nearest-location box">
-                <!-- <div class=""> -->
                 <p class="text-subtitle">Nearest Location</p>
                 <hr class="liner" />
                 <p class="text-theme-title">Mobile Tech Lab Corydon</p>
@@ -725,10 +677,9 @@
                     </td>
                   </tr>
                 </table>
-                <!-- </div> -->
               </td>
+              <td style="width: 1%"></td>
               <td class="customer-information box">
-                <!-- <div class=""> -->
                 <p class="text-subtitle">Customer Information</p>
                 <hr class="liner" />
                 <div style="margin-bottom: 5px">
@@ -753,7 +704,6 @@
                     >tim@green.ca</a
                   >
                 </div>
-                <!-- </div> -->
               </td>
             </tr>
           </table>
@@ -845,104 +795,87 @@
         <div class="section-2-desktop">
           <table>
             <tr>
-              <td class="open-late" style="text-align: left">
-                <div class="card-shadow">
-                  <div class="card" style="padding: 15px 10px 15px 0">
-                    <table>
-                      <tr>
-                        <td>
-                          <img
-                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png"
-                            style="width: 70px; margin: auto"
-                          />
-                        </td>
-                        <td style="text-align: center">
-                          <p
-                            class="text-theme-title"
-                            style="white-space: nowrap"
-                          >
-                            LOSING POWER?
-                          </p>
-                          <p class="text-content">
-                            We offer free battery evaluations
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
+              <td class="open-late card">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png"
+                        style="width: 70px; margin: auto"
+                      />
+                    </td>
+                    <td style="text-align: center">
+                      <p class="text-theme-title" style="white-space: nowrap">
+                        LOSING POWER?
+                      </p>
+                      <p class="text-content">
+                        We offer free battery evaluations
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
-              <td class="battery-money" style="text-align: right">
-                <div class="card-shadow">
-                  <div class="card" style="padding: 15px 10px 15px 0">
-                    <table>
-                      <tr>
-                        <td>
-                          <img
-                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png"
-                            style="width: 70px"
-                          />
-                        </td>
-                        <td style="text-align: center">
-                          <p
-                            class="text-theme-title"
-                            style="white-space: nowrap"
-                          >
-                            TRADE IN PROGRAM
-                          </p>
-                          <p class="text-content">
-                            Trade in Old Devices for Cash or Credit
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
+              <td style="width: 1%"></td>
+              <td class="battery-money card">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png"
+                        style="width: 70px"
+                      />
+                    </td>
+                    <td style="text-align: center">
+                      <p class="text-theme-title" style="white-space: nowrap">
+                        TRADE IN PROGRAM
+                      </p>
+                      <p class="text-content">
+                        Trade in Old Devices for Cash or Credit
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
         </div>
 
         <div class="section-2-mobile">
-          <div class="card-shadow">
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png"
-                      style="width: 80px"
-                    />
-                  </td>
-                  <td style="text-align: center">
-                    <p class="text-subtitle">LOSING POWER?</p>
-                    <p class="text-theme-content">
-                      We offer free battery evaluations
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png"
+                    style="width: 80px"
+                  />
+                </td>
+                <td style="text-align: center">
+                  <p class="text-subtitle">LOSING POWER?</p>
+                  <p class="text-theme-content">
+                    We offer free battery evaluations
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="card-shadow">
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png"
-                      style="width: 80px"
-                    />
-                  </td>
-                  <td style="text-align: center">
-                    <p class="text-subtitle">TRADE IN PROGRAM</p>
-                    <p class="text-theme-content">
-                      Trade in Old Devices for Cash or Credit
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png"
+                    style="width: 80px"
+                  />
+                </td>
+                <td style="text-align: center">
+                  <p class="text-subtitle">TRADE IN PROGRAM</p>
+                  <p class="text-theme-content">
+                    Trade in Old Devices for Cash or Credit
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
 
@@ -975,40 +908,37 @@
         <div class="section-4-desktop">
           <table>
             <tr>
-              <td style="width: 50%; text-align: left">
-                <div class="bounce">
-                  <p class="text-theme-title" style="color: white">
-                    Get Bounce Screen Insurance
-                  </p>
-                  <p class="text-theme-content" style="color: white">
-                    Starting At $39/yr
-                  </p>
-                  <p class="text-theme-content" style="color: white">
-                    Zero Deductible
-                  </p>
-                  <img
-                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
-                    style="width: 60%; margin-top: 10px"
-                  />
-                </div>
+              <td class="bounce">
+                <p class="text-theme-title" style="color: white">
+                  Get Bounce Screen Insurance
+                </p>
+                <p class="text-theme-content" style="color: white">
+                  Starting At $39/yr
+                </p>
+                <p class="text-theme-content" style="color: white">
+                  Zero Deductible
+                </p>
+                <img
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
+                  style="width: 60%; margin-top: 10px"
+                />
               </td>
-              <td style="width: 50%; text-align: left">
-                <div class="mobile-groups">
-                  <p class="text-theme-title" style="color: white">
-                    Certified Pre-Owned Devices Starting from $79
-                  </p>
-                  <img
-                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
-                    style="width: 60%"
-                  />
-                  <p class="text-theme-content" style="color: white">
-                    1 year warranty and free shipping. Shop online, pick up in
-                    store
-                  </p>
-                  <a href="" target="_blank" rel="noreffer">
-                    <button>Shop Now</button>
-                  </a>
-                </div>
+              <td style="width: 1%"></td>
+              <td class="mobile-groups">
+                <p class="text-theme-title" style="color: white">
+                  Certified Pre-Owned Devices Starting from $79
+                </p>
+                <img
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
+                  style="width: 60%"
+                />
+                <p class="text-theme-content" style="color: white">
+                  1 year warranty and free shipping. Shop online, pick up in
+                  store
+                </p>
+                <a href="" target="_blank" rel="noreffer">
+                  <button>Shop Now</button>
+                </a>
               </td>
             </tr>
           </table>
