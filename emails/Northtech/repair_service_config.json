@@ -80,8 +80,8 @@
       "title": "Customer Information",
       "name": "Tim Green",
       "company": {
-        "name": "Company",
-        "visible": false
+        "name": "Northtech Company",
+        "visible": true
       },
       "phone": "(204) 995 - 1430",
       "email": "tim@green.ca",
