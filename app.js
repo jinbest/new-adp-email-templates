@@ -81,7 +81,7 @@ function sendEmail(folderName, data) {
     .send({
       template: folderName,
       message: {
-        to: ["jingang718@outlook.com"],
+        to: ["jingang718@outlook.com", "jin.bestvictoria718@gmail.com"],
       },
       locals: data,
     })
@@ -89,8 +89,8 @@ function sendEmail(folderName, data) {
     .catch(console.error);
 }
 
-const bananaData = require("./emails/Banana/repair_service_config.json");
-// const blackappleData = require("./emails/BlackApple/repair_service_config.json");
+// const bananaData = require("./emails/Banana/repair_service_config.json");
+const blackappleData = require("./emails/BlackApple/repair_service_config.json");
 // const geeboData = require("./emails/Geebo/repair_service_config.json")
 // const mobileTechData = require("./emails/MobileTech/repair_service_config.json");
 // const nanoTechData = require("./emails/Nanotech/repair_service_config.json");
@@ -102,8 +102,8 @@ const bananaData = require("./emails/Banana/repair_service_config.json");
 // const dccmtxData = require("./emails/Dccmtx/repair_service_config.json");
 
 app.get("/send-email", function (req, res) {
-  sendEmail("Banana", bananaData);
-  // sendEmail("BlackApple", blackappleData);
+  // sendEmail("Banana", bananaData);
+  sendEmail("BlackApple", blackappleData);
   // sendEmail('Geebo', geeboData);
   // sendEmail("MobileTech", mobileTechData);
   // sendEmail("Nanotech", nanoTechData);
