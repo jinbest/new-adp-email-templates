@@ -370,7 +370,7 @@
             </a>
           </td>
           <td class="header-text">
-            <p class="text-theme-content">{{t header.text }}</p>
+            <p class="text-theme-content">{{ header.text }}</p>
           </td>
         </tr>
       </table>
@@ -378,7 +378,7 @@
         <a href={{ domain.website }} target="_blank" rel="noreffer" style="opacity: 1;">
           <img src={{ header.logo }} style="margin-bottom: 10px;">
         </a>
-        <p class="text-theme-content">{{t header.text }}</p>
+        <p class="text-theme-content">{{ header.text }}</p>
       </div>
     </div>
 
@@ -387,15 +387,15 @@
       {{#if section1.visible}}
       <div class="section-1">
         <p class="text-title">
-          {{t section1.title }}
+          {{ section1.title }}
         </p>
         <p class="text-content">
-          {{t section1.content }}
+          {{ section1.content }}
         </p>
 
         {{#if section1.summary.visible}}
         <div class="box sec1-card-1">
-          <p class="text-subtitle" style="margin-bottom: 10px;">{{t section1.summary.title }}</p>
+          <p class="text-subtitle" style="margin-bottom: 10px;">{{ section1.summary.title }}</p>
           <hr class="liner" />
 
           {{#if section1.summary.data.method.length}}
@@ -403,10 +403,10 @@
             {{#each section1.summary.data.method}}
             <tr>
               <td style="width: 150px;">
-                <p class="text-theme-title">{{t this.title }}:</p>
+                <p class="text-theme-title">{{ this.title }}:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{t this.content }}</p>
+                <p class="text-theme-content">{{ this.content }}</p>
               </td>
             </tr>
             {{/each}}
@@ -418,142 +418,142 @@
             {{#each this}}
             <tr>
               <td style="width: 150px;">
-                <p class="text-theme-title">{{t this.title}}:</p>
+                <p class="text-theme-title">{{ this.title}}:</p>
               </td>
               <td>
-                <p class="text-theme-content">{{t this.content }}</p>
+                <p class="text-theme-content">{{ this.content }}</p>
               </td>
             </tr>
             {{/each}}
           </table>
           {{/each}}
 
-          <span class="text-content t-bold">{{t section1.summary.content.bold }}</span>
-          <span class="text-content">{{t section1.summary.content.normal }}</span>
+          <span class="text-content t-bold">{{ section1.summary.content.bold }}</span>
+          <span class="text-content">{{ section1.summary.content.normal }}</span>
 
         </div>
         {{/if}}
 
         {{#ifCond section1.nearestLoc.visible '||' section1.customerInfo.visible}}
-        <table class="sec1-info-card-desktop" {{#if ../section1.customerInfo.company.visible}}style="height:290px" {{/if}}>
+        <table class="sec1-info-card-desktop" {{#if section1.customerInfo.company.visible}}style="height:290px" {{/if}}>
           <tr>
-            {{#if ../section1.nearestLoc.visible}}
+            {{#if section1.nearestLoc.visible}}
             <td class="nearest-location box">
-              <p class="text-subtitle">{{t ../section1.nearestLoc.title}}</p>
+              <p class="text-subtitle">{{ section1.nearestLoc.title}}</p>
               <hr class="liner" />
-              <p class="text-theme-title">{{ ../section1.nearestLoc.name }}</p>
-              <p class="text-theme-content">{{ ../section1.nearestLoc.address_1 }}</p>
-              <p class="text-theme-content">{{ ../section1.nearestLoc.address_2 }}</p>
-              <a class="text-theme-content" href="tel:{{ ../section1.nearestLoc.phone }}" style="color: black;">{{
-                ../section1.nearestLoc.phone }}</a>
+              <p class="text-theme-title">{{ section1.nearestLoc.name }}</p>
+              <p class="text-theme-content">{{ section1.nearestLoc.address_1 }}</p>
+              <p class="text-theme-content">{{ section1.nearestLoc.address_2 }}</p>
+              <a class="text-theme-content" href="tel:{{ section1.nearestLoc.phone }}" style="color: black;">{{
+                section1.nearestLoc.phone }}</a>
               <table class="buttons">
                 <tr>
                   <td style="text-align: left;">
-                    <a href="mailto:{{ ../section1.nearestLoc.buttons.email_us.text }}" target="_blank" rel="noreferrer">
-                      <button>{{t ../section1.nearestLoc.buttons.email_us.title}}</button>
+                    <a href="mailto:{{ section1.nearestLoc.buttons.email_us.text }}" target="_blank" rel="noreferrer">
+                      <button>{{ section1.nearestLoc.buttons.email_us.title}}</button>
                     </a>
                   </td>
                   <td style="text-align: right;">
-                    <a href="tel:{{ ../section1.nearestLoc.buttons.call_us.text }}" target="_blank" rel="noreferrer">
-                      <button>{{t ../section1.nearestLoc.buttons.call_us.title}}</button>
+                    <a href="tel:{{ section1.nearestLoc.buttons.call_us.text }}" target="_blank" rel="noreferrer">
+                      <button>{{ section1.nearestLoc.buttons.call_us.title}}</button>
                     </a>
                   </td>
                 </tr>
                 <tr>
                   <td style="text-align: left;">
-                    <a href={{ ../section1.nearestLoc.buttons.text_us.link }} target="_blank" rel="noreferrer">
-                      <button>{{t ../section1.nearestLoc.buttons.text_us.title}}</button>
+                    <a href={{ section1.nearestLoc.buttons.text_us.link }} target="_blank" rel="noreferrer">
+                      <button>{{ section1.nearestLoc.buttons.text_us.title}}</button>
                     </a>
                   </td>
                   <td style="text-align: right;">
-                    <a href={{ ../section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
-                      <button>{{t ../section1.nearestLoc.buttons.get_direction.title}}</button>
+                    <a href={{ section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
+                      <button>{{ section1.nearestLoc.buttons.get_direction.title}}</button>
                     </a>
                   </td>
                 </tr>
               </table>
             </td>
             {{/if}}
-            {{#ifCond ../section1.nearestLoc.visible '&&' ../section1.customerInfo.visible}}
+            {{#ifCond section1.nearestLoc.visible '&&' section1.customerInfo.visible}}
             <td style="width: 1%"></td>
             {{/ifCond}}
-            {{#if ../section1.customerInfo.visible}}
+            {{#if section1.customerInfo.visible}}
             <td class="customer-information box">
-              <p class="text-subtitle">{{t ../section1.customerInfo.title}}</p>
+              <p class="text-subtitle">{{ section1.customerInfo.title}}</p>
               <hr class="liner" />
               <div style="margin-bottom: 5px;">
-                <p class="text-theme-title">{{t ../section1.customerInfo.topic.customer_name}}:</p>
-                <p class="text-theme-content">{{ ../section1.customerInfo.name }}</p>
+                <p class="text-theme-title">{{ section1.customerInfo.topic.customer_name}}:</p>
+                <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
               </div>
-              {{#ifCond ../section1.customerInfo.company.visible '&&' ../section1.customerInfo.company.name}}
+              {{#ifCond section1.customerInfo.company.visible '&&' section1.customerInfo.company.name}}
               <div style="margin-bottom: 5px;">
-                <p class="text-theme-title">{{t ../section1.customerInfo.topic.company_name}}:</p>
-                <p class="text-theme-content">{{ ../section1.customerInfo.company.name }}</p>
+                <p class="text-theme-title">{{ section1.customerInfo.topic.company_name}}:</p>
+                <p class="text-theme-content">{{ section1.customerInfo.company.name }}</p>
               </div>
               {{/ifCond}}
               <div style="margin-bottom: 5px;">
-                <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_number}}:</p>
-                <a class="text-theme-content" href="tel:{{ ../section1.customerInfo.phone }}" style="color: black;">{{
-                  ../section1.customerInfo.phone }}</a>
+                <p class="text-theme-title">{{ section1.customerInfo.topic.contact_number}}:</p>
+                <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
+                  section1.customerInfo.phone }}</a>
               </div>
               <div style="margin-bottom: 5px;">
-                <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_email}}:</p>
-                <a class="text-theme-content" href="mailto:{{ ../section1.customerInfo.email }}" style="color: black;">{{
-                  ../section1.customerInfo.email }}</a>
+                <p class="text-theme-title">{{ section1.customerInfo.topic.contact_email}}:</p>
+                <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
+                  section1.customerInfo.email }}</a>
               </div>
             </td>
             {{/if}}
           </tr>
         </table>
         <div class="sec1-info-card-mobile">
-          {{#if ../section1.nearestLoc.visible}}
+          {{#if section1.nearestLoc.visible}}
           <div class="box">
-            <p class="text-subtitle">{{t ../section1.nearestLoc.title}}</p>
+            <p class="text-subtitle">{{ section1.nearestLoc.title}}</p>
             <hr class="liner" />
-            <p class="text-theme-title">{{ ../section1.nearestLoc.name }}</p>
-            <p class="text-theme-content">{{ ../section1.nearestLoc.address_1 }}</p>
-            <p class="text-theme-content">{{ ../section1.nearestLoc.address_2 }}</p>
-            <a class="text-theme-content" href="tel:{{ ../section1.nearestLoc.phone }}" style="color: black;">{{
-              ../section1.nearestLoc.phone }}</a>
+            <p class="text-theme-title">{{ section1.nearestLoc.name }}</p>
+            <p class="text-theme-content">{{ section1.nearestLoc.address_1 }}</p>
+            <p class="text-theme-content">{{ section1.nearestLoc.address_2 }}</p>
+            <a class="text-theme-content" href="tel:{{ section1.nearestLoc.phone }}" style="color: black;">{{
+              section1.nearestLoc.phone }}</a>
             <div class="buttons">
-              <a href="mailto:{{ ../section1.nearestLoc.buttons.email_us.text }}" target="_blank" rel="noreferrer">
-                <button>{{t ../section1.nearestLoc.buttons.email_us.title}}</button>
+              <a href="mailto:{{ section1.nearestLoc.buttons.email_us.text }}" target="_blank" rel="noreferrer">
+                <button>{{ section1.nearestLoc.buttons.email_us.title}}</button>
               </a>
-              <a href="tel:{{ ../section1.nearestLoc.buttons.call_us.text }}" target="_blank" rel="noreferrer">
-                <button>{{t ../section1.nearestLoc.buttons.call_us.title}}</button>
+              <a href="tel:{{ section1.nearestLoc.buttons.call_us.text }}" target="_blank" rel="noreferrer">
+                <button>{{ section1.nearestLoc.buttons.call_us.title}}</button>
               </a>
-              <a href={{ ../section1.nearestLoc.buttons.text_us.link }} target="_blank" rel="noreferrer">
-                <button>{{t ../section1.nearestLoc.buttons.text_us.title}}</button>
+              <a href={{ section1.nearestLoc.buttons.text_us.link }} target="_blank" rel="noreferrer">
+                <button>{{ section1.nearestLoc.buttons.text_us.title}}</button>
               </a>
-              <a href={{ ../section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
-                <button>{{t ../section1.nearestLoc.buttons.get_direction.title}}</button>
+              <a href={{ section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
+                <button>{{ section1.nearestLoc.buttons.get_direction.title}}</button>
               </a>
             </div>
           </div>
           {{/if}}
-          {{#if ../section1.customerInfo.visible}}
+          {{#if section1.customerInfo.visible}}
           <div class="box">
-            <p class="text-subtitle">{{t ../section1.customerInfo.title}}</p>
+            <p class="text-subtitle">{{ section1.customerInfo.title}}</p>
             <hr class="liner" />
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t ../section1.customerInfo.topic.customer_name}}:</p>
-              <p class="text-theme-content">{{ ../section1.customerInfo.name }}</p>
+              <p class="text-theme-title">{{ section1.customerInfo.topic.customer_name}}:</p>
+              <p class="text-theme-content">{{ section1.customerInfo.name }}</p>
             </div>
-            {{#ifCond ../section1.customerInfo.company.visible '&&' ../section1.customerInfo.company.name}}
+            {{#ifCond section1.customerInfo.company.visible '&&' section1.customerInfo.company.name}}
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t ../section1.customerInfo.topic.company_name}}:</p>
-              <p class="text-theme-content">{{ ../section1.customerInfo.company.name }}</p>
+              <p class="text-theme-title">{{ section1.customerInfo.topic.company_name}}:</p>
+              <p class="text-theme-content">{{ section1.customerInfo.company.name }}</p>
             </div>
             {{/ifCond}}
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_number}}:</p>
-              <a class="text-theme-content" href="tel:{{ ../section1.customerInfo.phone }}" style="color: black;">{{
-                ../section1.customerInfo.phone }}</a>
+              <p class="text-theme-title">{{ section1.customerInfo.topic.contact_number}}:</p>
+              <a class="text-theme-content" href="tel:{{ section1.customerInfo.phone }}" style="color: black;">{{
+                section1.customerInfo.phone }}</a>
             </div>
             <div style="margin-bottom: 5px;">
-              <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_email}}:</p>
-              <a class="text-theme-content" href="mailto:{{ ../section1.customerInfo.email }}" style="color: black;">{{
-                ../section1.customerInfo.email }}</a>
+              <p class="text-theme-title">{{ section1.customerInfo.topic.contact_email}}:</p>
+              <a class="text-theme-content" href="mailto:{{ section1.customerInfo.email }}" style="color: black;">{{
+                section1.customerInfo.email }}</a>
             </div>
           </div>
           {{/if}}
@@ -563,9 +563,9 @@
         {{#ifCond section1.book_appointment.link '&&' section1.book_appointment.description}}
         <div class="book-appointment">
           <a href={{ section1.book_appointment.link }} target="_blank" rel="noreferrer">
-            <button>{{t section1.book_appointment.title}}</button>
+            <button>{{ section1.book_appointment.title}}</button>
           </a>
-          <p class="text-theme-title">{{t section1.book_appointment.description }}</p>
+          <p class="text-theme-title">{{ section1.book_appointment.description }}</p>
         </div>
         {{/ifCond}}
       </div>
@@ -586,8 +586,8 @@
                     <img src={{ section2.losing_power.img}} style="width: 70px; margin: auto;" />
                   </td>
                   <td style="text-align: center;">
-                    <p class="text-theme-title" style="white-space: nowrap;">{{t section2.losing_power.title}}</p>
-                    <p class="text-content">{{t section2.losing_power.content}}</p>
+                    <p class="text-theme-title" style="white-space: nowrap;">{{ section2.losing_power.title}}</p>
+                    <p class="text-content">{{ section2.losing_power.content}}</p>
                   </td>
                 </tr>
               </table>
@@ -600,8 +600,8 @@
                     <img src={{ section2.trade_program.img}} style="width: 70px;" />
                   </td>
                   <td style="text-align: center;">
-                    <p class="text-theme-title" style="white-space: nowrap;">{{t section2.trade_program.title}}</p>
-                    <p class="text-content">{{t section2.trade_program.content}}</p>
+                    <p class="text-theme-title" style="white-space: nowrap;">{{ section2.trade_program.title}}</p>
+                    <p class="text-content">{{ section2.trade_program.content}}</p>
                   </td>
                 </tr>
               </table>
@@ -618,8 +618,8 @@
                 <img src={{ section2.losing_power.img}} style="width: 80px;" />
               </td>
               <td style="text-align: center;">
-                <p class="text-subtitle">{{t section2.losing_power.title}}</p>
-                <p class="text-theme-content">{{t section2.losing_power.content}}</p>
+                <p class="text-subtitle">{{ section2.losing_power.title}}</p>
+                <p class="text-theme-content">{{ section2.losing_power.content}}</p>
               </td>
             </tr>
           </table>
@@ -631,8 +631,8 @@
                 <img src={{ section2.trade_program.img}} style="width: 80px;" />
               </td>
               <td style="text-align: center;">
-                <p class="text-subtitle">{{t section2.trade_program.title}}</p>
-                <p class="text-theme-content">{{t section2.trade_program.content}}</p>
+                <p class="text-subtitle">{{ section2.trade_program.title}}</p>
+                <p class="text-theme-content">{{ section2.trade_program.content}}</p>
               </td>
             </tr>
           </table>
@@ -647,15 +647,15 @@
       {{#if section3.visible}}
       <div class="section-3">
         <p class="text-title">
-          {{t section3.title }}
+          {{ section3.title }}
         </p>
         <p class="text-theme-content">
-          {{t section3.content }}
+          {{ section3.content }}
         </p>
         {{#if section3.privacy.link}}
         <a class="text-theme-content" href={{ section3.privacy.link }} target="_blank" rel="noreferrer"
           style="text-decoration: underline; color: black">
-          {{t section3.privacy.text }}
+          {{ section3.privacy.text }}
         </a>
         {{/if}}
       </div>
@@ -670,19 +670,19 @@
         <table>
           <tr>
             <td class="bounce">
-              <p class="text-theme-title" style="color: white;">{{t section4.bounce.title }}</p>
-              <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_1 }}</p>
-              <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_2 }}</p>
+              <p class="text-theme-title" style="color: white;">{{ section4.bounce.title }}</p>
+              <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_1 }}</p>
+              <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_2 }}</p>
               <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
             </td>
             <td style="width: 1%"></td>
             <td class="mobile-groups">
-              <p class="text-theme-title" style="color: white;">{{t section4.certified.title }}</p>
+              <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
               <img src={{ section4.certified.img }} style="width: 60%;" />
-              <p class="text-theme-content" style="color: white;">{{t section4.certified.content }}</p>
+              <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
               {{#if section4.certified.shop_now.link}}
               <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
-                <button>{{t section4.certified.shop_now.title }}</button>
+                <button>{{ section4.certified.shop_now.title }}</button>
               </a>
               {{/if}}
             </td>
@@ -692,18 +692,18 @@
 
       <div class="section-4-mobile">
         <div class="bounce">
-          <p class="text-theme-title" style="color: white;">{{t section4.bounce.title }}</p>
-          <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_1 }}</p>
-          <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_2 }}</p>
+          <p class="text-theme-title" style="color: white;">{{ section4.bounce.title }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_1 }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.bounce.content_2 }}</p>
           <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
         </div>
         <div class="mobile-groups">
-          <p class="text-theme-title" style="color: white;">{{t section4.certified.title }}</p>
+          <p class="text-theme-title" style="color: white;">{{ section4.certified.title }}</p>
           <img src={{ section4.certified.img }} style="width: 60%;" />
-          <p class="text-theme-content" style="color: white;">{{t section4.certified.content }}</p>
+          <p class="text-theme-content" style="color: white;">{{ section4.certified.content }}</p>
           {{#if section4.certified.shop_now.link}}
           <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
-            <button>{{t section4.certified.shop_now.title }}</button>
+            <button>{{ section4.certified.shop_now.title }}</button>
           </a>
           {{/if}}
         </div>
@@ -716,7 +716,7 @@
 
       {{#if section5.visible}}
       <div class="section-5">
-        <p class="text-theme-title">{{t section5.title }}</p>
+        <p class="text-theme-title">{{ section5.title }}</p>
         <table style="width: 180px; margin: 0 auto 20px;">
           <tr>
             {{#if section5.socials.instagram}}
@@ -758,10 +758,10 @@
           </tr>
         </table>
         <p class="mid-text">
-          {{t section5.content_1 }}
+          {{ section5.content_1 }}
         </p>
         <p class="mid-text" style="margin-top: 15px;">
-          {{t section5.content_2 }}
+          {{ section5.content_2 }}
         </p>
       </div>
       {{/if}}
@@ -782,7 +782,7 @@
             {{#if footer.privacy_policy.link}}
             <a href={{ footer.privacy_policy.link }} target="_blank" rel="noreferrer" class="mid-text"
               style="text-decoration: underline;">
-              {{t footer.privacy_policy.name }}
+              {{ footer.privacy_policy.name }}
             </a>
             {{/if}}
           </td>
