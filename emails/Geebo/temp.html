@@ -42,8 +42,6 @@
       .main-div {
         width: 100%;
         max-width: 700px;
-        box-shadow: -10px -10px 30px rgba(174, 174, 192, 0.4),
-          -10px -10px 30px #ffffff, 10px 10px 30px rgba(174, 174, 192, 0.4);
         margin: auto;
         background-color: #ffffff;
       }
@@ -111,20 +109,15 @@
         text-align: center;
       }
       .box {
-        background: linear-gradient(#fff, #fff) padding-box,
-          linear-gradient(to right, #dceed4, #6eb24f) border-box;
         color: #313149;
         padding: 15px;
-        border: 2px solid transparent;
+        border: 2px solid #6eb24f;
         border-radius: 5px;
-        display: inline-block;
-        height: -webkit-fill-available;
       }
       .liner {
         margin: 5px auto;
-        background: linear-gradient(to right, #dceed4, #6eb24f) border-box;
+        background: #6eb24f;
         color: #313149;
-        display: inline-block;
         height: 2px;
         width: 100%;
         border: none;
@@ -139,18 +132,11 @@
       }
       .sec1-info-card-desktop {
         margin-top: 10px;
-        position: relative;
-        height: 265px;
       }
       .nearest-location {
-        text-align: left;
+        text-align: center;
         width: 50%;
         height: 100%;
-      }
-      .nearest-location > div {
-        margin-right: auto;
-        width: calc(100% - 38px);
-        text-align: center;
       }
       .buttons {
         margin-top: 10px;
@@ -174,14 +160,9 @@
         max-width: 200px;
       }
       .customer-information {
-        text-align: right;
+        text-align: center;
         width: 50%;
         height: 100%;
-      }
-      .customer-information > div {
-        margin-left: auto;
-        width: calc(100% - 38px);
-        text-align: center;
       }
       .book-appointment {
         text-align: center;
@@ -205,27 +186,17 @@
       }
       .section-2-desktop {
         padding: 20px 0;
-        position: relative;
       }
       .open-late,
       .battery-money {
         width: 50%;
       }
-      .section-2-desktop td > div {
-        width: calc(100% - 20px);
-      }
-      .card-shadow {
-        position: relative;
-        padding: 1px 2px 2px 1px;
-        background: linear-gradient(to right bottom, white, rgb(241, 238, 238))
-          border-box;
-        border-radius: 5px;
-        margin: 10px 0;
-      }
       .card {
         background: #ffffff;
+        border: 2px solid #6eb24f;
         border-radius: 5px;
         padding: 15px;
+        margin: 5px 0;
       }
       .section-3 {
         padding: 20px 0;
@@ -233,34 +204,21 @@
       }
       .section-4-desktop {
         padding: 20px 0;
-        position: relative;
       }
       .bounce {
-        width: calc(100% - 38px);
-        margin-right: auto;
         background: #4ccaf3;
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         padding: 25px 15px 0 15px;
         text-align: center;
-        height: 270px;
-        position: relative;
-      }
-      .bounce img {
-        position: absolute;
-        bottom: 0;
-        left: 20%;
+        width: 50%;
       }
       .mobile-groups {
-        width: calc(100% - 38px);
-        margin-left: auto;
         background: #3d6829;
         padding: 15px;
         text-align: center;
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         color: white;
-        height: 265px;
+        width: 50%;
       }
       .mobile-groups img {
         min-width: 150px;
@@ -268,7 +226,6 @@
       .mobile-groups button {
         font-size: 12px;
         background: #6eb24f;
-        box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
         height: 30px;
         width: 170px;
@@ -303,7 +260,6 @@
       }
       .footer {
         background-color: #585758;
-        height: 35px;
         padding: 20px 20px 15px;
       }
       .footer a {
@@ -376,7 +332,6 @@
           display: block;
         }
         .sec1-info-card-mobile .box {
-          width: calc(100% - 36px);
           margin-top: 10px;
         }
         .book-appointment button {
@@ -391,13 +346,9 @@
         }
         .bounce,
         .mobile-groups {
-          width: calc(100% - 30px);
           margin: 20px auto 0;
           height: auto;
-        }
-        .bounce img {
-          position: inherit;
-          left: 0;
+          width: inherit;
         }
       }
       @media (max-width: 375px) {
@@ -534,89 +485,86 @@
           </div>
           <table class="sec1-info-card-desktop">
             <tr>
-              <td class="nearest-location">
-                <div class="box">
-                  <p class="text-subtitle">Nearest Location</p>
-                  <hr class="liner" />
-                  <p class="text-theme-title">Mobile Tech Lab Corydon</p>
-                  <p class="text-theme-content">Unit F - 2020 Corydon Avenue</p>
-                  <p class="text-theme-content">Winnipeg, MB R3P 0N2</p>
+              <td class="nearest-location box">
+                <p class="text-subtitle">Nearest Location</p>
+                <hr class="liner" />
+                <p class="text-theme-title">Mobile Tech Lab Corydon</p>
+                <p class="text-theme-content">Unit F - 2020 Corydon Avenue</p>
+                <p class="text-theme-content">Winnipeg, MB R3P 0N2</p>
+                <a
+                  class="text-theme-content"
+                  href="tel:2048089416"
+                  style="color: black"
+                  >(204) 808-9416</a
+                >
+                <table class="buttons">
+                  <tr>
+                    <td style="text-align: left">
+                      <a
+                        href="https://geebodevicerepair.ca/get-quote"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button>Email Us</button>
+                      </a>
+                    </td>
+                    <td style="text-align: right">
+                      <a
+                        href="https://geebodevicerepair.ca/get-quote"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button>Call Us</button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left">
+                      <a
+                        href="https://geebodevicerepair.ca/get-quote"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button>Text Us</button>
+                      </a>
+                    </td>
+                    <td style="text-align: right">
+                      <a
+                        href="https://geebodevicerepair.ca/get-quote"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <button>Get Directions</button>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td style="width: 1%"></td>
+              <td class="customer-information box">
+                <p class="text-subtitle">Customer Information</p>
+                <hr class="liner" />
+                <div style="margin-bottom: 5px">
+                  <p class="text-theme-title">Customer Name:</p>
+                  <p class="text-theme-content">Tim Green</p>
+                </div>
+                <div style="margin-bottom: 5px">
+                  <p class="text-theme-title">Contact Number:</p>
                   <a
                     class="text-theme-content"
-                    href="tel:2048089416"
+                    href="tel:2049951430"
                     style="color: black"
-                    >(204) 808-9416</a
+                    >(204) 995 - 1430</a
                   >
-                  <table class="buttons">
-                    <tr>
-                      <td style="text-align: left">
-                        <a
-                          href="https://geebodevicerepair.ca/get-quote"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <button>Email Us</button>
-                        </a>
-                      </td>
-                      <td style="text-align: right">
-                        <a
-                          href="https://geebodevicerepair.ca/get-quote"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <button>Call Us</button>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td style="text-align: left">
-                        <a
-                          href="https://geebodevicerepair.ca/get-quote"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <button>Text Us</button>
-                        </a>
-                      </td>
-                      <td style="text-align: right">
-                        <a
-                          href="https://geebodevicerepair.ca/get-quote"
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <button>Get Directions</button>
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
                 </div>
-              </td>
-              <td class="customer-information">
-                <div class="box">
-                  <p class="text-subtitle">Customer Information</p>
-                  <hr class="liner" />
-                  <div style="margin-bottom: 10px">
-                    <p class="text-theme-title">Customer Name:</p>
-                    <p class="text-theme-content">Tim Green</p>
-                  </div>
-                  <div style="margin-bottom: 10px">
-                    <p class="text-theme-title">Contact Number:</p>
-                    <a
-                      class="text-theme-content"
-                      href="tel:2049951430"
-                      style="color: black"
-                      >(204) 995 - 1430</a
-                    >
-                  </div>
-                  <div style="margin-bottom: 10px">
-                    <p class="text-theme-title">Contact Email:</p>
-                    <a
-                      class="text-theme-content"
-                      href="mailto:tim@green.ca"
-                      style="color: black"
-                      >tim@green.ca</a
-                    >
-                  </div>
+                <div style="margin-bottom: 5px">
+                  <p class="text-theme-title">Contact Email:</p>
+                  <a
+                    class="text-theme-content"
+                    href="mailto:tim@green.ca"
+                    style="color: black"
+                    >tim@green.ca</a
+                  >
                 </div>
               </td>
             </tr>
@@ -668,11 +616,11 @@
             <div class="box">
               <p class="text-subtitle">Customer Information</p>
               <hr class="liner" />
-              <div style="margin-bottom: 10px">
+              <div style="margin-bottom: 5px">
                 <p class="text-theme-title">Customer Name:</p>
                 <p class="text-theme-content">Tim Green</p>
               </div>
-              <div style="margin-bottom: 10px">
+              <div style="margin-bottom: 5px">
                 <p class="text-theme-title">Contact Number:</p>
                 <a
                   class="text-theme-content"
@@ -681,7 +629,7 @@
                   >(204) 995 - 1430</a
                 >
               </div>
-              <div style="margin-bottom: 10px">
+              <div style="margin-bottom: 5px">
                 <p class="text-theme-title">Contact Email:</p>
                 <a
                   class="text-theme-content"
@@ -709,104 +657,87 @@
         <div class="section-2-desktop">
           <table>
             <tr>
-              <td class="open-late" style="text-align: left">
-                <div class="card-shadow">
-                  <div class="card" style="padding: 15px 10px 15px 0">
-                    <table>
-                      <tr>
-                        <td>
-                          <img
-                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/battery.png"
-                            style="width: 70px; margin: auto"
-                          />
-                        </td>
-                        <td style="text-align: center">
-                          <p
-                            class="text-theme-title"
-                            style="white-space: nowrap"
-                          >
-                            LOSING POWER?
-                          </p>
-                          <p class="text-content">
-                            We offer free battery evaluations
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
+              <td class="open-late card">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/battery.png"
+                        style="width: 70px; margin: auto"
+                      />
+                    </td>
+                    <td style="text-align: center">
+                      <p class="text-theme-title" style="white-space: nowrap">
+                        LOSING POWER?
+                      </p>
+                      <p class="text-content">
+                        We offer free battery evaluations
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
-              <td class="battery-money" style="text-align: right">
-                <div class="card-shadow">
-                  <div class="card" style="padding: 15px 10px 15px 0">
-                    <table>
-                      <tr>
-                        <td>
-                          <img
-                            src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/money.png"
-                            style="width: 70px"
-                          />
-                        </td>
-                        <td style="text-align: center">
-                          <p
-                            class="text-theme-title"
-                            style="white-space: nowrap"
-                          >
-                            TRADE IN PROGRAM
-                          </p>
-                          <p class="text-content">
-                            Trade in Old Devices for Cash or Credit
-                          </p>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
+              <td style="width: 1%"></td>
+              <td class="battery-money card">
+                <table>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/money.png"
+                        style="width: 70px"
+                      />
+                    </td>
+                    <td style="text-align: center">
+                      <p class="text-theme-title" style="white-space: nowrap">
+                        TRADE IN PROGRAM
+                      </p>
+                      <p class="text-content">
+                        Trade in Old Devices for Cash or Credit
+                      </p>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
         </div>
 
         <div class="section-2-mobile">
-          <div class="card-shadow">
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/battery.png"
-                      style="width: 80px"
-                    />
-                  </td>
-                  <td style="text-align: center">
-                    <p class="text-subtitle">LOSING POWER?</p>
-                    <p class="text-theme-content">
-                      We offer free battery evaluations
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/battery.png"
+                    style="width: 80px"
+                  />
+                </td>
+                <td style="text-align: center">
+                  <p class="text-subtitle">LOSING POWER?</p>
+                  <p class="text-theme-content">
+                    We offer free battery evaluations
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="card-shadow">
-            <div class="card">
-              <table>
-                <tr>
-                  <td>
-                    <img
-                      src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/money.png"
-                      style="width: 80px"
-                    />
-                  </td>
-                  <td style="text-align: center">
-                    <p class="text-subtitle">TRADE IN PROGRAM</p>
-                    <p class="text-theme-content">
-                      Trade in Old Devices for Cash or Credit
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </div>
+          <div class="card">
+            <table>
+              <tr>
+                <td>
+                  <img
+                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/3/money.png"
+                    style="width: 80px"
+                  />
+                </td>
+                <td style="text-align: center">
+                  <p class="text-subtitle">TRADE IN PROGRAM</p>
+                  <p class="text-theme-content">
+                    Trade in Old Devices for Cash or Credit
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
 
@@ -839,40 +770,37 @@
         <div class="section-4-desktop">
           <table>
             <tr>
-              <td style="width: 50%; text-align: left">
-                <div class="bounce">
-                  <p class="text-theme-title" style="color: white">
-                    Get Bounce Screen Insurance
-                  </p>
-                  <p class="text-theme-content" style="color: white">
-                    Starting At $39/yr
-                  </p>
-                  <p class="text-theme-content" style="color: white">
-                    Zero Deductible
-                  </p>
-                  <img
-                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
-                    style="width: 60%; margin-top: 10px"
-                  />
-                </div>
+              <td class="bounce">
+                <p class="text-theme-title" style="color: white">
+                  Get Bounce Screen Insurance
+                </p>
+                <p class="text-theme-content" style="color: white">
+                  Starting At $39/yr
+                </p>
+                <p class="text-theme-content" style="color: white">
+                  Zero Deductible
+                </p>
+                <img
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/bounce.png"
+                  style="width: 60%; margin-top: 10px"
+                />
               </td>
-              <td style="width: 50%; text-align: left">
-                <div class="mobile-groups">
-                  <p class="text-theme-title" style="color: white">
-                    Certified Pre-Owned Devices Starting from $79
-                  </p>
-                  <img
-                    src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
-                    style="width: 60%"
-                  />
-                  <p class="text-theme-content" style="color: white">
-                    1 year warranty and free shipping. Shop online, pick up in
-                    store
-                  </p>
-                  <a href="" target="_blank" rel="noreffer">
-                    <button>Shop Now</button>
-                  </a>
-                </div>
+              <td style="width: 1%"></td>
+              <td class="mobile-groups">
+                <p class="text-theme-title" style="color: white">
+                  Certified Pre-Owned Devices Starting from $79
+                </p>
+                <img
+                  src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png"
+                  style="width: 60%"
+                />
+                <p class="text-theme-content" style="color: white">
+                  1 year warranty and free shipping. Shop online, pick up in
+                  store
+                </p>
+                <a href="" target="_blank" rel="noreffer">
+                  <button>Shop Now</button>
+                </a>
               </td>
             </tr>
           </table>
