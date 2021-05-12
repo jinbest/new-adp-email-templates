@@ -154,12 +154,24 @@
   },
   "section5": {
     "title": "Find us on",
-    "socials": {
-      "instagram": "https://www.instagram.com/",
-      "twitter": "https://twitter.com/",
-      "linkedin": "https://www.linkedin.com/",
-      "facebook": "https://www.facebook.com/"
-    },
+    "socials": [
+      {
+        "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.png",
+        "link": "https://www.instagram.com/"
+      },
+      {
+        "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.png",
+        "link": "https://twitter.com/"
+      },
+      {
+        "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.png",
+        "link": "https://www.linkedin.com/"
+      },
+      {
+        "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.png",
+        "link": "https://www.facebook.com/"
+      }
+    ],
     "content_1": "Turnaround times and costs vary based upon the nature of the service, parts availability, your warranty status, and other factors. Once your device is in the shop, we will diagnose your problem and contact you as soon as we can to provide any details and specific time and cost estimate. Diagnostic and/or repair fees may apply if work to be performed is not covered under warranty. Offer expires one week after Free Estimate Request submitted.",
     "content_2": "© 2021 NorthTech Lab Inc. All Rights Reserved. All product and company names are trademarks of their respective holders. iPhone, iPad, iPod, iPod touch, Mac and iMac are registered trademarks and property of Apple, Inc. NorthTech Lab Inc. does not own or make claim to those trademarks used on this website in which it is not the holder. NorthTech Lab is a third-party repair company and is not affiliated with Apple.",
     "visible": true

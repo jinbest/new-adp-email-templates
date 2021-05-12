@@ -801,42 +801,17 @@
         <p class="text-theme-title">{{t section5.title }}</p>
         <table style="width: 180px; margin: 0 auto 20px;">
           <tr>
-            {{#if section5.socials.instagram}}
-            <td>
-              <a href={{ section5.socials.instagram }} target="_blank" rel="noreferrer">
-                <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/instagram.png" />
-                </div>
-              </a>
-            </td>
-            {{/if}}
-            {{#if section5.socials.twitter}}
-            <td>
-              <a href={{ section5.socials.twitter }} target="_blank" rel="noreferrer">
-                <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/twitter.png" />
-                </div>
-              </a>
-            </td>
-            {{/if}}
-            {{#if section5.socials.linkedin}}
-            <td>
-              <a href={{ section5.socials.linkedin }} target="_blank" rel="noreferrer">
-                <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/linkedin.png" />
-                </div>
-              </a>
-            </td>
-            {{/if}}
-            {{#if section5.socials.facebook}}
-            <td>
-              <a href={{ section5.socials.facebook }} target="_blank" rel="noreferrer">
-                <div class="fa-icon-button">
-                  <img src="https://storage.googleapis.com/adp_prod_images/assets/emails/common/facebook.png" />
-                </div>
-              </a>
-            </td>
-            {{/if}}
+            {{#each section5.socials}}
+              {{#if this.link}}
+              <td>
+                <a href={{ this.link }} target="_blank" rel="noreferrer">
+                  <div class="fa-icon-button">
+                    <img src={{this.img}} />
+                  </div>
+                </a>
+              </td>
+              {{/if}}
+            {{/each}}
           </tr>
         </table>
         <p class="mid-text">
