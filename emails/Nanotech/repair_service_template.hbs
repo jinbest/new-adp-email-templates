@@ -240,12 +240,21 @@
     .section-5 a {
       color: black;
     }
+    .section-5 table {
+      width: fit-content;
+      margin: 0 auto 20px;
+    }
+
+    .section-5 table td {
+      width: 45px;
+    }
     .fa-icon-button {
       cursor: pointer;
       width: 40px;
       height: 40px;
       text-align: center;
       border-radius: 20px;
+      margin: auto;
     }
     .fa-icon-button img {
       height: 100%;
@@ -724,16 +733,16 @@
       {{#if section5.visible}}
       <div class="section-5">
         <p class="text-theme-title">{{t section5.title }}</p>
-        <table style="width: 180px; margin: 0 auto 20px;">
+        <table>
           <tr>
             {{#each section5.socials}}
               {{#if this.link}}
               <td>
-                <a href={{ this.link }} target="_blank" rel="noreferrer">
-                  <div class="fa-icon-button">
+                <div class="fa-icon-button">
+                  <a href={{ this.link }} target="_blank" rel="noreferrer">
                     <img src={{this.img}} />
-                  </div>
-                </a>
+                  </a>
+                </div>
               </td>
               {{/if}}
             {{/each}}

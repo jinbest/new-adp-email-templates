@@ -89,11 +89,11 @@ function sendEmail(folderName, data) {
     .catch(console.error);
 }
 
-// const bananaData = require("./emails/Banana/repair_service_config.json");
+const bananaData = require("./emails/Banana/repair_service_config.json");
 // const blackappleData = require("./emails/BlackApple/repair_service_config.json");
 // const geeboData = require("./emails/Geebo/repair_service_config.json");
 // const mobileTechData = require("./emails/MobileTech/repair_service_config.json");
-const nanoTechData = require("./emails/Nanotech/repair_service_config.json");
+// const nanoTechData = require("./emails/Nanotech/repair_service_config.json");
 // const northTechData = require("./emails/Northtech/repair_service_config.json");
 // const phonephixData = require("./emails/Phonephix/repair_service_config.json");
 // const reparaData = require("./emails/Reparation/repair_service_config.json");
@@ -102,11 +102,11 @@ const nanoTechData = require("./emails/Nanotech/repair_service_config.json");
 // const dccmtxData = require("./emails/Dccmtx/repair_service_config.json");
 
 app.get("/send-email", function (req, res) {
-  // sendEmail("Banana", bananaData);
+  sendEmail("Banana", bananaData);
   // sendEmail("BlackApple", blackappleData);
   // sendEmail("Geebo", geeboData);
   // sendEmail("MobileTech", mobileTechData);
-  sendEmail("Nanotech", nanoTechData);
+  // sendEmail("Nanotech", nanoTechData);
   // sendEmail("Northtech", northTechData);
   // sendEmail("Phonephix", phonephixData);
   // sendEmail("Reparation", reparaData);
