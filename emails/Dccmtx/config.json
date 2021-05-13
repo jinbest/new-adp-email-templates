@@ -1,7 +1,7 @@
 {
   "domain": {
     "name": "NorthTech Lab",
-    "website": "https://northtechcellsolutions.ca/"
+    "website": ""
   },
   "header": {
     "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/5/logo-header.png",
@@ -20,71 +20,44 @@
       "visible": true,
       "data": {
         "method": [],
-        "summaries": [
-          [
-            {
-              "title": "Device",
-              "content": "iPhone XR"
-            },
-            {
-              "title": "Service",
-              "content": "Walk In Battery Replacement"
-            },
-            {
-              "title": "Duration",
-              "content": "1 Hour"
-            },
-            {
-              "title": "Warranty",
-              "content": "90 Days"
-            },
-            {
-              "title": "Quoted Cost",
-              "content": "$89.00"
-            },
-            {
-              "title": "As low as",
-              "content": "$7.00 per month at 0% APR with financing"
-            }
-          ]
-        ]
+        "summaries": []
       }
     },
     "nearestLoc": {
       "title": "Nearest Location",
-      "name": "NorthTech Lab Corydon",
-      "address_1": "Unit F - 2020 Corydon Avenue",
-      "address_2": "Winnipeg, MB R3P 0N2",
-      "phone": "(204) 808-9416",
+      "name": "",
+      "address_1": "",
+      "address_2": "",
+      "phone": "",
       "buttons": {
         "email_us": {
           "title": "Email Us",
-          "text": "tim@green.ca"
+          "text": ""
         },
         "call_us": {
           "title": "Call Us",
-          "text": "(204) 995 - 1430"
+          "text": ""
         },
         "text_us": {
           "title": "Text Us",
-          "link": "https://northtechcellsolutions.ca/get-quote"
+          "link": ""
         },
         "get_direction": {
           "title": "Get Direction",
-          "link": "https://northtechcellsolutions.ca/get-quote"
+          "link": ""
         }
       },
       "visible": true
     },
     "customerInfo": {
       "title": "Customer Information",
-      "name": "Tim Green",
+      "name": "",
       "company": {
-        "name": "Company",
+        "name": "",
         "visible": false
       },
-      "phone": "(204) 995 - 1430",
-      "email": "tim@green.ca",
+      "phone": "",
+      "email": "",
       "topic": {
         "customer_name": "Customer Name",
         "company_name": "Company Name",
@@ -95,7 +68,7 @@
     },
     "book_appointment": {
       "title": "Book Appointment",
-      "link": "https://northtechcellsolutions.ca/get-quote",
+      "link": "",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
     "visible": true,
@@ -128,7 +101,7 @@
     "content": "Our staff may ask for the passcode for your device upon intake. This is only to perform our 30-point pre-repair and post-repair inspection to ensure your device is in perfect working order. We'll test your front and rear camera, microphone, loudspeaker, sensors, and more. Access will allow us to ensure the highest quality repair and customer service. If you are uncomfortable giving us your passcode we can run our pre and post service inspection in front of you when you pickup the device.",
     "privacy": {
       "text": "See Full Privacy Policy",
-      "link": "https://northtechcellsolutions.ca/"
+      "link": ""
     },
     "visible": true,
     "linerVisible": true
@@ -139,7 +112,7 @@
       "title": "Get Bounce Screen Insurance",
       "content_1": "Starting At $39/yr",
       "content_2": "Zero Deductible",
-      "link": "https://northtechcellsolutions.ca/"
+      "link": ""
     },
     "certified": {
       "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png",
@@ -147,7 +120,7 @@
       "content": "1 year warranty and free shipping. Shop online, pick up in store",
       "shop_now": {
         "title": "Shop Now",
-        "link": "http://northtechshop.ca/"
+        "link": ""
       }
     },
     "visible": true,
@@ -181,11 +154,11 @@
     "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/5/logo-footer.png",
     "domain": {
       "name": "northtechcellsolutions.ca",
-      "link": "https://northtechcellsolutions.ca/"
+      "link": ""
     },
     "privacy_policy": {
       "name": "Privacy Policy",
-      "link": "https://northtechcellsolutions.ca/"
+      "link": ""
     }
   }
 }

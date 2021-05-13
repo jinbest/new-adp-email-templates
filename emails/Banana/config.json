@@ -1,90 +1,72 @@
 {
   "domain": {
-    "name": "Mobile Tech Lab",
-    "website": "https://mobiletechlab.ca/"
+    "name": "Banana Service",
+    "website": ""
   },
   "header": {
-    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-header.png",
-    "bgImg": "https://storage.googleapis.com/adp_prod_images/assets/emails/4/top-banner.png",
+    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/logo-header.png",
+    "bgImg": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/top-banner.png",
     "text": "Please call prior to visiting for parts availability and turnaround time."
   },
   "section1": {
     "title": "Here is the quote you requested!",
     "content": "We look forward to seeing you instore! When you visit us, our staff will check you in, inspect your device and confirm pricing and approximate turnaround time.",
     "summary": {
-      "title": "Quote Summary",
+      "title": "Appointment Summary",
       "content": {
         "bold": "We price match any repair shop.",
         "normal": "Simply reply to this email with the name of the shop and the price you were quoted."
       },
       "visible": true,
       "data": {
-        "method": [],
-        "summaries": [
-          [
-            {
-              "title": "Device",
-              "content": "iPhone XR"
-            },
-            {
-              "title": "Service",
-              "content": "Walk In Battery Replacement"
-            },
-            {
-              "title": "Duration",
-              "content": "1 Hour"
-            },
-            {
-              "title": "Warranty",
-              "content": "90 Days"
-            },
-            {
-              "title": "Quoted Cost",
-              "content": "$89.00"
-            },
-            {
-              "title": "As low as",
-              "content": "$7.00 per month at 0% APR with financing"
-            }
-          ]
-        ]
+        "method": [
+          {
+            "title": "When",
+            "content": "Tuesday, May 6, 2021  at 3:30 p.m."
+          },
+          {
+            "title": "Drop-Off Method",
+            "content": "Curbside drop-off"
+          }
+        ],
+        "summaries": []
       }
     },
     "nearestLoc": {
       "title": "Nearest Location",
-      "name": "Mobile Tech Lab Corydon",
-      "address_1": "Unit F - 2020 Corydon Avenue",
-      "address_2": "Winnipeg, MB R3P 0N2",
-      "phone": "(204) 808-9416",
+      "name": "",
+      "address_1": "",
+      "address_2": "",
+      "phone": "",
       "buttons": {
         "email_us": {
           "title": "Email Us",
-          "text": "tim@green.ca"
+          "text": ""
         },
         "call_us": {
           "title": "Call Us",
-          "text": "(204) 995 - 1430"
+          "text": ""
         },
         "text_us": {
           "title": "Text Us",
-          "link": "https://mobiletechlab.ca/get-quote"
+          "link": ""
         },
         "get_direction": {
           "title": "Get Direction",
-          "link": "https://mobiletechlab.ca/get-quote"
+          "link": ""
         }
       },
       "visible": true
     },
     "customerInfo": {
       "title": "Customer Information",
-      "name": "Tim Green",
+      "name": "",
       "company": {
-        "name": "Company",
-        "visible": true
+        "name": "",
+        "visible": false
       },
-      "phone": "(204) 995 - 1430",
-      "email": "tim@green.ca",
+      "phone": "",
+      "email": "",
       "topic": {
         "customer_name": "Customer Name",
         "company_name": "Company Name",
@@ -95,7 +77,7 @@
     },
     "book_appointment": {
       "title": "Book Appointment",
-      "link": "https://mobiletechlab.ca/get-quote",
+      "link": "",
       "description": "IT ONLY TAKES 2 MINUTES"
     },
     "visible": true,
@@ -103,20 +85,20 @@
   },
   "section2": {
     "open_late": {
-      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/4/open-layer.png",
-      "title": "OPEN LATE",
+      "img": "",
+      "title": "",
       "hours": {
-        "weekdays": "10:00 a.m. - 6:00 p.m.",
-        "weekends": "10:00 a.m. - 6:00 p.m."
+        "weekdays": "",
+        "weekends": ""
       }
     },
     "losing_power": {
-      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/4/battery.png",
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/battery.png",
       "title": "LOSING POWER?",
       "content": "We offer free battery evaluations"
     },
     "trade_program": {
-      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/4/money.png",
+      "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/money.png",
       "title": "TRADE IN PROGRAM",
       "content": "Trade in Old Devices for Cash or Credit"
     },
@@ -128,7 +110,7 @@
     "content": "Our staff may ask for the passcode for your device upon intake. This is only to perform our 30-point pre-repair and post-repair inspection to ensure your device is in perfect working order. We'll test your front and rear camera, microphone, loudspeaker, sensors, and more. Access will allow us to ensure the highest quality repair and customer service. If you are uncomfortable giving us your passcode we can run our pre and post service inspection in front of you when you pickup the device.",
     "privacy": {
       "text": "See Full Privacy Policy",
-      "link": "https://mobiletechlab.ca/privacy_policy"
+      "link": ""
     },
     "visible": true,
     "linerVisible": true
@@ -139,7 +121,7 @@
       "title": "Get Bounce Screen Insurance",
       "content_1": "Starting At $39/yr",
       "content_2": "Zero Deductible",
-      "link": "https://mobiletechlab.ca/"
+      "link": "https://getbounce.ca/collections/screen-replacement-plans?tap_a=83489-601ab8&tap_s=1304391-4730ad&tm_store=banana"
     },
     "certified": {
       "img": "https://storage.googleapis.com/adp_prod_images/assets/emails/common/group-mobiles.png",
@@ -147,7 +129,7 @@
       "content": "1 year warranty and free shipping. Shop online, pick up in store",
       "shop_now": {
         "title": "Shop Now",
-        "link": "https://shop.mobiletechlab.ca/"
+        "link": ""
       }
     },
     "visible": true,
@@ -174,18 +156,18 @@
       }
     ],
     "content_1": "Turnaround times and costs vary based upon the nature of the service, parts availability, your warranty status, and other factors. Once your device is in the shop, we will diagnose your problem and contact you as soon as we can to provide any details and specific time and cost estimate. Diagnostic and/or repair fees may apply if work to be performed is not covered under warranty. Offer expires one week after Free Estimate Request submitted.",
-    "content_2": "© 2021 Mobile Tech Lab Inc. All Rights Reserved. All product and company names are trademarks of their respective holders. iPhone, iPad, iPod, iPod touch, Mac and iMac are registered trademarks and property of Apple, Inc. Mobile Tech Lab Inc. does not own or make claim to those trademarks used on this website in which it is not the holder. Mobile Tech Lab is a third-party repair company and is not affiliated with Apple.",
+    "content_2": "© 2021 Banana Services Inc. All Rights Reserved. All product and company names are trademarks of their respective holders. iPhone, iPad, iPod, iPod touch, Mac and iMac are registered trademarks and property of Apple, Inc. Banana Services Inc. does not own or make claim to those trademarks used on this website in which it is not the holder. Banana Services is a third-party repair company and is not affiliated with Apple.",
     "visible": true
   },
   "footer": {
-    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/4/logo-footer.png",
+    "logo": "https://storage.googleapis.com/adp_prod_images/assets/emails/1/logo-footer.png",
     "domain": {
-      "name": "mobiletechlab.ca",
-      "link": "https://mobiletechlab.ca/"
+      "name": "bananaservice.ca",
+      "link": ""
     },
     "privacy_policy": {
       "name": "Privacy Policy",
-      "link": "https://mobiletechlab.ca/privacy_policy"
+      "link": ""
     }
   }
 }
