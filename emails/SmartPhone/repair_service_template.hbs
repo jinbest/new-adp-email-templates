@@ -1,0 +1,791 @@
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif !important;
+      margin: 0;
+      background: #ddd;
+      padding: 30px 0;
+    }
+    table {
+      width: 100%;
+    }
+    table tr,
+    table td,
+    th {
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      padding: 0;
+      margin: 1px 0;
+      color: #313149;
+    }
+    button:hover {
+      opacity: 0.7;
+    }
+    span {
+      color: #313149;
+    }
+    a {
+      text-decoration: none;
+      width: fit-content;
+      color: #313149;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    .main-div {
+      width: 100%;
+      max-width: 700px;
+      margin: auto;
+      background-color: #ffffff;
+    }
+    .header {
+      padding: 20px 20px 70px 20px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .logo-header {
+      height: 50px;
+      width: 40%;
+    }
+    .logo-header img {
+      height: 50px;
+    }
+    .header-mobile img {
+      height: 40px;
+    }
+    .header-text {
+      text-align: right;
+      width: 60%;
+    }
+    .header-text p {
+      color: white;
+      font-size: 16px;
+      line-height: 22px;
+      width: 300px;
+      margin-left: auto;
+      text-align: right;
+    }
+    .text-title {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .text-subtitle {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .text-theme-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .text-theme-content {
+      font-size: 16px;
+      font-weight: 200;
+    }
+    .text-content {
+      font-size: 14px;
+      font-weight: 200;
+    }
+    .mid-text {
+      font-size: 12px;
+      font-weight: 200;
+    }
+    .t-bold {
+      font-weight: bold;
+    }
+    .col-white {
+      color: white;
+    }
+    .col-black {
+      color: black;
+    }
+    .container {
+      padding: 0 30px 20px;
+    }
+    .section-1 {
+      text-align: center;
+    }
+    .box {
+      color: #313149;
+      padding: 15px;
+      border: 2px solid #312569;
+      border-radius: 5px;
+    }
+    .liner {
+      margin: 5px auto;
+      background: #312569;
+      color: #313149;
+      height: 2px;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+    .sec1-card-1 {
+      text-align: left;
+      margin-top: 20px;
+    }
+    .sec1-card-1 table {
+      margin: 10px 0;
+    }
+    .sec1-info-card-desktop {
+      margin-top: 10px;
+    }
+    .nearest-location {
+      text-align: center;
+      width: 50%;
+      height: 100%;
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons td {
+      width: 50%;
+    }
+    .buttons button {
+      height: 30px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: #312569;
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      border-radius: 15px;
+      cursor: pointer;
+      width: calc(100% - 3px);
+      margin-top: 5px;
+      max-width: 200px;
+    }
+    .customer-information {
+      text-align: center;
+      width: 50%;
+      height: 100%;
+    }
+    .book-appointment {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .book-appointment button {
+      width: 270px;
+      height: 40px;
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      border: 2px solid #312569;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      color: #312569;
+      margin-bottom: 10px;
+    }
+    .book-appointment p {
+      text-transform: uppercase;
+    }
+    .section-2-desktop {
+      padding: 20px 0;
+    }
+    .open-late,
+    .battery-money {
+      width: 50%;
+    }
+    .card {
+      background: #ffffff;
+      border: 2px solid #312569;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 5px 0;
+    }
+    .section-3 {
+      padding: 20px 0;
+      text-align: center;
+    }
+    .section-4-desktop {
+      padding: 20px 0;
+    }
+    .bounce {
+      background: #4ccaf3;
+      border-radius: 5px;
+      padding: 25px 15px 0 15px;
+      text-align: center;
+      width: 50%;
+    }
+    .mobile-groups {
+      background: #1b2445;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      width: 50%;
+    }
+    .mobile-groups img {
+      min-width: 150px;
+    }
+    .mobile-groups button {
+      font-size: 12px;
+      background: #312569;
+      border-radius: 20px;
+      height: 30px;
+      width: 170px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      margin: 5px 0;
+    }
+    .section-5 {
+      padding: 20px 0;
+      text-align: center;
+    }
+    .section-5 a {
+      color: black;
+    }
+    .section-5 table {
+      width: fit-content;
+      max-width: 180px;
+      margin: 0 auto 20px;
+    }
+
+    .section-5 table td {
+      width: 45px;
+    }
+    .fa-icon-button {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 20px;
+      margin: auto;
+    }
+    .fa-icon-button img {
+      height: 100%;
+    }
+    .fa-icon-button:hover {
+      opacity: 0.7;
+    }
+    .fa-icon-button i {
+      margin: 7px;
+    }
+    .footer {
+      background-color: #6d6e72;
+      padding: 20px 20px 15px;
+    }
+    .footer a {
+      color: white;
+      white-space: nowrap;
+    }
+    .footer td {
+      width: 33.33%;
+    }
+    .footer img {
+      height: 30px;
+    }
+    .header-mobile {
+      display: none;
+      text-align: center;
+    }
+    .header-mobile p {
+      color: white;
+    }
+    .sec1-info-card-mobile {
+      display: none;
+    }
+    .section-2-mobile,
+    .section-4-mobile {
+      display: none;
+      padding: 20px 0;
+    }
+    @media (max-width: 600px) {
+      .text-title {
+        font-size: 18px;
+      }
+      .text-subtitle {
+        font-size: 16px;
+      }
+      .text-theme-title,
+      .text-theme-content {
+        font-size: 14px;
+      }
+      .text-content {
+        font-size: 13px;
+      }
+      .mid-text {
+        font-size: 11px;
+      }
+      .section-2-desktop {
+        display: none;
+      }
+      .section-2-mobile {
+        display: block;
+      }
+    }
+    @media (max-width: 520px) {
+      .header-desktop,
+      .sec1-info-card-desktop {
+        display: none;
+      }
+      .header-mobile {
+        display: block;
+      }
+      .header {
+        padding: 25px 20px 115px 20px;
+      }
+      .section-1 {
+        margin-top: -50px;
+      }
+      .sec1-info-card-mobile {
+        display: block;
+      }
+      .sec1-info-card-mobile .box {
+        margin-top: 10px;
+      }
+      .book-appointment button {
+        width: 100%;
+      }
+      .section-4-desktop {
+        display: none;
+      }
+      .section-4-mobile {
+        display: block;
+        padding-top: 0;
+      }
+      .bounce,
+      .mobile-groups {
+        margin: 20px auto 0;
+        height: auto;
+        width: inherit;
+      }
+    }
+    @media (max-width: 375px) {
+      .footer img {
+        height: 20px;
+      }
+      .container {
+        padding: 0 15px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-div" id="email-template">
+
+    <div class="header" style="background-image: url('{{ header.bgImg }}');">
+      <table class="header-desktop">
+        <tr>
+          <td class="logo-header">
+            <a href={{ domain.website }} target="_blank" rel="noreffer" style="opacity: 1;">
+              <img src={{ header.logo }}>
+            </a>
+          </td>
+          <td class="header-text">
+            <p class="text-theme-content">{{t header.text }}</p>
+          </td>
+        </tr>
+      </table>
+      <div class="header-mobile">
+        <a href={{ domain.website }} target="_blank" rel="noreffer" style="opacity: 1;">
+          <img src={{ header.logo }} style="margin-bottom: 10px;">
+        </a>
+        <p class="text-theme-content">{{t header.text }}</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      {{#if section1.visible}}
+      <div class="section-1">
+        <p class="text-title">
+          {{t section1.title }}
+        </p>
+        <p class="text-content">
+          {{t section1.content }}
+        </p>
+
+        {{#if section1.summary.visible}}
+        <div class="box sec1-card-1">
+          <p class="text-subtitle" style="margin-bottom: 10px;">{{t section1.summary.title }}</p>
+          <hr class="liner" />
+
+          {{#if section1.summary.data.method.length}}
+          <table>
+            {{#each section1.summary.data.method}}
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">{{t this.title }}:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{t this.content }}</p>
+              </td>
+            </tr>
+            {{/each}}
+          </table>
+          {{/if}}
+
+          {{#each section1.summary.data.summaries}}
+          <table>
+            {{#each this}}
+            <tr>
+              <td style="width: 150px;">
+                <p class="text-theme-title">{{t this.title}}:</p>
+              </td>
+              <td>
+                <p class="text-theme-content">{{t this.content }}</p>
+              </td>
+            </tr>
+            {{/each}}
+          </table>
+          {{/each}}
+
+          <span class="text-content t-bold">{{t section1.summary.content.bold }}</span>
+          <span class="text-content">{{t section1.summary.content.normal }}</span>
+
+        </div>
+        {{/if}}
+
+        {{#ifCond section1.nearestLoc.visible '||' section1.customerInfo.visible}}
+        <table class="sec1-info-card-desktop" {{#if ../section1.customerInfo.company.visible}}style="height:290px" {{/if}}>
+          <tr>
+            {{#if ../section1.nearestLoc.visible}}
+            <td class="nearest-location box">
+              <p class="text-subtitle">{{t ../section1.nearestLoc.title}}</p>
+              <hr class="liner" />
+              <p class="text-theme-title">{{ ../section1.nearestLoc.name }}</p>
+              <p class="text-theme-content">{{ ../section1.nearestLoc.address_1 }}</p>
+              <p class="text-theme-content">{{ ../section1.nearestLoc.address_2 }}</p>
+              <a class="text-theme-content" href="tel:{{ ../section1.nearestLoc.phone }}" style="color: black;">{{
+                ../section1.nearestLoc.phone }}</a>
+              <table class="buttons">
+                <tr>
+                  <td style="text-align: left;">
+                    <a href="mailto:{{ ../section1.nearestLoc.buttons.email_us.text }}">
+                      <button>{{t ../section1.nearestLoc.buttons.email_us.title}}</button>
+                    </a>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href="tel:{{ ../section1.nearestLoc.buttons.call_us.text }}">
+                      <button>{{t ../section1.nearestLoc.buttons.call_us.title}}</button>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="text-align: left;">
+                    <a href="sms:{{ ../section1.nearestLoc.buttons.text_us.link }}">
+                      <button>{{t ../section1.nearestLoc.buttons.text_us.title}}</button>
+                    </a>
+                  </td>
+                  <td style="text-align: right;">
+                    <a href={{ ../section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
+                      <button>{{t ../section1.nearestLoc.buttons.get_direction.title}}</button>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            {{/if}}
+            {{#ifCond ../section1.nearestLoc.visible '&&' ../section1.customerInfo.visible}}
+            <td style="width: 1%"></td>
+            {{/ifCond}}
+            {{#if ../section1.customerInfo.visible}}
+            <td class="customer-information box">
+              <p class="text-subtitle">{{t ../section1.customerInfo.title}}</p>
+              <hr class="liner" />
+              <div style="margin-bottom: 5px;">
+                <p class="text-theme-title">{{t ../section1.customerInfo.topic.customer_name}}:</p>
+                <p class="text-theme-content">{{ ../section1.customerInfo.name }}</p>
+              </div>
+              {{#ifCond ../section1.customerInfo.company.visible '&&' ../section1.customerInfo.company.name}}
+              <div style="margin-bottom: 5px;">
+                <p class="text-theme-title">{{t ../section1.customerInfo.topic.company_name}}:</p>
+                <p class="text-theme-content">{{ ../section1.customerInfo.company.name }}</p>
+              </div>
+              {{/ifCond}}
+              <div style="margin-bottom: 5px;">
+                <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_number}}:</p>
+                <a class="text-theme-content" href="tel:{{ ../section1.customerInfo.phone }}" style="color: black;">{{
+                  ../section1.customerInfo.phone }}</a>
+              </div>
+              <div style="margin-bottom: 5px;">
+                <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_email}}:</p>
+                <a class="text-theme-content" href="mailto:{{ ../section1.customerInfo.email }}" style="color: black;">{{
+                  ../section1.customerInfo.email }}</a>
+              </div>
+            </td>
+            {{/if}}
+          </tr>
+        </table>
+        <div class="sec1-info-card-mobile">
+          {{#if ../section1.nearestLoc.visible}}
+          <div class="box">
+            <p class="text-subtitle">{{t ../section1.nearestLoc.title}}</p>
+            <hr class="liner" />
+            <p class="text-theme-title">{{ ../section1.nearestLoc.name }}</p>
+            <p class="text-theme-content">{{ ../section1.nearestLoc.address_1 }}</p>
+            <p class="text-theme-content">{{ ../section1.nearestLoc.address_2 }}</p>
+            <a class="text-theme-content" href="tel:{{ ../section1.nearestLoc.phone }}" style="color: black;">{{
+              ../section1.nearestLoc.phone }}</a>
+            <div class="buttons">
+              <a href="mailto:{{ ../section1.nearestLoc.buttons.email_us.text }}">
+                <button>{{t ../section1.nearestLoc.buttons.email_us.title}}</button>
+              </a>
+              <a href="tel:{{ ../section1.nearestLoc.buttons.call_us.text }}">
+                <button>{{t ../section1.nearestLoc.buttons.call_us.title}}</button>
+              </a>
+              <a href="sms:{{ ../section1.nearestLoc.buttons.text_us.link }}">
+                <button>{{t ../section1.nearestLoc.buttons.text_us.title}}</button>
+              </a>
+              <a href={{ ../section1.nearestLoc.buttons.get_direction.link }} target="_blank" rel="noreferrer">
+                <button>{{t ../section1.nearestLoc.buttons.get_direction.title}}</button>
+              </a>
+            </div>
+          </div>
+          {{/if}}
+          {{#if ../section1.customerInfo.visible}}
+          <div class="box">
+            <p class="text-subtitle">{{t ../section1.customerInfo.title}}</p>
+            <hr class="liner" />
+            <div style="margin-bottom: 5px;">
+              <p class="text-theme-title">{{t ../section1.customerInfo.topic.customer_name}}:</p>
+              <p class="text-theme-content">{{ ../section1.customerInfo.name }}</p>
+            </div>
+            {{#ifCond ../section1.customerInfo.company.visible '&&' ../section1.customerInfo.company.name}}
+            <div style="margin-bottom: 5px;">
+              <p class="text-theme-title">{{t ../section1.customerInfo.topic.company_name}}:</p>
+              <p class="text-theme-content">{{ ../section1.customerInfo.company.name }}</p>
+            </div>
+            {{/ifCond}}
+            <div style="margin-bottom: 5px;">
+              <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_number}}:</p>
+              <a class="text-theme-content" href="tel:{{ ../section1.customerInfo.phone }}" style="color: black;">{{
+                ../section1.customerInfo.phone }}</a>
+            </div>
+            <div style="margin-bottom: 5px;">
+              <p class="text-theme-title">{{t ../section1.customerInfo.topic.contact_email}}:</p>
+              <a class="text-theme-content" href="mailto:{{ ../section1.customerInfo.email }}" style="color: black;">{{
+                ../section1.customerInfo.email }}</a>
+            </div>
+          </div>
+          {{/if}}
+        </div>
+        {{/ifCond}}
+
+        {{#ifCond section1.book_appointment.link '&&' section1.book_appointment.description}}
+        <div class="book-appointment">
+          <a href={{ ../section1.book_appointment.link }} target="_blank" rel="noreferrer">
+            <button>{{t ../section1.book_appointment.title}}</button>
+          </a>
+          <p class="text-theme-title">{{t ../section1.book_appointment.description }}</p>
+        </div>
+        {{/ifCond}}
+      </div>
+
+      {{#if section1.linerVisible}}
+      <hr class="liner" />
+      {{/if}}
+      {{/if}}
+
+      {{#if section2.visible}}
+      <div class="section-2-desktop">
+        <table>
+          <tr>
+            <td class="open-late card">
+              <table>
+                <tr>
+                  <td>
+                    <img src={{ section2.losing_power.img}} style="width: 70px; margin: auto;" />
+                  </td>
+                  <td style="text-align: center;">
+                    <p class="text-theme-title" style="white-space: nowrap;">{{t section2.losing_power.title}}</p>
+                    <p class="text-content">{{t section2.losing_power.content}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td style="width: 1%"></td>
+            <td class="battery-money card">
+              <table>
+                <tr>
+                  <td>
+                    <img src={{ section2.trade_program.img}} style="width: 70px;" />
+                  </td>
+                  <td style="text-align: center;">
+                    <p class="text-theme-title" style="white-space: nowrap;">{{t section2.trade_program.title}}</p>
+                    <p class="text-content">{{t section2.trade_program.content}}</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section-2-mobile">
+        <div class="card">
+          <table>
+            <tr>
+              <td>
+                <img src={{ section2.losing_power.img}} style="width: 80px;" />
+              </td>
+              <td style="text-align: center;">
+                <p class="text-subtitle">{{t section2.losing_power.title}}</p>
+                <p class="text-theme-content">{{t section2.losing_power.content}}</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="card">
+          <table>
+            <tr>
+              <td>
+                <img src={{ section2.trade_program.img}} style="width: 80px;" />
+              </td>
+              <td style="text-align: center;">
+                <p class="text-subtitle">{{t section2.trade_program.title}}</p>
+                <p class="text-theme-content">{{t section2.trade_program.content}}</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      {{#if section2.linerVisible}}
+      <hr class="liner" />
+      {{/if}}
+      {{/if}}
+
+      {{#if section3.visible}}
+      <div class="section-3">
+        <p class="text-title">
+          {{t section3.title }}
+        </p>
+        <p class="text-theme-content">
+          {{t section3.content }}
+        </p>
+        {{#if section3.privacy.link}}
+        <a class="text-theme-content" href={{ section3.privacy.link }} target="_blank" rel="noreferrer"
+          style="text-decoration: underline; color: black">
+          {{t section3.privacy.text }}
+        </a>
+        {{/if}}
+      </div>
+
+      {{#if section3.linerVisible}}
+      <hr class="liner" />
+      {{/if}}
+      {{/if}}
+
+      {{#if section4.visible}}
+      <div class="section-4-desktop">
+        <table>
+          <tr>
+            <td class="bounce">
+              <a href={{ section4.bounce.link }} target="_blank" rel="noreferrer">
+                <div>
+                  <p class="text-theme-title" style="color: white;">{{t section4.bounce.title }}</p>
+                  <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_1 }}</p>
+                  <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_2 }}</p>
+                  <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
+                </div>
+              </a>
+            </td>
+            <td style="width: 1%"></td>
+            <td class="mobile-groups">
+              <p class="text-theme-title" style="color: white;">{{t section4.certified.title }}</p>
+              <img src={{ section4.certified.img }} style="width: 60%;" />
+              <p class="text-theme-content" style="color: white;">{{t section4.certified.content }}</p>
+              {{#if section4.certified.shop_now.link}}
+              <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
+                <button>{{t section4.certified.shop_now.title }}</button>
+              </a>
+              {{/if}}
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="section-4-mobile">
+        <div class="bounce">
+          <a href={{ section4.bounce.link }} target="_blank" rel="noreferrer">
+            <div>
+              <p class="text-theme-title" style="color: white;">{{t section4.bounce.title }}</p>
+              <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_1 }}</p>
+              <p class="text-theme-content" style="color: white;">{{t section4.bounce.content_2 }}</p>
+              <img src={{ section4.bounce.img }} style="width: 60%; margin-top: 10px;" />
+            </div>
+          </a>
+        </div>
+        <div class="mobile-groups">
+          <p class="text-theme-title" style="color: white;">{{t section4.certified.title }}</p>
+          <img src={{ section4.certified.img }} style="width: 60%;" />
+          <p class="text-theme-content" style="color: white;">{{t section4.certified.content }}</p>
+          {{#if section4.certified.shop_now.link}}
+          <a href={{ section4.certified.shop_now.link }} target="_blank" rel="noreffer">
+            <button>{{t section4.certified.shop_now.title }}</button>
+          </a>
+          {{/if}}
+        </div>
+      </div>
+
+      {{#if section4.linerVisible}}
+      <hr class="liner" />
+      {{/if}}
+      {{/if}}
+
+      {{#if section5.visible}}
+      <div class="section-5">
+        <p class="text-theme-title">{{t section5.title }}</p>
+        <table>
+          <tr>
+            {{#each section5.socials}}
+              {{#if this.link}}
+              <td>
+                <div class="fa-icon-button">
+                  <a href={{ this.link }} target="_blank" rel="noreferrer">
+                    <img src={{this.img}} />
+                  </a>
+                </div>
+              </td>
+              {{/if}}
+            {{/each}}
+          </tr>
+        </table>
+        <p class="mid-text">
+          {{t section5.content_1 }}
+        </p>
+        <p class="mid-text" style="margin-top: 15px;">
+          {{t section5.content_2 }}
+        </p>
+      </div>
+      {{/if}}
+
+    </div>
+
+    <div class="footer">
+      <table>
+        <tr>
+          <td style="text-align: left;">
+            <img src={{ footer.logo }} />
+          </td>
+          <td style="text-align: center;">
+            <a href={{ footer.domain.link }} target="_blank" rel="noreferrer" class="mid-text">{{ footer.domain.name
+              }}</a>
+          </td>
+          <td style="text-align: right;">
+            {{#if footer.privacy_policy.link}}
+            <a href={{ footer.privacy_policy.link }} target="_blank" rel="noreferrer" class="mid-text"
+              style="text-decoration: underline;">
+              {{t footer.privacy_policy.name }}
+            </a>
+            {{/if}}
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</body>
+
+</html>
